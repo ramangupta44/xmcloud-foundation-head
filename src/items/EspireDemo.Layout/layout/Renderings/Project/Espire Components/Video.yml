@@ -2,17 +2,17 @@
 ID: "5bae854f-3463-4625-b536-4fc6c716331f"
 Parent: "5dbf5d75-2915-427f-aa88-72e557858fa0"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Project/Espire Components/VideoSection
+Path: /sitecore/layout/Renderings/Project/Espire Components/Video
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: VideoSection
+  Value: Video
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Applications/32x32/media_play_green.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Feature/EspireDemo/PageContent/Components/VideoSection/VideoSection
+  Value: /sitecore/templates/Feature/EspireDemo/PageContent/Components/Video/Video
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{E16DE313-51C6-4272-98FE-E9CE13FC3FDA}"
@@ -37,11 +37,11 @@ Languages:
         sitecore\harshit.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "af015c89-7a92-49d3-b23f-42847701c109"
+      Value: "74963d41-6033-4907-b865-82aa8e623d9b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\harshit.gupta@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230802T071330Z
+      Value: 20230802T113749Z

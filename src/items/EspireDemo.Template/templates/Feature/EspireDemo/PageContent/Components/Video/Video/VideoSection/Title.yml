@@ -2,7 +2,7 @@
 ID: "1a14663b-8820-4c7d-b492-03d2f6a6b643"
 Parent: "e9b95063-52b7-4a72-9f05-6763b1209bf7"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/EspireDemo/PageContent/Components/VideoSection/VideoSection/VideoSection/Title
+Path: /sitecore/templates/Feature/EspireDemo/PageContent/Components/Video/Video/VideoSection/Title
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type

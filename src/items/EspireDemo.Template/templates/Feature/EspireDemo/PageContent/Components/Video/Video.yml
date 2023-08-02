@@ -1,8 +1,18 @@
 ﻿---
-ID: "8135aa2f-4553-4fa9-be37-fecbe8ba5c1d"
-Parent: "e16de313-51c6-4272-98fe-e9ce13fc3fda"
-Template: "e16de313-51c6-4272-98fe-e9ce13fc3fda"
-Path: /sitecore/templates/Feature/EspireDemo/PageContent/Rendering Parameters/VideoSection/__Standard Values
+ID: "36202ee6-bea6-440b-b815-b48fb03387b6"
+Parent: "266cc629-575a-415e-b636-cfcd7b4265a0"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/EspireDemo/PageContent/Components/Video/Video
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/media_play_green.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: 
 Languages:
 - Language: en
   Versions:
@@ -10,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230802T070823Z
+      Value: 20230731T125244Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +31,11 @@ Languages:
         sitecore\harshit.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5b5411dc-f463-43ff-882c-4e2eba3eb74c"
+      Value: "65723d74-27ac-460d-9afe-d1548fe63bdd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\harshit.gupta@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230802T070852Z
+      Value: 20230802T065725Z
