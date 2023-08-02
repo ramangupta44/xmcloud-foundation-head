@@ -17,9 +17,11 @@ type TitleDescriptionProps = ComponentProps & {
 };
 export const TitlewithDescription = (props: TitleDescriptionProps): JSX.Element => {
   return (
-    <div className={`title-description ${props.params.styles}`}>
-      <Text tag="h2" field={props?.fields?.Title} />
-      <RichText field={props?.fields?.Description}></RichText>
+    <div className="general-template-inner">
+      <div className={`title-description ${props.params.styles}`}>
+        <Text tag="h2" field={props?.fields?.Title} />
+        <RichText field={props?.fields?.Description}></RichText>
+      </div>
     </div>
   );
 };
