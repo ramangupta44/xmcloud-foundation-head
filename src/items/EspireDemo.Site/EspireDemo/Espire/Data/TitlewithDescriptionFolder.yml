@@ -1,0 +1,23 @@
+﻿---
+ID: "aef3e1fa-4e79-4c1d-831d-4a3c53441f16"
+Parent: "50b61e13-9847-4f8f-aaad-0d1f042504fc"
+Template: "8d0c2fff-8288-4222-ab12-15e03d8b1e7c"
+Path: /sitecore/content/EspireDemo/Espire/Data/TitlewithDescriptionFolder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230801T105853Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b53329a0-270c-47ff-8763-557e281251b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\harshit.gupta@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230801T105853Z

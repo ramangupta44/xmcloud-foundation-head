@@ -1,0 +1,37 @@
+﻿---
+ID: "ea1df022-694a-499a-8953-0550e749a559"
+Parent: "aef3e1fa-4e79-4c1d-831d-4a3c53441f16"
+Template: "1679e998-51c8-46a7-b7ab-519984403d0c"
+Path: /sitecore/content/EspireDemo/Espire/Data/TitlewithDescriptionFolder/TitlewithDescription
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230801T105903Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\harshit.gupta@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\harshit.gupta@espire.com
+    - ID: "8a17c949-5a2f-43df-9da4-2b01c14f8edd"
+      Hint: Title
+      Value: Harshit
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "516da8db-c14c-4734-957e-b10824835b9c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\harshit.gupta@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230801T105923Z
+    - ID: "f5167596-b16a-4d6c-8705-4debe36f4b33"
+      Hint: Description
+      Value: djljwejdwejdowejdlwejmlweknh wedhweodjowejfowehdfowelfjweldhcwekhfcnjwejcfowehn
