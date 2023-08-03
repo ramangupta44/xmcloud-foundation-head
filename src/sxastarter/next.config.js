@@ -56,6 +56,19 @@ const nextConfig = {
       }, 
     ];
   },
+
+  // Added header to enable Allow CORS request from CM to Rendering host
+  async headers() {
+    return [
+      {
+        source: '/_next/static/media/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET,DELETE,PATCH,POST,PUT' },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = () => {
