@@ -36,6 +36,8 @@ SharedFields:
     Disallow: /aspnet_client/
     Disallow: /bin/
     Disallow: /config/
+    
+    
     Disallow: /data/
     Disallow: /install/
     Disallow: /masterpages/
@@ -43,6 +45,7 @@ SharedFields:
     Disallow: /sitecore/
     Disallow: /sitecore/login/
     Disallow: /xsl/
+    Disallow: https://espire-starter-kit-dev-espire.vercel.app/sitemap.xml
 - ID: "72e83c8d-3578-4e50-b4c0-93a78a1729f2"
   Hint: FilesystemPath
   Value: /dist/Espire
@@ -91,11 +94,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3c224c2e-cae4-4703-837f-456a01fb989c"
+      Value: "033b3204-8a10-469d-9968-0a96bf3bc808"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\b6hiKrOdCH
+        sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230720T100633Z
+      Value: 20231101T141125Z
