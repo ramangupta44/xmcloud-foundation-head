@@ -1,73 +1,22 @@
-import { React, useState, useMemo } from 'react';
+import React from 'react';
 import { MapComponentTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/MapComponentTemplateProps';
-// import GoogleMapReact from 'google-map-react';
-import { GoogleMap, InfoWindow, Marker, useLoadScript } from '@react-google-maps/api';
+import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 
-import {
-  Image as JssImage,
-  Link as JssLink,
-  RichText as JssRichText,
-  Text,
-  withDatasourceCheck,
-} from '@sitecore-jss/sitecore-jss-nextjs';
-import { EditMode } from 'lib/component-props';
-
-// const AnyReactComponent = ({ text }) => (
-//   <div
-//     style={{
-//       color: 'white',
-//       background: 'navy',
-//       padding: '15px 10px',
-//       textAlign: 'center',
-//       alignItems: 'center',
-//       justifyContent: 'center',
-//       borderRadius: '50% 50% 50%',
-//       border: '4px solid #fff',
-//       width: '50px',
-//       height: '50px',
-//     }}
-//   >
-//     {text}
-//   </div>
-// );
+import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export const MapComponent = (props: MapComponentTemplateProps): JSX.Element => {
-  const isEditMode = EditMode();
-  const defaultProps = {
-    center: {
-      lat: 28.5164209,
-      lng: 77.0265524,
-    },
-    zoom: 11,
-  };
-
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: 'AIzaSyBZgvPLUW72hExNXOpE1goyo9NNIdjOAz0',
   });
-  const [mapRef, setMapRef] = useState();
-  const [isOpen, setIsOpen] = useState(false);
-  const [infoWindowData, setInfoWindowData] = useState();
 
+  console.log(props);
   const markers = [
     { address: 'Address1', lat: 18.5204, lng: 73.8567 },
     { address: 'Address2', lat: 18.5314, lng: 73.8446 },
     { address: 'Address3', lat: 18.5642, lng: 73.7769 },
   ];
 
-  // const onMapLoad = (map) => {
-  //   setMapRef(map);
-  //   const bounds = new google.maps.LatLngBounds();
-  //   markers?.forEach(({ lat, lng }) => bounds.extend({ lat, lng }));
-  //   map.fitBounds(bounds);
-  // };
-
-  // const handleMarkerClick = (id, lat, lng, address) => {
-  //   mapRef?.panTo({ lat, lng });
-  //   setInfoWindowData({ id, address });
-  //   setIsOpen(true);
-  // };
-
-  const onLoad = (map) => {
+  const onLoad = (map: { fitBounds: (arg0: google.maps.LatLngBounds) => void }) => {
     const bounds = new google.maps.LatLngBounds();
     markers?.forEach(({ lat, lng }) => bounds.extend({ lat, lng }));
     map.fitBounds(bounds);
@@ -90,29 +39,10 @@ export const MapComponent = (props: MapComponentTemplateProps): JSX.Element => {
         ) : (
           <GoogleMap mapContainerClassName="map-container" onLoad={onLoad}>
             {markers.map(({ lat, lng }) => (
-              <Marker position={{ lat, lng }} icon={customMarker} />
+              <Marker position={{ lat, lng }} icon={customMarker} key="lat" />
             ))}
           </GoogleMap>
         )}
-      </div>
-      {/* map ends */}
-      <div className={`map-component ${props.params.styles}`}>
-        <section className={`map-component-default`}>
-          <JssImage field={props?.fields?.Image} width={''} height={''} />
-          <div className="container">
-            <div className="map-component-content">
-              <Text tag="h1" field={props?.fields?.Title} />
-              <JssRichText field={props?.fields?.Description} tag="p" />
-              {isEditMode ? (
-                <JssLink field={props?.fields?.Link} className="primary-btn" />
-              ) : props?.fields?.Link?.value?.href ? (
-                <JssLink field={props?.fields?.Link} className="primary-btn" />
-              ) : (
-                ''
-              )}
-            </div>
-          </div>
-        </section>
       </div>
     </>
   );

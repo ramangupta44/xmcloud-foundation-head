@@ -1,4 +1,4 @@
-import { React, useState, useMemo } from 'react';
+import React from 'react';
 import { BannerTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/BannerTemplateProps';
 
 import {
