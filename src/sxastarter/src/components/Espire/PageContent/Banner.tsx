@@ -10,25 +10,6 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { EditMode } from 'lib/component-props';
 
-// const AnyReactComponent = ({ text }) => (
-//   <div
-//     style={{
-//       color: 'white',
-//       background: 'navy',
-//       padding: '15px 10px',
-//       textAlign: 'center',
-//       alignItems: 'center',
-//       justifyContent: 'center',
-//       borderRadius: '50% 50% 50%',
-//       border: '4px solid #fff',
-//       width: '50px',
-//       height: '50px',
-//     }}
-//   >
-//     {text}
-//   </div>
-// );
-
 export const Banner = (props: BannerTemplateProps): JSX.Element => {
   const isEditMode = EditMode();
 
