@@ -6,7 +6,7 @@ import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export const MapComponent = (props: MapComponentTemplateProps): JSX.Element => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyBZgvPLUW72hExNXOpE1goyo9NNIdjOAz0',
+    googleMapsApiKey: 'AIzaSyD_0f6HchBUrvF0JEFRkttlVPPLQTfEdOw',
   });
 
   console.log(props);
