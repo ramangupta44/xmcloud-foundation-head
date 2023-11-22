@@ -172,6 +172,9 @@
         &::before {
           content: url("../../../public/hamburger-icon.svg");
           display: inline-block;
+          @include respond-to(mobile-to-tablet) {
+            margin-top: 10px;
+          }
         }
       }
       @include respond-to(mobile-to-tablet) {
@@ -180,6 +183,12 @@
     }
     .image {
       padding-top: 15px;
+      a{
+        @include respond-to(mobile-to-tablet) {
+          padding-bottom: 10px;
+        }
+       
+      }
     }
     &.container {
       @include respond-to(below-laptop) {
