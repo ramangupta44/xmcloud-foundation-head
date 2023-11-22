@@ -3,7 +3,7 @@
   > .container {
     width: 100%;
     max-width: 100%;
-    @include respond-to(tablet-to-laptop){
+    @include respond-to(tablet-to-laptop) {
       padding: 0 3rem;
     }
   }
@@ -52,7 +52,7 @@
   }
   img {
     max-width: 90px;
-    @include respond-to(below-laptop){
+    @include respond-to(below-laptop) {
       max-width: 60px;
     }
   }
@@ -114,10 +114,10 @@
 
   .search-bar-default {
     margin: auto;
-    @include respond-to(below-laptop){
-      padding: 0 3rem 0 2rem
+    @include respond-to(below-laptop) {
+      padding: 0 3rem 0 2rem;
     }
-    @include respond-to(mobile-to-tablet){
+    @include respond-to(mobile-to-tablet) {
       padding-right: 0;
     }
   }
@@ -133,58 +133,58 @@
     }
   }
 
-  #top-nav{
-    .link-list{
-      .first{
+  #top-nav {
+    .link-list {
+      .first {
         display: none;
-        @include respond-to(laptop-and-above){
+        @include respond-to(laptop-and-above) {
           display: inline-block;
         }
       }
-      @include respond-to(below-laptop){
+      @include respond-to(below-laptop) {
         flex: 1;
       }
-      .last{
-        @include respond-to(below-laptop){
+      .last {
+        @include respond-to(below-laptop) {
           display: block;
           text-align: right;
         }
       }
     }
-    &.container{
-      @include respond-to(below-laptop){
-      padding-left: 0;
-      padding-right: 0;
+    &.container {
+      @include respond-to(below-laptop) {
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }
 
-  #bottom-nav{
+  #bottom-nav {
     padding-top: 15px;
-    .link{
-      @include respond-to(below-laptop){
+    .link {
+      @include respond-to(below-laptop) {
         text-align: right;
         margin: 0;
-        a{
+        a {
           font-size: 0;
         }
-       
-        &::before{
+
+        &::before {
           content: url("../../../public/hamburger-icon.svg");
           display: inline-block;
         }
       }
-      @include respond-to(mobile-to-tablet){
+      @include respond-to(mobile-to-tablet) {
         padding-right: 0;
       }
     }
     .image {
       padding-top: 15px;
     }
-    &.container{
-      @include respond-to(below-laptop){
-      padding-left: 0;
-      padding-right: 0;
+    &.container {
+      @include respond-to(below-laptop) {
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }
