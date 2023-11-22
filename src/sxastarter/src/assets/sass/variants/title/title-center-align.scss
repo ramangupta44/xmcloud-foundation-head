@@ -5,3 +5,16 @@
         text-align: center;
     }
 }
+
+.editing-mode {
+  .title{
+    .field-title > span{
+       border-bottom: 0;
+       color : black;
+      &:hover{
+        text-decoration: none;
+      }
+
+    }
+  }
+}

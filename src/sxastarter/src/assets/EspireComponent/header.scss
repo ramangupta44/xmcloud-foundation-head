@@ -117,6 +117,9 @@
     @include respond-to(below-laptop){
       padding: 0 3rem 0 2rem
     }
+    @include respond-to(mobile-to-tablet){
+      padding-right: 0;
+    }
   }
 
   @include respond-to(laptop-to-desktop) {
@@ -171,9 +174,12 @@
           display: inline-block;
         }
       }
+      @include respond-to(mobile-to-tablet){
+        padding-right: 0;
+      }
     }
     .image {
-      padding-bottom: 10px;
+      padding-top: 15px;
     }
     &.container{
       @include respond-to(below-laptop){
