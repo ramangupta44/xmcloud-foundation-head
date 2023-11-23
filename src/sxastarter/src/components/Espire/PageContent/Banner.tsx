@@ -12,25 +12,28 @@ import { EditMode } from 'lib/component-props';
 
 export const Banner = (props: BannerTemplateProps): JSX.Element => {
   const isEditMode = EditMode();
+
   return (
-    <div className={`banner ${props.params.styles}`}>
-      <section className={`banner-default`}>
-        <JssImage field={props?.fields?.Image} width={''} height={''} />
-        <div className="container">
-          <div className="banner-content">
-            <Text tag="h1" field={props?.fields?.Title} />
-            <JssRichText field={props?.fields?.Description} tag="p" />
-            {isEditMode ? (
-              <JssLink field={props?.fields?.Link} className="primary-btn" />
-            ) : props?.fields?.Link?.value?.href ? (
-              <JssLink field={props?.fields?.Link} className="primary-btn" />
-            ) : (
-              ''
-            )}
+    <>
+      <div className={`banner ${props.params.styles}`}>
+        <section className={`banner-default`}>
+          <JssImage field={props?.fields?.Image} width={''} height={''} />
+          <div className="container">
+            <div className="banner-content">
+              <Text tag="h1" field={props?.fields?.Title} />
+              <JssRichText field={props?.fields?.Description} tag="p" />
+              {isEditMode ? (
+                <JssLink field={props?.fields?.Link} className="primary-btn" />
+              ) : props?.fields?.Link?.value?.href ? (
+                <JssLink field={props?.fields?.Link} className="primary-btn" />
+              ) : (
+                ''
+              )}
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 
