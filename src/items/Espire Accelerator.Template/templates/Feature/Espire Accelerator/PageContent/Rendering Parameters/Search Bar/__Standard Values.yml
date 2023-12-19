@@ -1,0 +1,31 @@
+﻿---
+ID: "f914e225-886f-4501-ae2b-11dfd1c817d8"
+Parent: "cf39d129-d1c7-49cc-a450-968d85a7fb1f"
+Template: "cf39d129-d1c7-49cc-a450-968d85a7fb1f"
+Path: /sitecore/templates/Feature/Espire Accelerator/PageContent/Rendering Parameters/Search Bar/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230713T152155Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47fcd90c-47a8-4636-b3b9-a4127c877018"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230713T152215Z

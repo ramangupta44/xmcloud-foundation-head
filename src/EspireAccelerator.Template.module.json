@@ -1,0 +1,31 @@
+{
+    "namespace": "Espire Accelerator.Template",
+   
+    "items": {
+        "includes": [
+            {
+                "name": "Espire Accelerator.Template",
+                "path": "/sitecore/templates",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants",
+                "rules": [
+                    {
+                        "path": "/Feature/Espire Accelerator",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "/Feature",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "*",
+                        "scope": "ignored"
+                    }
+                ]
+            }
+          
+        ]
+    }
+}
