@@ -1,10 +1,10 @@
 {
-    "namespace": "EspireDemo.Library",
+    "namespace": "Espire Accelerator.Library",
 
     "items": {
         "includes": [
             {
-                "name": "EspireDemo.Media Library",
+                "name": "Espire Accelerator.Media Library",
                 "path": "/sitecore/media library",
                 "allowedPushOperations": "createUpdateAndDelete",
                 "scope": "itemAndDescendants",

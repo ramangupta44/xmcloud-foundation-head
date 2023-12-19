@@ -1,10 +1,10 @@
 {
-    "namespace": "EspireDemo.Site",
-    "references": ["EspireDemo.Template"],
+    "namespace": "Espire Accelerator.Site",
+    "references": ["Espire Accelerator.Template"],
     "items": {
         "includes": [
             {
-                "name": "EspireDemo.Site",
+                "name": "Espire Accelerator.Site",
                 "path": "/sitecore/content/EspireDemo",
                 "allowedPushOperations": "createUpdateAndDelete",
                 "scope": "itemAndDescendants"
