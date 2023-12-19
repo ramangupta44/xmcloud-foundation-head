@@ -1,10 +1,10 @@
 {
-    "namespace": "EspireDemo.System",
+    "namespace": "Espire Accelerator.System",
   
     "items": {
         "includes": [
             {
-                "name": "EspireDemo.System",
+                "name": "Espire Accelerator.System",
                 "path": "/sitecore/system",
                 "allowedPushOperations": "createUpdateAndDelete",
                 "scope": "itemAndDescendants",
@@ -15,8 +15,8 @@
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
                     },
-                    {
-                        "path": "/Modules/Layout Service/Rendering Contents Resolvers/Espire Upgrade",
+					{
+                        "path": "/Modules/Layout Service/Rendering Contents Resolvers/Espire Accelerator",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
                     },
@@ -35,13 +35,6 @@
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "SingleItem"
                     },
-                    
-                    {
-                        "path": "/Settings",
-                        "allowedPushOperations": "createUpdateAndDelete",
-                        "scope": "SingleItem"
-                    },
-
                     {
                         "path": "*",
                         "scope": "ignored"
