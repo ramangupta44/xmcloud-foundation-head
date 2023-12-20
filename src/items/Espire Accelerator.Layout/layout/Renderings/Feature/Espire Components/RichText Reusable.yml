@@ -21,7 +21,7 @@ SharedFields:
   Value: "{444AEBF2-8F50-4185-86C1-D88C9D2CB3D7}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/EspireDemo/Espire/Data/RichText Reusable
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='RichText  Reusable Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='RichText  Reusable Folder']"
 Languages:
 - Language: en
   Versions:
@@ -40,11 +40,11 @@ Languages:
         sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "43ad795a-881c-415c-8351-579c41b76add"
+      Value: "5722a3ad-120e-4d99-b4a1-cde219524fbf"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\raman.gupta@espire.com
+        sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230718T113105Z
+      Value: 20231220T125519Z
