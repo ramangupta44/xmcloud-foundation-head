@@ -1,0 +1,30 @@
+﻿---
+ID: "954b5cf9-aaaf-4bb8-9291-d600e48454c9"
+Parent: "84c2e7f6-20eb-4a47-a0a5-8ee3fa1c1d94"
+Template: "66fa9be4-d704-45a2-8420-4eb3ece556b6"
+Path: /sitecore/content/EspireDemo/Espire/Home/Test Pages/Head Script/Data/SitecoreDemo
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231005T085043Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a5563746-dc7b-4185-ad58-f90ad25e7413"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "be908b9c-b59f-4c73-9154-d36488596256"
+      Hint: function
+      Value: |
+        <script>if(!window.mootrack){ !function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","https://cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack"); } mootrack('loadForm', '0f36551a0e2a4791b1efcc3e54a0be83');</script>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231005T094901Z
