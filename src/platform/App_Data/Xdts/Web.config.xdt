@@ -27,5 +27,8 @@ xdt:Transform="Replace" xdt:Locator="Match(name)"/>
 </customHeaders>
 </httpProtocol>
 </system.webServer>
+<system.web>
+  <customErrors mode="RemoteOnly" />
+</system.web>
 </location>
 </configuration>
