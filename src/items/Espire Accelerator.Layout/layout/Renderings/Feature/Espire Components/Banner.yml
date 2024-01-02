@@ -21,7 +21,7 @@ SharedFields:
   Value: "{0C9EB3F7-47D1-4CC3-B8AB-9011CB5A473F}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/EspireDemo/Espire/Data/Banner
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Banner Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Banner Folder']"
 - ID: "c39a90ce-0035-41bb-90f6-3c8a6ea87797"
   Hint: AddFieldEditorButton
   Value: 1
@@ -46,11 +46,11 @@ Languages:
         sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c888eac3-dad7-4fa8-b981-82e9cbe438f2"
+      Value: "1839749d-550b-41a0-bee1-3a903a5fca05"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\raman.gupta@espire.com
+        sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230718T113027Z
+      Value: 20231220T122542Z

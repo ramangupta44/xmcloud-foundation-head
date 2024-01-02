@@ -18,7 +18,7 @@ SharedFields:
   Value: "{D1352C21-FBBD-44CB-AC52-C5735989DEE1}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/EspireDemo/Espire/Data/Social Media Feeds
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Social Media Feeds Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Social Media Feeds Folder']"
 Languages:
 - Language: en
   Versions:
@@ -37,11 +37,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "050b7f19-c4f2-4ade-9c45-a4e1e901ff38"
+      Value: "969654f7-1c76-41b0-86bb-fe5d85c779b3"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230821T053339Z
+      Value: 20231220T125632Z
