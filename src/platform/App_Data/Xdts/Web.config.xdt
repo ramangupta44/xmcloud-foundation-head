@@ -28,7 +28,7 @@ xdt:Transform="Replace" xdt:Locator="Match(name)"/>
 </httpProtocol>
 </system.webServer>
 <system.web>
-  <customErrors mode="RemoteOnly" />
+  <customErrors mode="Off" />
 </system.web>
 </location>
 </configuration>
