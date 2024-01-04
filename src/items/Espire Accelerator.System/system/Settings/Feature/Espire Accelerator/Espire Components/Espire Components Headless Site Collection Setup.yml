@@ -1,8 +1,8 @@
 ﻿---
-ID: "d61bd5fd-d2bc-49b2-903b-8d93b0f04a75"
-Parent: "8f343079-3cc5-4ef7-bc27-32addb46f45e"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Feature/Espire Accelerator
+ID: "f136b0a4-0a69-467b-9ed4-f08c56ba7099"
+Parent: "f7938815-3fb3-47ca-8e31-60c45e84d946"
+Template: "f036b5e0-37fb-4537-9d36-ef84e5bd41b7"
+Path: /sitecore/system/Settings/Feature/Espire Accelerator/Espire Components/Espire Components Headless Site Collection Setup
 Languages:
 - Language: en
   Versions:
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240103T115124Z
+      Value: 20240103T120016Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +21,14 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2a937771-4e45-4753-a553-61c34b1f5290"
+      Value: "f308eb1a-cf96-430f-8931-d028f33702fa"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Espire Components
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240103T115124Z
+      Value: 20240103T120016Z

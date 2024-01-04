@@ -36,6 +36,21 @@
                         "scope": "SingleItem"
                     },
                     {
+                        "path": "/Settings/Feature/Espire Accelerator",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "/Settings/Feature",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "/Settings",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
                         "path": "*",
                         "scope": "ignored"
                     }

@@ -1,0 +1,33 @@
+﻿---
+ID: "c75ee39d-a521-4b66-b53c-37b2de3ab45e"
+Parent: "aed2998b-0bd7-40aa-b550-eadd38fa3984"
+Template: "aed2998b-0bd7-40aa-b550-eadd38fa3984"
+Path: /sitecore/templates/Feature/Espire Accelerator/Espire Components/Carousel Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {88E3CB3B-75A9-45B2-A26A-4151BCCD04E0}
+    {AED2998B-0BD7-40AA-B550-EADD38FA3984}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8502eb9d-840b-4e8a-8fd3-07baacf7d323"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240103T124056Z
