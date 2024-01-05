@@ -72,7 +72,7 @@ SharedFields:
   Value: "{BE9829C8-0EAA-434A-BD35-640C7C76813F}"
 - ID: "f29428d5-1285-48b8-a884-44057965829a"
   Hint: RenderingsPath
-  Value: "{5DBF5D75-2915-427F-AA88-72E557858FA0}"
+  Value: "{95784640-9FB0-4430-BA60-6EE80EFCFBD0}"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{0FEEB907-58F0-44DE-B08C-2F43C063D0A5}"
@@ -94,11 +94,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "033b3204-8a10-469d-9968-0a96bf3bc808"
+      Value: "1e942fd6-f2da-442a-a33a-4dfedda259a9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20231101T141125Z
+      Value: 20240105T093544Z
