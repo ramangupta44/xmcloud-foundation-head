@@ -1,5 +1,5 @@
 ﻿---
-ID: "2687cdff-d73e-46cf-b14b-a735eb122e85"
+ID: "cd4e7626-1891-4f4d-833b-a941feb55b54"
 Parent: "da61ad50-8fdb-4252-a68f-b4470b1c9fe8"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: /sitecore/layout/Renderings/Feature/Espire Accelerator
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240103T115125Z
+      Value: 20240108T043613Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +21,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "262d29f6-5c73-4dcd-be2b-802e8f40911a"
+      Value: "7ea06788-c5a4-48a8-995d-103391479c65"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240103T115125Z
+      Value: 20240108T043613Z
