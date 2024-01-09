@@ -26,7 +26,7 @@
                         "scope": "SingleItem"
                     },
 					{
-                        "path": "/Renderings/Feature/Espire Components",
+                        "path": "/Renderings/Feature/Espire Accelerator",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
                     },

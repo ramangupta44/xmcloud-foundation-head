@@ -1,0 +1,33 @@
+﻿---
+ID: "e634f098-380d-4a6a-a29b-8a3156fef9b3"
+Parent: "26233a84-d0c7-4c9b-aff7-336499edd3cd"
+Template: "26233a84-d0c7-4c9b-aff7-336499edd3cd"
+Path: /sitecore/templates/Feature/Espire Accelerator/Espire Basic Components/Social Media Share Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {705CC674-F84A-49F7-8103-3328DE62E99B}
+    {26233A84-D0C7-4C9B-AFF7-336499EDD3CD}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e4920ad-cf06-4291-98fd-ec260915ae87"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T071840Z
