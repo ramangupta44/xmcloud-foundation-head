@@ -1,0 +1,36 @@
+﻿---
+ID: "61c42b16-cdd6-41c6-8c32-659968c346bc"
+Parent: "89789b02-8817-4cc1-a859-37814b502905"
+Template: "cd09933c-74e4-4169-af16-a36ef0946734"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/RichText Reusable/RichText Reusable1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T091025Z
+    - ID: "50a4531c-3255-468d-9d56-6eebdd9851be"
+      Hint: RichText
+      Value: |
+        <h2>Digital Experience Platforms</h2>
+        <p>As a leading DXP service provider, Espire is helping businesses deliver game changing, personalized and omni-channel digital experiences-at scale. With end-to-end digital content management, effective customer journey mapping, marketing automation and managed services for CRM or DXP applications, we help businesses get a unified customer view and drive impeccable digital experiences across all customer touchpoints.</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b914959d-6aa4-4fed-a91b-0117ba18f33b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240110T091034Z

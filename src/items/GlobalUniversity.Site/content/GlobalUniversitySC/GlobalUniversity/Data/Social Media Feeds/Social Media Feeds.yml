@@ -1,0 +1,40 @@
+﻿---
+ID: "0abe7230-e6fb-444d-a3a9-b211a3b81e00"
+Parent: "321a7767-c7d7-4bad-8d10-da95c424ed4f"
+Template: "73c13835-1808-4fe2-bf92-79717b76ba0f"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Social Media Feeds/Social Media Feeds
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T092127Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "72797c3b-edbf-4f9e-ad73-46ea2b2f5429"
+      Hint: URL
+      Value: "https://widgets.sociablekit.com/google-calendar/widget.js"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c58a457-a5c1-4bee-984a-715922d59d77"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "befde9f6-a609-404c-a014-3558b9602767"
+      Hint: ClassName
+      Value: "sk-ww-google-calendar"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240110T092142Z
+    - ID: "f3b10b8b-2988-4c54-a657-4ed4bb9fea25"
+      Hint: ID
+      Value: 229529

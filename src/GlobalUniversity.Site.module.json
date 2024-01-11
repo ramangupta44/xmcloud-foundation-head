@@ -1,0 +1,16 @@
+{
+    "namespace": "GlobalUniversity.Site",
+    "references": ["GlobalUniversity.Template"],
+    "items": {
+        "includes": [
+            {
+                "name": "GlobalUniversity.Site",
+                "path": "/sitecore/content",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants"
+
+            }
+          
+        ]
+    }
+}

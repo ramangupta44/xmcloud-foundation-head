@@ -1,0 +1,37 @@
+﻿---
+ID: "d4f96443-d744-45fb-81f3-05ef588f1bdb"
+Parent: "af1c8ccd-7427-429f-8bee-63613e3e2ef2"
+Template: "4cbc21fd-9481-4e43-8e66-54a98b531462"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Head Script/Head Script1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T091757Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "91a4c18e-5c08-43ac-b1cc-5c157e2d0cbb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "c7f7ed00-cc69-46cc-acb4-a4c667fe436d"
+      Hint: script
+      Value: testAtul
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240111T070519Z
+    - ID: "f48f1086-74ba-488e-b980-c3a19bb27266"
+      Hint: function
+      Value: 

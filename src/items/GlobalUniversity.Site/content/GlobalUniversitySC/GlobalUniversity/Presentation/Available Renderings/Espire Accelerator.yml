@@ -1,0 +1,49 @@
+﻿---
+ID: "96258e4e-f6ed-4c35-b73d-058c81724cea"
+Parent: "54dd2e7f-86c6-403e-ac52-341d5ac2c715"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Available Renderings/Espire Accelerator
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {8777F46D-FA42-4ED6-8EE3-46178976628B}
+    {9238DF1F-68A3-4B83-8E8F-828CA2D5B9F2}
+    {53C16FF2-8FE3-4783-A747-C4B40C25984D}
+    {B80EE0AD-4CFF-4235-8AC7-583B02B5C819}
+    {41408534-4A68-4A61-A657-D99BD6C6DDAA}
+    {1167CE9E-6FFE-4739-95BB-8EA99D322CBB}
+    {9FDDF776-B6EF-4658-9B50-A3E380D7C75A}
+    {87C1022B-4648-4A43-8C34-C9C34FCA5506}
+    {13B26AA9-81B3-4CA3-8CCA-40BB55C2F676}
+    {77080CC3-29BF-440B-B693-CAF9A4F3E508}
+    {63A14BEC-7488-4E9B-B3ED-951301CCCE78}
+    {7EE1469C-DBDB-47D7-95CA-85CCB597FAE5}
+    {B8D0DA1B-20D4-41CC-81F1-94A5C868BF62}
+    {3BF40154-F6E5-4D84-9FFD-758F0D984C59}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231220T054159Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c0066319-2fd3-4a3c-9f6f-4412a31b4eb9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231220T054255Z
