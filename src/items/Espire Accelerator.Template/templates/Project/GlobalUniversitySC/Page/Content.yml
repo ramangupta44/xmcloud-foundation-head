@@ -1,8 +1,8 @@
 ﻿---
-ID: "bd1477e5-531f-4192-ae2a-7868e25f8b07"
-Parent: "fdfab544-0a22-4ff3-82e3-a36a4536132e"
-Template: "fdfab544-0a22-4ff3-82e3-a36a4536132e"
-Path: /sitecore/templates/Project/EspireDemo/JSS Settings/__Standard Values
+ID: "e4ca8d1e-d329-4c23-9610-5d373a63d08c"
+Parent: "97779d41-866b-4682-9902-99588d954e78"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/GlobalUniversitySC/Page/Content
 Languages:
 - Language: en
   Versions:
@@ -10,22 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230707T131434Z
+      Value: 20231220T053429Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\manoj.chopkar@espire.com
+        sitecore\raman.gupta@espire.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\manoj.chopkar@espire.com
+        sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cf7b6090-c5ac-4fd5-b1ac-b3e90f7158aa"
+      Value: "9a0744dc-fdcb-4f14-8043-47a5daa2f183"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\manoj.chopkar@espire.com
+        sitecore\raman.gupta@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230707T131434Z
+      Value: 20231220T053429Z
