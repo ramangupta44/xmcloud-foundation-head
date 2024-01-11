@@ -1,0 +1,35 @@
+﻿---
+ID: "d1d0b8b9-2f7b-4484-ba11-43e0341ed132"
+Parent: "3a2dcede-0ad7-4041-8867-48fc23f122e2"
+Template: "fa997aa3-4ad9-47c8-ba18-4ac9ec3c5f16"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Link/Link1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T090847Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "22a50abe-72b6-4592-b338-04a449171a2c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240111T062530Z
+    - ID: "e810b54e-56db-45cf-b4df-4aa733eac799"
+      Hint: Link
+      Value: |
+        <link text="Home" anchor="" linktype="internal" class="" title="Home" target="" querystring="" id="{C74739BB-394A-4F5D-A449-0DF57C1545BD}" />

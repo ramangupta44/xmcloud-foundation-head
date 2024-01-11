@@ -1,0 +1,29 @@
+{
+    "namespace": "GlobalUniversity.Template",
+    "items": {
+        "includes": [
+            {
+                "name": "GlobalUniversity.Template",
+                "path": "/sitecore/templates",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants",
+                "rules": [
+                    {
+                        "path": "/Branches/Project",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "/Branches",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "*",
+                        "scope": "ignored"
+                    }
+                ]
+            }
+        ]
+    }
+}
