@@ -1,6 +1,5 @@
 {
     "namespace": "Espire Accelerator.System",
-  
     "items": {
         "includes": [
             {
@@ -9,13 +8,12 @@
                 "allowedPushOperations": "createUpdateAndDelete",
                 "scope": "itemAndDescendants",
                 "rules": [
-
                     {
                         "path": "/Dictionary",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
                     },
-					{
+                    {
                         "path": "/Modules/Layout Service/Rendering Contents Resolvers/Espire Accelerator",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
@@ -56,7 +54,6 @@
                     }
                 ]
             }
-          
         ]
     }
 }
