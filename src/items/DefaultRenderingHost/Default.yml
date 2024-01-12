@@ -12,13 +12,13 @@ SharedFields:
   Value: 
 - ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
   Hint: __Read Only
-  Value: 1
+  Value: 
 - ID: "e32c1801-79b3-4fc1-a9c4-3c6e6c2968ae"
   Hint: ServerSideRenderingEngineApplicationUrl
-  Value: "https://xmc-i4tfkuh7ahherhedq64pt.sitecorecloud.io/"
+  Value: "http://rendering:3000"
 - ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
   Hint: ServerSideRenderingEngineEndpointUrl
-  Value: "https://xmc-i4tfkuh7ahherhedq64pt.sitecorecloud.io:443/api/editing/render"
+  Value: "http://rendering:3000/api/editing/render"
 Languages:
 - Language: "de-DE"
   Fields:
@@ -62,7 +62,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "986522ec-d58b-403f-b3c6-aa2a94164d53"
+      Value: "b702ea07-dc31-49bd-b07d-d00fc53ef957"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240112T044205Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
