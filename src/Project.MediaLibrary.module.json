@@ -1,10 +1,9 @@
 {
-    "namespace": "Espire Accelerator.Library",
-
+    "namespace": "Project.Media Library",
     "items": {
         "includes": [
             {
-                "name": "Espire Accelerator.Media Library",
+                "name": "Project.Media Library",
                 "path": "/sitecore/media library",
                 "allowedPushOperations": "createUpdateAndDelete",
                 "scope": "itemAndDescendants",
@@ -15,14 +14,9 @@
                         "scope": "ignored"
                     },
                     {
-                        "path": "/Project/EspireDemo",
-                        "allowedPushOperations": "createUpdateAndDelete",
-                        "scope": "itemAndDescendants"
-                    },
-                    {
                         "path": "/Project",
                         "allowedPushOperations": "createUpdateAndDelete",
-                        "scope": "SingleItem"
+                        "scope": "itemAndDescendants"
                     },
                     {
                         "path": "*",
@@ -30,7 +24,6 @@
                     }
                 ]
             }
-          
         ]
     }
 }

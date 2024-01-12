@@ -1,6 +1,5 @@
 {
     "namespace": "Espire Accelerator.Layout",
- 
     "items": {
         "includes": [
             {
@@ -9,8 +8,7 @@
                 "allowedPushOperations": "createUpdateAndDelete",
                 "scope": "itemAndDescendants",
                 "rules": [
-
-					{
+                    {
                         "path": "/Placeholder Settings/Feature/Espire Accelerator",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
@@ -25,7 +23,7 @@
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "SingleItem"
                     },
-					{
+                    {
                         "path": "/Renderings/Feature/Espire Accelerator",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
@@ -46,7 +44,6 @@
                     }
                 ]
             }
-          
         ]
     }
 }
