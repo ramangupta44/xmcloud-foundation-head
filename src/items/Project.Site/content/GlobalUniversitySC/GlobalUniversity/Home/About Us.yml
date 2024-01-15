@@ -2,9 +2,12 @@
 ID: "87e00201-e0a9-4b40-bfb5-d56ad93bbf9a"
 Parent: "c74739bb-394a-4f5d-a449-0df57c1545bd"
 Template: "97779d41-866b-4682-9902-99588d954e78"
-Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/About
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/About Us
 BranchID: "aa757cc9-f2da-4f78-a33d-9d382d5fcf92"
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -44,7 +47,7 @@ Languages:
       Value: 20231220T053614Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: About
+      Value: About Us
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -58,14 +61,14 @@ Languages:
       Value: 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6d52aa67-dc6c-4401-aa03-ebb265ac68e3"
+      Value: "43b100d8-60e7-4d67-a1bf-a93bd5807669"
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: About
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\iwmkkOokji
+        sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240111T064643Z
+      Value: 20240115T092418Z
