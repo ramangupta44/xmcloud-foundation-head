@@ -1,0 +1,16 @@
+    {
+        "namespace": "Project.Site",
+        "references": [
+            "Espire Accelerator.Template"
+        ],
+        "items": {
+            "includes": [
+                {
+                    "name": "Project.Site",
+                    "path": "/sitecore/content",
+                    "allowedPushOperations": "createUpdateAndDelete",
+                    "scope": "itemAndDescendants"
+                }
+            ]
+        }
+    }
