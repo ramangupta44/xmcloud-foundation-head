@@ -16,4 +16,15 @@ const LanguageSelector = (props: ComponentProps): JSX.Element => {
   );
 };
 
+export const Login = (props: ComponentProps): JSX.Element => {
+  return (
+    <div className={`${props.params.styles}`}>
+      <div className="login">
+        <Form.Select aria-label="Login Functionality">
+          <option>Login</option>
+        </Form.Select>
+      </div>
+    </div>
+  );
+};
 export default LanguageSelector;
