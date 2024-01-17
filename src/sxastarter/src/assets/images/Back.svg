@@ -1,0 +1,7 @@
+<svg id="Back" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="bound" width="24" height="24" fill="none"/>
+  <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(-3.5 -2)">
+    <path id="Path_173" data-name="Path 173" d="M23.5,18H7.5" transform="translate(0 -4)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_174" data-name="Path 174" d="M13.5,19.5l-6-6,6-6" transform="translate(0 0.5)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

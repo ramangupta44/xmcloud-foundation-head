@@ -1,0 +1,7 @@
+<svg id="online" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="bound" width="24" height="24" fill="none"/>
+  <g id="Icon_feather-video" data-name="Icon feather-video" transform="translate(2.5 -0.5)">
+    <path id="Path_227" data-name="Path 227" d="M29,10.5l-5,3.571,5,3.571Z" transform="translate(-11.5 -1.571)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_228" data-name="Path 228" d="M2.967,7.5h8.067A1.448,1.448,0,0,1,12.5,8.929v7.143A1.448,1.448,0,0,1,11.033,17.5H2.967A1.448,1.448,0,0,1,1.5,16.071V8.929A1.448,1.448,0,0,1,2.967,7.5Z" transform="translate(0)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
