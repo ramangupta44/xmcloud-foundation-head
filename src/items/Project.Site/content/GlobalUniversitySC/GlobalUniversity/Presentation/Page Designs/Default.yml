@@ -6,11 +6,11 @@ Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Page De
 SharedFields:
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
-  Value: "{3BFB339C-DAC0-41A0-8FE7-451303FA3570}|{5F09274E-7AFD-4BD5-814F-D6DFAD457664}"
+  Value: "{3BFB339C-DAC0-41A0-8FE7-451303FA3570}|{ADC5CDE9-9EDA-4EA1-9640-82AE66DF52D7}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{17BC40AA-DA0A-46CE-BFF6-5C8B09E1B8A8}" />
+    <image mediaid="{8248DA84-6B57-4AF4-8BC4-9FEB7DBFBFE4}" />
 Languages:
 - Language: en
   Versions:
@@ -29,11 +29,11 @@ Languages:
         sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a813cba5-5271-4cda-a69f-4dfcfa97c1f5"
+      Value: "eb9f3f99-f1f6-42fc-b4c6-45803afda018"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240115T121740Z
+      Value: 20240117T093415Z

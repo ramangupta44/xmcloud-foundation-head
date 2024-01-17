@@ -11,7 +11,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{60E425E6-FC74-4BE6-B13B-B937CEC8F780}" />
+    <image mediaid="{27D0B0D2-0087-4A59-8365-9466BBC8E672}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -55,10 +55,11 @@ Languages:
             <r
               uid="{3A71C5FC-D362-4F2F-8FA3-5006B7BEE263}"
               p:before="*"
-              s:ds="local:/Data/Image 1"
+              s:ds="{307CFF26-B488-4A40-B53F-D791F301E8F7}"
               s:id="{AB2EDBA0-3960-4F12-B765-579DC231894A}"
-              s:par="GridParameters=%7B824C8D0B-5538-4E25-BAF2-82CF5E7D94FF%7D%7C%7B44DE8663-1F41-422C-8D4C-021D981CEC4F%7D&amp;FieldNames=%7B053A5949-AEEB-412B-A35B-8160C2CCE328%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
-              s:ph="/headless-header/container-1/container-3" />
+              s:par="GridParameters=%7B824C8D0B-5538-4E25-BAF2-82CF5E7D94FF%7D%7C%7B44DE8663-1F41-422C-8D4C-021D981CEC4F%7D&amp;FieldNames=%7B053A5949-AEEB-412B-A35B-8160C2CCE328%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+              s:ph="/headless-header/container-1/container-3"
+              s:ccb="Clear on publish" />
             <r
               uid="{E541B6F3-A4E4-4AF7-BBC4-A62CEB86117A}"
               p:after="r[@uid='{3A71C5FC-D362-4F2F-8FA3-5006B7BEE263}']"
@@ -139,11 +140,11 @@ Languages:
         sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4fae7016-32ca-46b1-8c35-d9cf0c63f360"
+      Value: "1c056b25-1de0-47a0-9aa0-0aa6f09483f1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240115T130740Z
+      Value: 20240117T100218Z
