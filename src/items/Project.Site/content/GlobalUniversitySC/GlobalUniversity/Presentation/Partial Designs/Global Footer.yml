@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{7B409249-65EE-449A-A77D-B99D530C638D}" />
+    <image mediaid="{CFE71982-4AA6-4AC2-BBA1-E1DF02FFEC93}" />
 Languages:
 - Language: en
   Versions:
@@ -31,21 +31,21 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Footer Menu"
               s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B9D1DFE3B-81A8-4473-A799-E57FCE568AD2%7D&amp;FieldNames=%7B3FAE2781-A8E1-444E-A3B9-3E90FB8D4627%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+              s:par="GridParameters=%7B89647981-C99C-44E3-A55E-65BFF555E4C3%7D%7C%7B9D1DFE3B-81A8-4473-A799-E57FCE568AD2%7D&amp;FieldNames=%7B3FAE2781-A8E1-444E-A3B9-3E90FB8D4627%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
               s:ph="/headless-footer/container-1/container-3" />
             <r
               uid="{876F9260-3E55-4D8A-AA6D-23B6785BB8B2}"
               p:after="r[@uid='{BBFD9B70-C966-4A91-9ACD-69A52583504B}']"
               s:ds="local:/Data/Footer Courses"
               s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B9D1DFE3B-81A8-4473-A799-E57FCE568AD2%7D&amp;FieldNames=%7B3FAE2781-A8E1-444E-A3B9-3E90FB8D4627%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+              s:par="GridParameters=%7B89647981-C99C-44E3-A55E-65BFF555E4C3%7D%7C%7B9D1DFE3B-81A8-4473-A799-E57FCE568AD2%7D&amp;FieldNames=%7B3FAE2781-A8E1-444E-A3B9-3E90FB8D4627%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
               s:ph="/headless-footer/container-1/container-3" />
             <r
               uid="{BD23C5D0-D173-44AF-BFCE-A39DBED08A76}"
               p:after="r[@uid='{876F9260-3E55-4D8A-AA6D-23B6785BB8B2}']"
               s:ds="local:/Data/Footer General"
               s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B9D1DFE3B-81A8-4473-A799-E57FCE568AD2%7D&amp;FieldNames=%7B3FAE2781-A8E1-444E-A3B9-3E90FB8D4627%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B9D1DFE3B-81A8-4473-A799-E57FCE568AD2%7D%7C%7B64E70996-17A5-42B1-ACA7-0CC49459B74B%7D%7C%7BBE3AE849-B39A-4A65-AE35-28F847E8A191%7D&amp;FieldNames=%7B3FAE2781-A8E1-444E-A3B9-3E90FB8D4627%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
               s:ph="/headless-footer/container-1/container-3" />
             <r
               uid="{15D32582-62F8-41DC-BE26-32D462FC0B17}"
@@ -93,7 +93,7 @@ Languages:
               p:after="r[@uid='{C55671AD-2207-4AFA-B379-AA0A4B62D000}']"
               s:ds="{82CF3091-A67A-44D8-B030-40AAEF3A6ED4}"
               s:id="{F22A1862-883D-45A2-A7BB-B0AD68642844}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B47C95DC0-72FB-4F35-B0CB-BCF295B3F8CB%7D%7C%7B0789FAA7-1774-451B-99FE-C01493D973E4%7D&amp;FieldNames=%7BCB96C364-24BD-4A80-A622-31496C195900%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B47C95DC0-72FB-4F35-B0CB-BCF295B3F8CB%7D%7C%7B0789FAA7-1774-451B-99FE-C01493D973E4%7D&amp;FieldNames=%7BCB96C364-24BD-4A80-A622-31496C195900%7D&amp;Styles=%7BBA9671A5-1D73-4387-8A05-BC36C577587A%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
               s:ph="/headless-footer/container-1"
               s:ccb="Clear on publish" />
             <r
@@ -117,11 +117,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "800408ec-1ebb-4174-b7aa-daf869d3e3b5"
+      Value: "37dd19cf-7f8d-436f-939c-188374fc8640"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240117T095540Z
+      Value: 20240118T064213Z
