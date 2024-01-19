@@ -14,12 +14,17 @@
   @media screen and (max-width:$tablet-width) {
     padding: 8rem 2rem;
   }
-  p{
+  h3{
     font-size:$footer-sub-menu;
     color:$white;
+    border-bottom:0;
+    line-height: 1;
   }
   .image{
     margin-bottom:1.5rem;
+    @media screen and (max-width:$tablet-width) {
+      padding:0;
+    }
     img{
       width:50%;
       @media screen and (max-width:$tablet-width) {

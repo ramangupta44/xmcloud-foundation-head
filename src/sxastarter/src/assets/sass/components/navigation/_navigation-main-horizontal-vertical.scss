@@ -32,9 +32,9 @@ $borderSize: 2px;
       }
       &.submenu {
         &:hover a{
-            background-color:$white;
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
+            // background-color:$white;
+            // border-top-right-radius: 5px;
+            // border-top-left-radius: 5px;
             span{
                 color: $text-basic;
             }
