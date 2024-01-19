@@ -70,11 +70,11 @@ $borderSize: 2px;
       &:active, &:hover {
           >a {
               &+ul {
-                  display: block !important;
+                //   display: block !important;
               }
           }
           >ul {
-              display: block !important;
+            //   display: block !important;
               min-width: 60px;
           }
       }
@@ -129,12 +129,12 @@ $borderSize: 2px;
           &:active, &:hover {
               >a {
                   &+ul {
-                      display: inline-flex !important;
+                    //   display: inline-flex !important;
                       flex-wrap: wrap;
                   }
               }
               >ul {
-                  display: inline-flex !important;
+                //   display: inline-flex !important;
                   flex-wrap: wrap;
               }
           }

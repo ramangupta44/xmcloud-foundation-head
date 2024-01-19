@@ -1,0 +1,68 @@
+﻿---
+ID: "5f09274e-7afd-4bd5-814f-d6dfad457664"
+Parent: "d58893ee-b9ce-455c-b993-77491e1e4da1"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Partial Designs/Footer
+BranchID: "8204a950-cbaa-4d06-878b-11ced5ddc1ad"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: footer
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{15EFFDEA-CD55-498E-9335-916B6D1D9C27}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="?Styles=%7bDADFFE8B-D42A-40A0-8586-CA723C0FE9AB%7d%7c%7b5E1F4883-E666-4C65-ACAE-07DB6F497CD6%7d%7c%7b31DA42A2-74A4-4EB1-93F8-A7F543C33676%7d%7c%7b21C705BA-7DAA-469C-A982-B6977F1B60DB%7d%7c%7b1685664F-DB4F-4A75-AA85-18DFFACD8D71%7d%7c%7bD5D98706-EB50-49DA-9DEC-4129E2729247%7d%7c%7b6D42B87B-B574-4B98-B0B4-0C6EF3B8D419%7d%7c%7b61AFF536-44C5-4002-A79D-A1D7C1FAD8B3%7d%7c%7b12B39666-78D9-4C0E-B4EC-9BCD6927EB05%7d%7c%7bE2B2595D-6E7F-4806-8C7D-B346A7C51050%7d%7c%7bDFD85FDE-C6B8-43F2-8413-3CD1DFD6F0DC%7d%7c%7b87725C33-41DB-421D-B93D-B85210A9B072%7d%7c%7bFA2AB674-6B16-4967-AC90-609E60ACF6C2%7d%7c%7b78B46E37-E287-436F-8B14-6AC7A6B06225%7d%7c%7b376C0A82-BCD7-4C9D-AD73-A7BFF3B44531%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d&amp;DynamicPlaceholderId=1"
+          s:ph="headless-footer" />
+        <r
+          uid="{63EA9AB2-B611-4886-A6B3-6F5D9CCF521D}"
+          p:after="r[@uid='{15EFFDEA-CD55-498E-9335-916B6D1D9C27}']"
+          s:ds="local:/Data/Address"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?Styles=%7bFF98DA72-DADA-491A-A47D-D3EBD29C2B62%7d&amp;FieldNames=%7bC6303B04-126F-49DB-AA30-BD94C899AA1F%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b31A49E90-E4B4-4F04-A3C7-E15B6835990F%7d"
+          s:ph="/headless-footer/container-1" />
+        <r
+          uid="{BE80FD50-CF96-4D37-A87B-6BAEB2D4F20E}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/Contact info"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?Styles=%7bFF98DA72-DADA-491A-A47D-D3EBD29C2B62%7d&amp;FieldNames=%7bC6303B04-126F-49DB-AA30-BD94C899AA1F%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b31A49E90-E4B4-4F04-A3C7-E15B6835990F%7d"
+          s:ph="/headless-footer/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EDB00EAA-5ACA-4C4D-8B88-3195D992F980}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231220T053615Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7151bfe7-3842-4eb1-8aeb-82d12928873f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231220T053623Z

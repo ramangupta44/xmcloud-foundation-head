@@ -1,0 +1,7 @@
+<svg id="search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="bound" width="24" height="24" fill="none"/>
+  <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(-0.5 -0.5)">
+    <path id="Path_219" data-name="Path 219" d="M18.7,11.6a7.1,7.1,0,1,1-7.1-7.1A7.1,7.1,0,0,1,18.7,11.6Z" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_220" data-name="Path 220" d="M28.893,28.893l-3.918-3.918" transform="translate(-8.393 -8.393)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

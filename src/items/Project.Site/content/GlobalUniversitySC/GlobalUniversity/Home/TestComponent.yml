@@ -1,0 +1,171 @@
+﻿---
+ID: "768118f9-863a-40ac-b36a-045015e3a40d"
+Parent: "c74739bb-394a-4f5d-a449-0df57c1545bd"
+Template: "97779d41-866b-4682-9902-99588d954e78"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/TestComponent
+SharedFields:
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2175B2E1-5A1F-4C68-8563-AEEE22E46FEC}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8062AAE6-4AF4-4A72-AB5E-974739B3C318}"
+              p:before="*"
+              s:ds="11f14d17-ee27-4214-882e-356ac07332fd"
+              s:id="{57C72A7F-4920-4E4D-8EF5-36CE64D2F652}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B1C46FE4C-3E96-46CA-9BB2-383472473634%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="headless-main" />
+            <r
+              uid="{F65BBF23-D099-4283-B7E3-B609E1F0F029}"
+              p:after="r[@uid='{8062AAE6-4AF4-4A72-AB5E-974739B3C318}']"
+              s:ds="d1d0b8b9-2f7b-4484-ba11-43e0341ed132"
+              s:id="{C62BF2E7-4D01-4D12-88AA-39E4ADCAE0CC}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B00FDE750-2E68-4F7E-B7BA-526F282A1DF3%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ph="headless-main" />
+            <r
+              uid="{E3D4C811-1DB6-4982-8260-83F773413CC8}"
+              p:after="r[@uid='{F65BBF23-D099-4283-B7E3-B609E1F0F029}']"
+              s:id="{BC4306FB-EFA9-4267-ABAB-3A8A82309F39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B2976436B-FEB6-4543-A4CE-522FB1580FAF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:ph="headless-main" />
+            <r
+              uid="{19D488AB-D6CD-4827-8060-29320098159F}"
+              p:after="r[@uid='{E3D4C811-1DB6-4982-8260-83F773413CC8}']"
+              s:ds="0ca927bc-6177-4567-b7d1-d4086ad467d4"
+              s:id="{D9BD6470-88C3-44B8-BB00-C541D86A2350}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B77DDD42B-24E4-4B14-A589-977D99E41FD3%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:ph="headless-main" />
+            <r
+              uid="{917C6178-50F6-4DF4-97B6-375BC7AEBA95}"
+              p:after="r[@uid='{19D488AB-D6CD-4827-8060-29320098159F}']"
+              s:id="{BC4306FB-EFA9-4267-ABAB-3A8A82309F39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7BFF1920F4-C59B-485F-86F2-125064A361EC%7D&amp;FieldNames=%7B2976436B-FEB6-4543-A4CE-522FB1580FAF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+              s:ph="headless-main" />
+            <r
+              uid="{241CD7AD-8DC6-4911-A545-A100DDF27CA1}"
+              p:after="r[@uid='{917C6178-50F6-4DF4-97B6-375BC7AEBA95}']"
+              s:ds="65d747cc-2b54-4108-85e9-be586562c331"
+              s:id="{F22A1862-883D-45A2-A7BB-B0AD68642844}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BCB96C364-24BD-4A80-A622-31496C195900%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+              s:ph="headless-main" />
+            <r
+              uid="{2A34A1C7-2C08-48F4-827B-A7A3445066FC}"
+              p:after="r[@uid='{241CD7AD-8DC6-4911-A545-A100DDF27CA1}']"
+              s:id="{BC4306FB-EFA9-4267-ABAB-3A8A82309F39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B2976436B-FEB6-4543-A4CE-522FB1580FAF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=10"
+              s:ph="headless-main" />
+            <r
+              uid="{AB483B35-B19B-47AD-B1E6-4BD08467CDFB}"
+              p:after="r[@uid='{2A34A1C7-2C08-48F4-827B-A7A3445066FC}']"
+              s:id="{BC4306FB-EFA9-4267-ABAB-3A8A82309F39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B2976436B-FEB6-4543-A4CE-522FB1580FAF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=14"
+              s:ph="headless-main" />
+            <r
+              uid="{3960E4C0-BA2F-43C1-98EF-E62E5E25E67A}"
+              p:after="r[@uid='{AB483B35-B19B-47AD-B1E6-4BD08467CDFB}']"
+              s:id="{BC4306FB-EFA9-4267-ABAB-3A8A82309F39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B2976436B-FEB6-4543-A4CE-522FB1580FAF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=13"
+              s:ph="headless-main" />
+            <r
+              uid="{26208D58-3413-4297-A8D2-EA5885CC7B2C}"
+              p:after="r[@uid='{3960E4C0-BA2F-43C1-98EF-E62E5E25E67A}']"
+              s:id="{61C1F68A-C058-479D-B2E1-40BA649F44DD}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B3C0923D0-7A43-4BE9-9DC9-C8FFD5D7FFDF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=16"
+              s:ph="headless-main" />
+            <r
+              uid="{D0F80376-E402-4568-8B15-482C6F62DE97}"
+              p:after="r[@uid='{26208D58-3413-4297-A8D2-EA5885CC7B2C}']"
+              s:id="{BC4306FB-EFA9-4267-ABAB-3A8A82309F39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B2976436B-FEB6-4543-A4CE-522FB1580FAF%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=18"
+              s:ph="headless-main" />
+            <r
+              uid="{93E6D0CB-8D3A-48DD-AA1D-84425DF0A4AD}"
+              p:after="r[@uid='{D0F80376-E402-4568-8B15-482C6F62DE97}']"
+              s:ds="0abe7230-e6fb-444d-a3a9-b211a3b81e00"
+              s:id="{39C5BC49-5B20-4AE2-BD1F-113E49446BE0}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF1966F8-9BE2-4C03-9987-124C35D9538D%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=17"
+              s:ph="headless-main" />
+            <r
+              uid="{A44413D3-73FF-4A8C-962F-950DCA176461}"
+              p:after="r[@uid='{93E6D0CB-8D3A-48DD-AA1D-84425DF0A4AD}']"
+              s:ds="{1CED1517-2699-4F8C-85BF-81AE699C38B7}"
+              s:id="{0D03159E-76BD-4E37-8823-21451C6BC2EE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B13015F59-EACD-4D48-B283-AAE1A21B9FCE%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=22"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+            <r
+              uid="{0F8D7CF6-EC8F-404F-BCBE-EE80DBB0E45C}"
+              p:after="r[@uid='{A44413D3-73FF-4A8C-962F-950DCA176461}']"
+              s:id="{61C1F68A-C058-479D-B2E1-40BA649F44DD}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B12AD19B5-E457-440F-AFB0-1A6142A81C52%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=21"
+              s:ph="headless-main" />
+            <r
+              uid="{98AF3FB1-9B07-4DF6-A4BE-57C0029983CF}"
+              p:after="r[@uid='{0F8D7CF6-EC8F-404F-BCBE-EE80DBB0E45C}']"
+              s:ds="{D4F96443-D744-45FB-81F3-05EF588F1BDB}"
+              s:id="{3EBE54D7-77D0-40F5-9E4D-27289CC195AE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=12"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+            <r
+              uid="{D468CED2-2DEE-400C-B63D-D3A27D9487FA}"
+              p:after="*[1=2]"
+              s:ds="{61C42B16-CDD6-41C6-8C32-659968C346BC}"
+              s:id="{E5EDC666-14A0-403B-B369-1726906C0F8F}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B70EB8B39-5248-47AD-B19F-A918C30651DE%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T083346Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: TestComponent
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "897ebcfb-a5f6-40ed-ace7-e11176fd7c20"
+      Hint: Content
+      Value: |
+        <strong style="color: #000000; background-color: #ffffff; margin: 0px; padding: 0px; text-align: justify;">Lorem Ipsum</strong><span style="color: #000000; background-color: #ffffff; text-align: justify;">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "48f6e379-6f80-46e5-921b-121d1de1ed89"
+    - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
+      Hint: Title
+      Value: TestComponent
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240115T092418Z

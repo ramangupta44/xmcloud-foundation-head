@@ -8,6 +8,10 @@ import {
   FacebookIcon,
   TwitterShareButton,
   TwitterIcon,
+  InstapaperShareButton,
+  InstagramIcon,
+  PinterestShareButton,
+  PinterestIcon,
 } from 'next-share';
 
 type SocialMediaShareProps = ComponentProps & {
@@ -54,6 +58,29 @@ export const SocialMediaShare = (props: SocialMediaShareProps): JSX.Element => {
                   <TwitterShareButton url={process?.env?.PUBLIC_URL + (pageURL as string)}>
                     <TwitterIcon size={32} round />
                   </TwitterShareButton>
+                </li>
+              );
+            } else if (
+              item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'instagram'
+            ) {
+              return (
+                <li key={index}>
+                  <InstapaperShareButton url={process?.env?.PUBLIC_URL + (pageURL as string)}>
+                    <InstagramIcon size={32} round />
+                  </InstapaperShareButton>
+                </li>
+              );
+            } else if (
+              item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'pinterest'
+            ) {
+              return (
+                <li key={index}>
+                  <PinterestShareButton
+                    url={process?.env?.PUBLIC_URL + (pageURL as string)}
+                    media={pageURL as string}
+                  >
+                    <PinterestIcon size={32} round />
+                  </PinterestShareButton>
                 </li>
               );
             } else {
