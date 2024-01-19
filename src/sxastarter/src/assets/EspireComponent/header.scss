@@ -140,10 +140,11 @@
                   @media screen and (max-width:$screen-md ) {
                     pointer-events: none;
                     font-size:$navigation-font-basic;
-                    color:$white;
+                    color:$black;
                     border:none;
-                    padding:1.2rem 2.5rem  1.2rem 0rem;
+                    padding:.5rem;
                     background-color: transparent;
+                    display:block;
                   }
                 &:hover{
                   border-color:transparent;
@@ -195,6 +196,7 @@
                   text-decoration: none;
                   font-size: $navigation-font-basic;
                   padding:.8rem;
+                  
                   &:hover{
                     border-bottom: 1px solid $grey-black;
                     &:last-child{
@@ -261,7 +263,6 @@
             right: 4rem;
         }
         nav{
-          
           @media screen and (max-width:$screen-md ) {
             position: absolute;
             top: -6.2rem;
@@ -272,7 +273,6 @@
             padding-top: 8rem;
             padding-bottom: 8rem;
             display:none;
-            background: red;
           }
           @media screen and (max-width:$screen-sm-max){
             top: -6.2rem;
