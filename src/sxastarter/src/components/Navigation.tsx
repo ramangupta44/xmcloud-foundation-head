@@ -97,7 +97,7 @@ export const Default = (props: NavigationProps): JSX.Element => {
           checked={isOpenMenu}
           onChange={() => handleToggleMenu()}
         />
-        <label className="menu-humburger" htmlFor="menu-mobile-navigate"/>
+        <label className="menu-humburger" htmlFor="menu-mobile-navigate" />
         <div className="component-content">
           <nav>
             <ul className="clearfix">{list}</ul>
