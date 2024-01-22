@@ -388,19 +388,23 @@
   }
   @media screen and (max-width:$tablet-width) {
     #header{
+      .container{
+        width:100%;
+      }
       #bottom-nav{
         .navigation.navigation-main {
           .menu-mobile-navigate-wrapper{
             .menu-humburger{
-              right:-10rem;
+              right:1rem;
+              top: -4.6rem;
             }
           }
         }
         .footer-search-bar {
           .search-bar{
             button{
-              top: 0.9rem;
-              right: -15rem;
+              top: 0.4rem;
+              right: -3rem;
             }
           }
         }
@@ -409,11 +413,22 @@
   }
   @media screen and (max-width:$screen-xs) {
     #header{
+      .container{
+        width:100%;
+      }
       #bottom-nav{
+        .navigation.navigation-main {
+          .menu-mobile-navigate-wrapper{
+            .menu-humburger{
+              right:1rem;
+            }
+          }
+        }
         .footer-search-bar {
           .search-bar{
             button{
-              top: 0.9rem;
+              top: -0.9rem;
+              right: 1rem;
             }
           }
         }
