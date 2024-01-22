@@ -86,12 +86,12 @@ li {
   p {
     font-size: $sm-font;
   }
-  .container-default {
-    &.container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
+  // .container-default {
+  //   &.container {
+  //     padding-left: 3rem;
+  //     padding-right: 3rem;
+  //   }
+  // }
   .section-inner-space {
     padding-top: $md-space;
     padding-bottom: $md-space;
