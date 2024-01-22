@@ -11,7 +11,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{C745FB52-A008-4073-9915-31B485820114}" />
+    <image mediaid="{000A6AAC-687C-46CB-973D-331E34622EEE}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -65,7 +65,7 @@ Languages:
               p:after="r[@uid='{3A71C5FC-D362-4F2F-8FA3-5006B7BEE263}']"
               s:ds=""
               s:id="{61C1F68A-C058-479D-B2E1-40BA649F44DD}"
-              s:par="GridParameters=%7B824C8D0B-5538-4E25-BAF2-82CF5E7D94FF%7D%7C%7B765BE77D-D018-486C-ADD5-8443BB79B1DD%7D%7C%7BC6CDDBF6-58AF-4BBE-B9B3-B8E0B4561701%7D&amp;FieldNames=%7B12AD19B5-E457-440F-AFB0-1A6142A81C52%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+              s:par="GridParameters=%7B824C8D0B-5538-4E25-BAF2-82CF5E7D94FF%7D%7C%7B765BE77D-D018-486C-ADD5-8443BB79B1DD%7D%7C%7B95710A52-36F6-4668-A9AE-4A42249CE8C3%7D&amp;FieldNames=%7B12AD19B5-E457-440F-AFB0-1A6142A81C52%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
               s:ph="/headless-header/container-1/container-3"
               s:ccb="Clear on publish" />
             <r
@@ -85,7 +85,7 @@ Languages:
               p:after="r[@uid='{CF3523E4-1EDB-48F5-B7CE-100B64445F41}']"
               s:ds=""
               s:id="{61C1F68A-C058-479D-B2E1-40BA649F44DD}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B9FEA365C-DCAF-4AE4-AAD3-E85E03FA355F%7D%7C%7B64E70996-17A5-42B1-ACA7-0CC49459B74B%7D%7C%7B259E9864-0E78-412E-B955-C10F1A3720E9%7D%7C%7BBE3AE849-B39A-4A65-AE35-28F847E8A191%7D&amp;FieldNames=%7B3C0923D0-7A43-4BE9-9DC9-C8FFD5D7FFDF%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B9FEA365C-DCAF-4AE4-AAD3-E85E03FA355F%7D%7C%7B64E70996-17A5-42B1-ACA7-0CC49459B74B%7D%7C%7B3A2FEA39-3BBC-4064-A53D-82762BA9AF78%7D%7C%7BB86D9885-E5AE-4A8A-847C-D231A94408AD%7D&amp;FieldNames=%7B3C0923D0-7A43-4BE9-9DC9-C8FFD5D7FFDF%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
               s:ph="/headless-header/container-1/container-2"
               s:ccb="Clear on publish" />
             <r
@@ -93,7 +93,7 @@ Languages:
               p:after="r[@uid='{7635CE06-B75F-403B-A63F-BC3A1A48CC28}']"
               s:ds=""
               s:id="{152960A2-5729-4F52-97E5-ED616269A858}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B39F41C87-964B-4986-B996-0109735F5E4E%7D%7C%7B64E70996-17A5-42B1-ACA7-0CC49459B74B%7D%7C%7BBE3AE849-B39A-4A65-AE35-28F847E8A191%7D&amp;FieldNames=%7BBC2610EF-9CC3-4E63-B60C-5F21AF5BACC7%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B39F41C87-964B-4986-B996-0109735F5E4E%7D%7C%7B64E70996-17A5-42B1-ACA7-0CC49459B74B%7D%7C%7BB86D9885-E5AE-4A8A-847C-D231A94408AD%7D&amp;FieldNames=%7BBC2610EF-9CC3-4E63-B60C-5F21AF5BACC7%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
               s:ph="/headless-header/container-1/container-2"
               s:ccb="Clear on publish" />
             <r
@@ -144,11 +144,11 @@ Languages:
         sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ac53af99-4212-4b52-9c20-364801fd89b0"
+      Value: "eef4bde4-3917-4fac-90f9-2ad6bc0a2bed"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240118T124936Z
+      Value: 20240122T064747Z

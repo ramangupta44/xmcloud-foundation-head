@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{CFE71982-4AA6-4AC2-BBA1-E1DF02FFEC93}" />
+    <image mediaid="{54A502DA-0346-494B-AF32-EAEB3FFDD2E9}" />
 Languages:
 - Language: en
   Versions:
@@ -66,13 +66,13 @@ Languages:
               uid="{4C5A7368-6D20-4846-92DB-70A0D6BFD365}"
               p:after="r[@uid='{BF403BA1-7F57-4AB2-9389-75A35630E6CC}']"
               s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B44DE8663-1F41-422C-8D4C-021D981CEC4F%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B47C95DC0-72FB-4F35-B0CB-BCF295B3F8CB%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
               s:ph="/headless-footer/container-1" />
             <r
               uid="{6DF5CF3C-C849-476C-BE46-BF88C6CCC958}"
               p:after="r[@uid='{4C5A7368-6D20-4846-92DB-70A0D6BFD365}']"
               s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B3479A28B-5D80-4AD0-A8DC-ECDA353309F5%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B2768FF40-A5E3-4B51-B073-7010C981EBD7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
               s:ph="/headless-footer/container-1" />
             <r
               uid="{41C47FAD-0DDC-4EC5-BEC6-2C0CCF02BDA7}"
@@ -117,11 +117,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "37dd19cf-7f8d-436f-939c-188374fc8640"
+      Value: "bab3c3f1-2c30-4192-88e5-2cde6b861549"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240118T064213Z
+      Value: 20240122T063926Z
