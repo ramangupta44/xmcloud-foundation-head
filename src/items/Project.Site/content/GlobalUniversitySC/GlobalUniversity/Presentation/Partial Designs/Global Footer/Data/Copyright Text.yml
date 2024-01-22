@@ -24,14 +24,14 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
       Hint: Text
-      Value: Copyright © 2023 The Global University. All rights reserved.
+      Value: <p>Copyright &copy; 2023 The Global University. All rights reserved.</p>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "658eae9b-af0d-48bf-b149-52cf5eb0a89a"
+      Value: "ff976b60-689c-4e40-a2c8-e1f735bfc8f0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240117T091255Z
+      Value: 20240122T064001Z
