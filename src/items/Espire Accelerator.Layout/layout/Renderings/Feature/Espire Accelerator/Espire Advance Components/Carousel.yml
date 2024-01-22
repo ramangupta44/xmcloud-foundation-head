@@ -30,7 +30,7 @@ SharedFields:
   Value: "query:$site/*[@@name='Data']/*[@@templatename='Carousel Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Carousel Folder']"
 - ID: "c39a90ce-0035-41bb-90f6-3c8a6ea87797"
   Hint: AddFieldEditorButton
-  Value: 
+  Value: 1
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true
@@ -77,14 +77,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "314fbef9-fe73-4db5-baf1-f1cbf538c5d4"
+      Value: "088c9dd7-5618-4e81-99da-9b6c873689e2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240108T074130Z
+      Value: 20240122T065423Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
