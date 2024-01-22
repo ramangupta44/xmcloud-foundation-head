@@ -5,6 +5,12 @@ Template: "97779d41-866b-4682-9902-99588d954e78"
 Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {97779D41-866B-4682-9902-99588D954E78}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {FAB30E6E-F3CE-4AC2-9AD5-607355A93858}
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -119,14 +125,14 @@ Languages:
         sitecore\raman.gupta@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d1ace682-e10a-41cf-8bc7-6416553721dc"
+      Value: "dc77dd77-6ad4-474a-8d27-40e8afc96216"
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: Home
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\raman.gupta@espire.com
+        sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240110T070158Z
+      Value: 20240122T094145Z

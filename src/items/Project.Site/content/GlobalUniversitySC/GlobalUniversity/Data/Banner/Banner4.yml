@@ -1,0 +1,45 @@
+﻿---
+ID: "2459faed-a9d6-4b29-8fd9-1a127bddf5dc"
+Parent: "cfe16425-cb39-419e-a874-830f4a751970"
+Template: "6168d3f5-038b-4f98-98b2-7e232ef7c40c"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Banner/Banner4
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T061249Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\raman.gupta@espire.com
+    - ID: "82cf1aa5-cb69-43a6-ba09-a5530c6b4359"
+      Hint: Image
+      Value: |
+        <image mediaid="{7DC4262C-8DF4-4A34-9D65-ACD13F695168}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c90ef5c-442c-4631-a65f-fa8742fc36f4"
+    - ID: "b88d5cc4-fe8d-4e6f-b5d0-49273007d4de"
+      Hint: Description
+      Value: Delivering Total Experience &amp; Agile Digital Transformation Solutions
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d002283a-0af5-4b38-b206-09c759024d1b"
+      Hint: Link
+      Value: |
+        <link text="Home" anchor="" linktype="internal" class="" title="Home" target="" querystring="" id="{C74739BB-394A-4F5D-A449-0DF57C1545BD}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240122T062150Z
+    - ID: "ff60ce4c-2359-4fcb-9bff-e32b554a5f2b"
+      Hint: Title
+      Value: Banner 4
