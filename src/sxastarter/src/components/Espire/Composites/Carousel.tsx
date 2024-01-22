@@ -36,7 +36,6 @@ export const Carousel = (props: CarouselProps): JSX.Element => {
       <Text field={props?.fields?.Title} />
       <Slider {...settings}>
         {props?.fields?.Slide?.map((slide, index) => {
-          console.log(slide?.fields?.Image?.value?.src);
           return (
             <div key={index}>
               <img
