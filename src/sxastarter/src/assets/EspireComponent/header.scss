@@ -12,6 +12,7 @@
 #header{
   background-color: $primary;
   padding: 2rem 0 0;
+  border-bottom: 1px solid $grey-black;
   @media screen and (max-width:$screen-md ) {
     padding:1rem 2rem;
   }
@@ -65,8 +66,8 @@
         img{
           width: auto;
           position: relative;
-          bottom: 3rem;
-          margin-bottom: -1.5rem;
+          bottom: 2.4rem;
+          margin-bottom: -1.9rem;
       
           @media screen and (max-width:$screen-md ) {
             width: 100%;
@@ -89,12 +90,21 @@
           }
           li.rel-level1{
             margin: 0 1rem;
-            &:hover{
-              
+            padding: 1rem 0rem 0 1.2rem;
+             &:hover{
+              >.navigation-title >a{
+                border-bottom:4px solid $secondry;
+              }
                ul{
-               
                 display:block;
               }
+            }
+            > ul{
+              padding: 0 !important;
+              li{
+                border-bottom:1px solid $grey-black;
+              }
+              
             }
             &.submenu {
               &:hover >.navigation-title a span{ 
@@ -114,25 +124,19 @@
                 }
               }
             }
-            // &.active{
-            //   .navigation-title{
-            //     a{
-            //       border-bottom: 4px solid $secondry;
-            //     }
-            //   }
-            // }
-            
             .navigation-title{
               a{
                 color:$white;
                 font-family: poppins-regular;
                 border-top: 0;
+                padding: 0.8rem 0;
+                border-bottom: 4px solid transparent;
                 @media screen and (max-width:$screen-md ) {
                   display:none;
                 }
                 &::after{
-                  top: 38%;
-                  right: -5px;
+                  top: 1.8rem;
+                   right: -1.5rem;
                 }
               }
               .mobile-title{
@@ -166,8 +170,8 @@
             }
             ul{
               width: 348px;
-              left: 10.2rem;
-              top: 5.7rem;
+              left: 2.2rem;
+              top: 6rem;
               border-radius: 6px;
               border-top-left-radius: 0;
               padding: 1.2rem;
@@ -185,7 +189,11 @@
               }
               li.rel-level2{
                 margin: 0;
-                padding:0;
+                padding: 0 1.2rem;
+                span{
+                  color:$grey;
+                }
+
                 &:hover{
                     background-color: transparent;
                     
@@ -245,13 +253,12 @@
             float: right;
             position: absolute;
             top: -3.5rem;
+            right: -15rem;
+          }
+          @media screen and (max-width:$screen-xs ) {
+            top: -3.5rem;
             right: 0rem;
           }
-          // @media screen and (max-width:$tablet-width ) {
-          //   top: -4rem;
-          //   right: -8rem;
-          // }
-          
         }
         .menu-mobile-navigate{
           display: block;
@@ -276,30 +283,15 @@
           }
           @media screen and (max-width:$screen-sm-max){
             top: -6.2rem;
-            right: -5.9rem;
+            right: -22.9rem;
           }
           @media screen and (max-width:$tablet-width ) {
-            right: -2.9rem;
+            right: -21.9rem;
             top: -7.9rem;
           }
-          // &:after{
-          //   @media screen and (max-width:$screen-md ) {
-          //     content: " ";
-          //     background-color: rgba(0, 0, 0, 0.74);
-          //     height: 100%;
-          //     width: 100%;
-          //     top: 0;
-          //     left: 0;
-          //     right: 0;
-          //     bottom: 0;
-          //     position: fixed;
-          //     z-index: 1;
-          //   }
-          // }
-          ul{
-            @media screen and (max-width:$screen-md ) {
-              // display:block;
-            }
+          @media screen and (max-width:$screen-xs){
+            top: -6.2rem;
+            right: -2.9rem;
           }
         }
       }
@@ -329,14 +321,22 @@
           border:none;
           top: -3px;
           right: 2rem;
+          background: transparent;
+          @media screen and (max-width:$screen-md ) {
+            top: -8px;
+            right: -18rem;
+          }
           @media screen and (max-width:$tablet-width ) {
-            top: .4rem;
+            top: -0.9rem;
+            right: -17rem;
+        
           }
           @media screen and (max-width:$content-width-xs){
             top: -1rem;
           }
           @media screen and (max-width:$screen-xs){
             top: -.8rem;
+            right: -1rem;
           }
           
           .fa-search{
