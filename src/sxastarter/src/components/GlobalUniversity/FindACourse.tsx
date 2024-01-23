@@ -21,12 +21,12 @@ type Category = {
 const FindACourse = (props: FindACourseProps): JSX.Element => {
   console.log(props, 'props');
   return (
-    <div className={`${props.params.styles}`}>
+    <div className={`${props.params.styles}`} id="find-a-course">
       <div className="container">
-        <div id="find-a course">
+        <div className="find-a-course">
           <h4>Find a course </h4>
           <form className="row g-3">
-            <div className=" col-auto ">
+            <div className=" col">
               <input
                 type="text"
                 className="form-control"
@@ -35,7 +35,7 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
                 aria-describedby="inputGroup-sizing-default"
               />
             </div>
-            <div className=" col-auto">
+            <div className=" col">
               <select className="form-select" aria-label="Default select example">
                 <option selected>Search by category</option>
                 <option value="1">One</option>
@@ -43,7 +43,7 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
                 <option value="3">Three</option>
               </select>
             </div>
-            <div className=" col-auto">
+            <div className=" col">
               <select className="form-select" aria-label="Default select example">
                 <option selected>Select type</option>
                 <option value="1">One</option>
@@ -51,9 +51,11 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
                 <option value="3">Three</option>
               </select>
             </div>
-            <button type="submit" className="btn btn-primary col-auto">
-              Submit
-            </button>
+            <div className=" col">
+              <button type="submit" className="btn btn-primary col-auto">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>
