@@ -98,6 +98,7 @@
           li.rel-level1{
             margin: 0 1rem;
             padding: 1rem 0rem 0 1.2rem;
+            position: relative;
              &:hover{
               >.navigation-title >a{
                 border-bottom:4px solid $secondry;
@@ -177,7 +178,7 @@
             }
             ul{
               width: 348px;
-              left: 2.2rem;
+              left: 1.2rem;
               top: 6rem;
               border-radius: 6px;
               border-top-left-radius: 0;
@@ -362,6 +363,24 @@
 // Editing Mode style
 
 .editing-mode{
+  .navigation.navigation-main{
+    nav{
+      ul{
+        li.rel-level1{
+          &:hover{
+            li.rel-level2 a{
+              color: $black;
+            }
+          }
+          ul{
+            li.rel-level2{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
   @media screen and (max-width:$ipad) {
     #header{
       #bottom-nav{
