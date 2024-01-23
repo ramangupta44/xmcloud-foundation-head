@@ -26,7 +26,7 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
         <div className="find-a-course">
           <h4>Find a course </h4>
           <form className="row g-3">
-            <div className=" col">
+            <div className=" col-md-3 col-xs-12">
               <input
                 type="text"
                 className="form-control"
@@ -35,7 +35,7 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
                 aria-describedby="inputGroup-sizing-default"
               />
             </div>
-            <div className=" col">
+            <div className=" col-md-3 col-xs-12">
               <select className="form-select" aria-label="Default select example">
                 <option selected>Search by category</option>
                 <option value="1">Program</option>
@@ -45,7 +45,7 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
                 <option value="5">Agriculture</option>
               </select>
             </div>
-            <div className=" col">
+            <div className=" col-md-3 col-xs-12">
               <select className="form-select" aria-label="Default select example">
                 <option selected>Select type</option>
                 <option value="1">Accredited Courses</option>
@@ -55,7 +55,7 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
                 <option value="5">Apprentice/Traineeships</option>
               </select>
             </div>
-            <div className=" col">
+            <div className=" col-md-3 col-xs-12">
               <button type="submit" className="btn btn-primary col-auto">
                 Submit
               </button>

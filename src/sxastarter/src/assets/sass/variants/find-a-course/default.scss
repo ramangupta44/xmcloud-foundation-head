@@ -1,7 +1,11 @@
+@import "../../abstracts/vars/media-screen";
 
 #find-a-course{
     background-color: $light-grey;
     padding: 5rem 10rem;
+    @media screen and (max-width:$screen-md ) {
+        padding: 5rem 1rem;
+    }
     h4{
         color:$black;
         margin-bottom:1.8rem;
