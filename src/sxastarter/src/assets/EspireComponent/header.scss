@@ -60,7 +60,14 @@
     }
   }
   #bottom-nav{
-    margin-top:2.5rem;
+    @media screen and (max-width:$screen-md ) {
+      margin-top:2.5rem;
+    }
+    .component-content {
+      > .row{
+      align-items: center;
+      }
+    }
     .component.image{
       a{
         img{
@@ -253,11 +260,11 @@
             width:25px;
             float: right;
             position: absolute;
-            top: -3.5rem;
+            top: -4.5rem;
             right: -15rem;
           }
           @media screen and (max-width:$screen-xs ) {
-            top: -3.5rem;
+            top: -4.2rem;
             right: 0rem;
           }
         }
