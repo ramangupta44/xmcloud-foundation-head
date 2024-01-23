@@ -38,17 +38,21 @@ const FindACourse = (props: FindACourseProps): JSX.Element => {
             <div className=" col">
               <select className="form-select" aria-label="Default select example">
                 <option selected>Search by category</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">Program</option>
+                <option value="2">Accounting</option>
+                <option value="3">Administration & Business</option>
+                <option value="4">Aged Care and Disability</option>
+                <option value="5">Agriculture</option>
               </select>
             </div>
             <div className=" col">
               <select className="form-select" aria-label="Default select example">
                 <option selected>Select type</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">Accredited Courses</option>
+                <option value="2">Courses</option>
+                <option value="3">Short Courses</option>
+                <option value="4">VETDSS courses</option>
+                <option value="5">Apprentice/Traineeships</option>
               </select>
             </div>
             <div className=" col">
