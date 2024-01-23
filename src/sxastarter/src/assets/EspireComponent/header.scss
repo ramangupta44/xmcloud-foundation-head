@@ -389,7 +389,7 @@
   @media screen and (max-width:$tablet-width) {
     #header{
       .container{
-        width:100%;
+        max-width:100%;
       }
       #bottom-nav{
         .navigation.navigation-main {
@@ -414,13 +414,14 @@
   @media screen and (max-width:$screen-xs) {
     #header{
       .container{
-        width:100%;
+        max-width:100%;
       }
       #bottom-nav{
         .navigation.navigation-main {
           .menu-mobile-navigate-wrapper{
             .menu-humburger{
               right:1rem;
+              top: -3.5rem;
             }
           }
         }
