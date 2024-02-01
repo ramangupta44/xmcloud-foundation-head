@@ -1,8 +1,8 @@
 ﻿---
 ID: "ccb28824-4d08-45e3-a144-5148f37560cd"
-Parent: "c74739bb-394a-4f5d-a449-0df57c1545bd"
+Parent: "eb085602-1ce5-47a9-9d8b-f891d92766ad"
 Template: "fab30e6e-f3ce-4ac2-9ad5-607355a93858"
-Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/TestCourses
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Courses/Design/TestCourses
 SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
@@ -21,7 +21,7 @@ Languages:
       Value: TestCourses
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6afb53f8-3a3c-4f17-8eef-cd2d9da63d85"
+      Value: "0b6820d9-835d-4481-80cc-ffe38ce2c397"
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: TestCourses
@@ -29,6 +29,12 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
+    - ID: "cae4fcf3-3c5d-4bcb-9a99-065776f745f1"
+      Hint: AvailableSeat
+      Value: 2
+    - ID: "d76fa400-5684-4d84-a5b8-ce89f58f34a2"
+      Hint: CourseCategory
+      Value: "{EA682604-DEB3-4B77-821E-5A19E4EFD3B2}"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240122T094155Z
+      Value: 20240131T062707Z

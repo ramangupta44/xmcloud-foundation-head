@@ -1,0 +1,31 @@
+﻿---
+ID: "bc520ba9-5c1a-4b2b-a776-e2b9e5fcbf6c"
+Parent: "c54d17f1-6ed9-4133-a12d-7463b88e481d"
+Template: "a6713cde-c3e6-46a8-8e02-fa82f1d08cda"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Find A Course
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240122T153546Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0b0777fd-f2a1-4ccf-9a28-5753d4e08f8b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240125T121237Z
