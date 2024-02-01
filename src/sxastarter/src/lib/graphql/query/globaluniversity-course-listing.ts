@@ -23,32 +23,31 @@ export const GlobalUniversity_Course_Listing_Query = gql`
         hasNext
       }
       results {
-      ... on Courses {
-        title {
-          value
-        }
-        image {
-          value
-        }
-        courseDescription {
-          value
-        }
-        courseType {
-          targetItems {
-            name
+        ... on Courses {
+          title {
+            value
+          }
+          image {
+            value
+          }
+          courseDescription {
+            value
+          }
+          courseType {
+            targetItems {
+              name
+            }
+          }
+          studentType {
+            targetItems {
+              name
+            }
           }
         }
-        studentType {
-          targetItems {
-            name
-          }
+        url {
+          path
         }
       }
-      url {
-        path
-      }
-     
-    }
     }
   }
 `;
