@@ -34,6 +34,11 @@
                         "scope": "SingleItem"
                     },
                     {
+                        "path": "/Renderings/Project",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
                         "path": "/Renderings",
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "SingleItem"
