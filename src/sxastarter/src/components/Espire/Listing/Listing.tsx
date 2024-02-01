@@ -1,16 +1,20 @@
-import { apolloClient } from 'lib/graphql/graphql-apollo-client';
-import { Listing_Query } from 'lib/graphql/query/listing';
-import { useRouter } from 'next/router';
-import { GlobalUniversity_Course_Listing_Query } from 'lib/graphql/query/globaluniversity-course-listing';
-import { SetStateAction, useEffect, useState } from 'react';
-import InfiniteScroll from 'react-infinite-scroll-component';
+import { apolloClient } from "lib/graphql/graphql-apollo-client";
+import { Listing_Query } from "lib/graphql/query/listing";
+import { useRouter } from "next/router";
+import { GlobalUniversity_Course_Listing_Query } from "lib/graphql/query/globaluniversity-course-listing";
+import { SetStateAction, useEffect, useState } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
 import {
   ActualData,
   ListingProps,
   list,
   result,
-} from 'lib/component-props/EspireTemplateProps/Listing/ListingProps';
-import { Field, ImageField, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+} from "lib/component-props/EspireTemplateProps/Listing/ListingProps";
+import {
+  Field,
+  ImageField,
+  useSitecoreContext,
+} from "@sitecore-jss/sitecore-jss-nextjs";
 
 type CourseListingData = {
   CourseListingData: {
@@ -27,7 +31,7 @@ type CourseListingResult = {
 
 const Listing = (props: ListingProps): JSX.Element => {
   const [data, setData] = useState<ListingProps>();
-  const [loadMore, SetLoadMore] = useState('');
+  const [loadMore, SetLoadMore] = useState("");
   const [result, Setresult] = useState<ListingProps>();
   const [hasnext, SetHasNext] = useState<ListingProps>();
   const [items, setItems] = useState([]);
@@ -37,7 +41,7 @@ const Listing = (props: ListingProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
   const scope = props?.params?.Scope;
   const language = sitecoreContext?.language;
-  const count = parseInt(props?.params?.['Display Count']);
+  const count = parseInt(props?.params?.["Display Count"]);
 
   const GetList = async (): Promise<unknown> => {
     const { data } = await apolloClient.query({
@@ -61,15 +65,18 @@ const Listing = (props: ListingProps): JSX.Element => {
       const result = await GetList();
       if (!ignore) {
         setData(
-          (result as ListingProps)?.ListingData?.children?.results as unknown as ListingProps
+          ((result as ListingProps)?.ListingData?.children
+            ?.results as unknown) as ListingProps
         );
-        SetLoadMore((result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor);
+        SetLoadMore(
+          (result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor
+        );
         SetHasNext(
-          (result as ListingProps)?.ListingData?.children?.pageInfo
-            ?.hasNext as unknown as ListingProps
+          ((result as ListingProps)?.ListingData?.children?.pageInfo
+            ?.hasNext as unknown) as ListingProps
         );
         Setresult(result as ListingProps);
-        setFinalData(data as unknown as []);
+        setFinalData((data as unknown) as []);
       }
     }
 
@@ -84,10 +91,10 @@ const Listing = (props: ListingProps): JSX.Element => {
     SetHasNext(undefined);
     function isHasNext() {
       SetHasNext(
-        (result as ListingProps)?.ListingData?.children?.pageInfo
-          ?.hasNext as unknown as ListingProps
+        ((result as ListingProps)?.ListingData?.children?.pageInfo
+          ?.hasNext as unknown) as ListingProps
       );
-      setFinalData(data as unknown as []);
+      setFinalData((data as unknown) as []);
     }
 
     isHasNext();
@@ -98,30 +105,35 @@ const Listing = (props: ListingProps): JSX.Element => {
 
     finalData = [
       ...[finalData],
-      ...[(result as ListingProps)?.ListingData?.children?.results as unknown as ListingProps],
+      ...[
+        ((result as ListingProps)?.ListingData?.children
+          ?.results as unknown) as ListingProps,
+      ],
     ]?.flat();
-    setData(finalData as unknown as ListingProps);
+    setData((finalData as unknown) as ListingProps);
     if (hasnext) {
-      SetLoadMore((result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor);
+      SetLoadMore(
+        (result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor
+      );
     }
     Setresult(result as ListingProps);
   };
 
   return (
     <div className={`${props?.params?.styles} default-listing`}>
-      {props?.params?.['Show More'] ? (
+      {props?.params?.["Show More"] ? (
         <div className="listing">
           {finalData?.map((item: list, index) => {
             let items = [];
-            items = item?.fields as unknown as [];
+            items = (item?.fields as unknown) as [];
             return (
               <div key={index} className="list">
                 {items?.map((childData: result, index) => {
                   return (
-                    (childData?.name as unknown as string) == 'Title' && (
+                    ((childData?.name as unknown) as string) == "Title" && (
                       <h1 key={index}>
-                        {childData?.name as unknown as string} : {''}
-                        {childData?.value as unknown as string}
+                        {(childData?.name as unknown) as string} : {""}
+                        {(childData?.value as unknown) as string}
                       </h1>
                     )
                   );
@@ -134,7 +146,7 @@ const Listing = (props: ListingProps): JSX.Element => {
               Load More
             </button>
           ) : (
-            ''
+            ""
           )}
         </div>
       ) : (
@@ -144,28 +156,32 @@ const Listing = (props: ListingProps): JSX.Element => {
           hasMore={true}
           loader={<span className="hidden"></span>}
           endMessage={
-            <p style={{ textAlign: 'center' }}>
+            <p style={{ textAlign: "center" }}>
               <b>Yay! You have seen it all</b>
             </p>
           }
           refreshFunction={refresh}
           pullDownToRefresh
           pullDownToRefreshThreshold={50}
-          pullDownToRefreshContent={<h3 style={{ textAlign: 'center' }}> Pull down to refresh</h3>}
-          releaseToRefreshContent={<h3 style={{ textAlign: 'center' }}>Release to refresh</h3>}
+          pullDownToRefreshContent={
+            <h3 style={{ textAlign: "center" }}> Pull down to refresh</h3>
+          }
+          releaseToRefreshContent={
+            <h3 style={{ textAlign: "center" }}>Release to refresh</h3>
+          }
         >
           <div className="listing">
             {finalData?.map((item: list, index) => {
               let items = [];
-              items = item?.fields as unknown as [];
+              items = (item?.fields as unknown) as [];
               return (
                 <div key={index} className="list">
                   {items?.map((childData: result, index) => {
                     return (
-                      (childData?.name as unknown as string) == 'Title' && (
+                      ((childData?.name as unknown) as string) == "Title" && (
                         <div key={index}>
-                          {childData?.name as unknown as string} :{''}
-                          {childData?.value as unknown as string}
+                          {(childData?.name as unknown) as string} :{""}
+                          {(childData?.value as unknown) as string}
                         </div>
                       )
                     );
@@ -182,7 +198,7 @@ const Listing = (props: ListingProps): JSX.Element => {
 
 export const ListCard = (props: ListingProps): JSX.Element => {
   const [data, setData] = useState<ListingProps>();
-  const [loadMore, SetLoadMore] = useState('');
+  const [loadMore, SetLoadMore] = useState("");
   const [result, Setresult] = useState<ListingProps>();
   const [hasnext, SetHasNext] = useState<ListingProps>();
   const [items, setItems] = useState([]);
@@ -192,7 +208,7 @@ export const ListCard = (props: ListingProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
   const scope = props?.params?.Scope;
   const language = sitecoreContext?.language;
-  const count = parseInt(props?.params?.['Display Count']);
+  const count = parseInt(props?.params?.["Display Count"]);
 
   const GetList = async (): Promise<unknown> => {
     const { data } = await apolloClient.query({
@@ -216,15 +232,18 @@ export const ListCard = (props: ListingProps): JSX.Element => {
       const result = await GetList();
       if (!ignore) {
         setData(
-          (result as ListingProps)?.ListingData?.children?.results as unknown as ListingProps
+          ((result as ListingProps)?.ListingData?.children
+            ?.results as unknown) as ListingProps
         );
-        SetLoadMore((result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor);
+        SetLoadMore(
+          (result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor
+        );
         SetHasNext(
-          (result as ListingProps)?.ListingData?.children?.pageInfo
-            ?.hasNext as unknown as ListingProps
+          ((result as ListingProps)?.ListingData?.children?.pageInfo
+            ?.hasNext as unknown) as ListingProps
         );
         Setresult(result as ListingProps);
-        setFinalData(data as unknown as []);
+        setFinalData((data as unknown) as []);
       }
     }
 
@@ -239,10 +258,10 @@ export const ListCard = (props: ListingProps): JSX.Element => {
     SetHasNext(undefined);
     function isHasNext() {
       SetHasNext(
-        (result as ListingProps)?.ListingData?.children?.pageInfo
-          ?.hasNext as unknown as ListingProps
+        ((result as ListingProps)?.ListingData?.children?.pageInfo
+          ?.hasNext as unknown) as ListingProps
       );
-      setFinalData(data as unknown as []);
+      setFinalData((data as unknown) as []);
     }
 
     isHasNext();
@@ -254,11 +273,16 @@ export const ListCard = (props: ListingProps): JSX.Element => {
 
     finalData = [
       ...[finalData],
-      ...[(result as ListingProps)?.ListingData?.children?.results as unknown as ListingProps],
+      ...[
+        ((result as ListingProps)?.ListingData?.children
+          ?.results as unknown) as ListingProps,
+      ],
     ]?.flat();
-    setData(finalData as unknown as ListingProps);
+    setData((finalData as unknown) as ListingProps);
     if (hasnext) {
-      SetLoadMore((result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor);
+      SetLoadMore(
+        (result as ListingProps)?.ListingData?.children?.pageInfo?.endCursor
+      );
     }
     Setresult(result as ListingProps);
   };
@@ -267,9 +291,13 @@ export const ListCard = (props: ListingProps): JSX.Element => {
 
   finalData?.forEach((item: list) => {
     let items = [];
-    items = item?.fields as unknown as [];
+    items = (item?.fields as unknown) as [];
     const filteredData = items?.filter((item: result) => {
-      return item.name === 'Title' || item?.name === 'Content' || item?.name === 'Image';
+      return (
+        item.name === "Title" ||
+        item?.name === "Content" ||
+        item?.name === "Image"
+      );
     });
     newData = [...newData, ...[filteredData]];
     return newData;
@@ -280,15 +308,19 @@ export const ListCard = (props: ListingProps): JSX.Element => {
   newData.forEach((newData, index) => {
     const urlData = (finalData[index] as list)?.url;
     const emptyObject = Object.assign({ urlData });
-    (newData as [])?.forEach((element: { name: string; jsonValue: unknown }) => {
-      newObj = Object.assign(emptyObject, { [element.name]: element.jsonValue });
-    });
+    (newData as [])?.forEach(
+      (element: { name: string; jsonValue: unknown }) => {
+        newObj = Object.assign(emptyObject, {
+          [element.name]: element.jsonValue,
+        });
+      }
+    );
     actualData?.push(newObj);
   });
 
   return (
     <div className={`${props?.params?.styles} listing card-listing`}>
-      {props?.params?.['Show More'] ? (
+      {props?.params?.["Show More"] ? (
         <>
           <div className="container">
             <div className="blogs">
@@ -298,11 +330,19 @@ export const ListCard = (props: ListingProps): JSX.Element => {
                     return (
                       <div className="col mb-3 mb-lg-0" key={index}>
                         <div className="img-title">
-                          <img src={item?.Image?.value?.src} alt={item?.Image?.value?.alt} />
+                          <img
+                            src={item?.Image?.value?.src}
+                            alt={item?.Image?.value?.alt}
+                          />
                           <div className="rounded-bottom-4 blog-info">
-                            <div className="blog-title">{item?.Title?.value}</div>
+                            <div className="blog-title">
+                              {item?.Title?.value}
+                            </div>
                             <p>{item?.Content?.Value}</p>
-                            <a href={item?.urlData?.path} className="secondary-btn">
+                            <a
+                              href={item?.urlData?.path}
+                              className="secondary-btn"
+                            >
                               Read more
                             </a>
                           </div>
@@ -330,28 +370,32 @@ export const ListCard = (props: ListingProps): JSX.Element => {
           hasMore={true}
           loader={<span className="hidden"></span>}
           endMessage={
-            <p style={{ textAlign: 'center' }}>
+            <p style={{ textAlign: "center" }}>
               <b>Yay! You have seen it all</b>
             </p>
           }
           refreshFunction={refresh}
           pullDownToRefresh
           pullDownToRefreshThreshold={50}
-          pullDownToRefreshContent={<h3 style={{ textAlign: 'center' }}> Pull down to refresh</h3>}
-          releaseToRefreshContent={<h3 style={{ textAlign: 'center' }}>Release to refresh</h3>}
+          pullDownToRefreshContent={
+            <h3 style={{ textAlign: "center" }}> Pull down to refresh</h3>
+          }
+          releaseToRefreshContent={
+            <h3 style={{ textAlign: "center" }}>Release to refresh</h3>
+          }
         >
           <div className="listing">
             {finalData?.map((item: list, index) => {
               let items = [];
-              items = item?.fields as unknown as [];
+              items = (item?.fields as unknown) as [];
               return (
                 <div key={index} className="list">
                   {items?.map((childData: result, index) => {
                     return (
-                      (childData?.name as unknown as string) == 'Title' && (
+                      ((childData?.name as unknown) as string) == "Title" && (
                         <div key={index}>
-                          {childData?.name as unknown as string} :{''}
-                          {childData?.value as unknown as string}
+                          {(childData?.name as unknown) as string} :{""}
+                          {(childData?.value as unknown) as string}
                         </div>
                       )
                     );
@@ -371,9 +415,15 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
   const [courseListData, setCourseListData] = useState<CourseListingData>();
   const path = props?.params?.Scope;
   let { keyword, category, type } = router?.query;
- ( keyword == undefined || keyword == null || keyword == "") ? (keyword = "*") : router?.query?.keyword;
- ( category == undefined || category == null || category == "") ? (category = "*") : router?.query?.category;
- ( type == undefined || type == null || type == "") ? (type = "*") : router?.query?.type
+  keyword == undefined || keyword == null || keyword == ""
+    ? (keyword = "*")
+    : router?.query?.keyword;
+  category == undefined || category == null || category == ""
+    ? (category = "*")
+    : router?.query?.category;
+  type == undefined || type == null || type == ""
+    ? (type = "*")
+    : router?.query?.type;
 
   const GetCourseData = async (
     path: string,
@@ -395,9 +445,11 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
 
   function toPascalCase(text: string) {
     return text
-      ?.split(' ')
-      ?.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      ?.join(' ');
+      ?.split(" ")
+      ?.map(
+        (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+      )
+      ?.join(" ");
   }
 
   useEffect(() => {
@@ -405,11 +457,11 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
       if (
         path != undefined &&
         keyword != undefined &&
-        keyword != '' &&
+        keyword != "" &&
         type != undefined &&
-        type != ' ' &&
+        type != " " &&
         category != undefined &&
-        category != ' '
+        category != " "
       ) {
         const courseData = await GetCourseData(
           path,
@@ -418,7 +470,7 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
           toPascalCase(category as string)
         );
 
-        console.log(courseData, 'coursedata');
+        console.log(courseData, "coursedata");
         setCourseListData(courseData as CourseListingData);
       }
     })();
