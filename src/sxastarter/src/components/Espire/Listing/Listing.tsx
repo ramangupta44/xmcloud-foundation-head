@@ -1,5 +1,7 @@
 import { apolloClient } from 'lib/graphql/graphql-apollo-client';
 import { Listing_Query } from 'lib/graphql/query/listing';
+import { useRouter } from 'next/router';
+import { GlobalUniversity_Course_Listing_Query } from 'lib/graphql/query/globaluniversity-course-listing';
 import { SetStateAction, useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import {
@@ -8,8 +10,20 @@ import {
   list,
   result,
 } from 'lib/component-props/EspireTemplateProps/Listing/ListingProps';
-import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, ImageField, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
+type CourseListingData = {
+  CourseListingData: {
+    results: CourseListingResult[];
+  };
+};
+
+type CourseListingResult = {
+  Image: ImageField;
+
+  title: Field<string>;
+  courseDescription: Field<string>;
+};
 //Listing
 
 const Listing = (props: ListingProps): JSX.Element => {
@@ -234,6 +248,7 @@ export const ListCard = (props: ListingProps): JSX.Element => {
 
     isHasNext();
   }, [result, data]);
+
   const LoadMore = async () => {
     let finalData = [data]?.flat();
     const result = await GetList();
@@ -248,6 +263,7 @@ export const ListCard = (props: ListingProps): JSX.Element => {
     }
     Setresult(result as ListingProps);
   };
+
   let newData: unknown[] = [];
 
   finalData?.forEach((item: list) => {
@@ -266,7 +282,9 @@ export const ListCard = (props: ListingProps): JSX.Element => {
     const urlData = (finalData[index] as list)?.url;
     const emptyObject = Object.assign({ urlData });
     (newData as [])?.forEach((element: { name: string; jsonValue: unknown }) => {
-      newObj = Object.assign(emptyObject, { [element.name]: element.jsonValue });
+      newObj = Object.assign(emptyObject, {
+        [element.name]: element.jsonValue,
+      });
     });
     actualData?.push(newObj);
   });
@@ -347,6 +365,82 @@ export const ListCard = (props: ListingProps): JSX.Element => {
           </div>
         </InfiniteScroll>
       )}
+    </div>
+  );
+};
+
+export const CourseListing = (props: ListingProps): JSX.Element => {
+  const router = useRouter();
+  const [courseListData, setCourseListData] = useState<CourseListingData>();
+  const path = props?.params?.Scope;
+  let { keyword, category, type } = router?.query;
+  keyword == undefined || keyword == null || keyword == ''
+    ? (keyword = '*')
+    : router?.query?.keyword;
+  category == undefined || category == null || category == ''
+    ? (category = '*')
+    : router?.query?.category;
+  type == undefined || type == null || type == '' ? (type = '*') : router?.query?.type;
+
+  const GetCourseData = async (
+    path: string,
+    keyword: string,
+    type: string,
+    category: string
+  ): Promise<unknown> => {
+    const { data } = await apolloClient.query({
+      query: GlobalUniversity_Course_Listing_Query,
+      variables: {
+        path: path,
+        keyword: keyword,
+        CourseType: type,
+        CourseCategory: category,
+      },
+    });
+    return data;
+  };
+
+  function toPascalCase(text: string) {
+    return text
+      ?.split(' ')
+      ?.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      ?.join(' ');
+  }
+
+  useEffect(() => {
+    (async () => {
+      if (
+        path != undefined &&
+        keyword != undefined &&
+        keyword != '' &&
+        type != undefined &&
+        type != ' ' &&
+        category != undefined &&
+        category != ' '
+      ) {
+        const courseData = await GetCourseData(
+          path,
+          toPascalCase(keyword as string),
+          toPascalCase(type as string),
+          toPascalCase(category as string)
+        );
+
+        console.log(courseData, 'coursedata');
+        setCourseListData(courseData as CourseListingData);
+      }
+    })();
+  }, [path, keyword, type, category]);
+
+  return (
+    <div>
+      {courseListData?.CourseListingData?.results?.map((list, index) => {
+        return (
+          <div key={index}>
+            <p>{list?.title?.value} </p>
+            <p>{list?.courseDescription?.value} </p>
+          </div>
+        );
+      })}
     </div>
   );
 };

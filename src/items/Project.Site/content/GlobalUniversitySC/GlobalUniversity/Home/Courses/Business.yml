@@ -6,7 +6,7 @@ Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Courses/Busines
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 300
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -32,7 +32,7 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "da46aa64-e7ce-475b-ae3d-2f825e7a8659"
+      Value: "33b74363-d871-42d9-bb62-054767a5d6b0"
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: Business
@@ -42,4 +42,4 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240122T083343Z
+      Value: 20240125T095227Z
