@@ -1,0 +1,41 @@
+@import "../sass/abstracts/vars/headings";
+@import "../sass/abstracts/vars/colors";
+
+#course-listing{
+    .course-listing-image{
+        img{
+            width: auto;
+            max-width: 100%;
+            border-radius: 16px;
+        }
+    }
+    .course-listing-details{
+        h6{
+            font-size:$small;
+            color:$grey;
+            font-family: poppins-regular;
+        }
+        h5{
+            font-size:$font-small;
+            color:$black;
+            font-family: poppins-bold;
+        }
+        p{
+            font-size: $small;
+            color:$black;
+            font-family: poppins-regular;
+        }   
+        ul{
+            li{
+                font-size:$listing-font;
+                color:$black;
+                font-family: poppins-regular;
+                img{
+                    height:24px;
+                    width:24px;
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+}
