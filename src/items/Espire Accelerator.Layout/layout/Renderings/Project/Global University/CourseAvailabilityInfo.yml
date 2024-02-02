@@ -1,17 +1,15 @@
 ﻿---
-ID: "73cd70cf-c91e-4c02-a176-195436cf52c1"
-Parent: "54dd2e7f-86c6-403e-ac52-341d5ac2c715"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Available Renderings/Global University Components
+ID: "46b98669-cc06-4377-bcb2-1b45ad33af6a"
+Parent: "d8772b6d-b942-4ab1-b200-eb77e16db11e"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/Global University/CourseAvailabilityInfo
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
-  Value: |
-    {A349AA61-B2E8-491E-A62C-1BC114A395C0}
-    {B973A7DC-7B58-4B0A-8230-B49568A4024B}
-    {49E6F4CE-8B6E-4214-A563-3D6BDA0A7CE1}
-    {46B98669-CC06-4377-BCB2-1B45AD33AF6A}
-    {713CA5BF-E748-451D-84C7-0066A866A54F}
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: CourseAvailabilityInfo
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{1404C5ED-A840-4B8D-AADC-7A8F39533886}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +17,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240123T051704Z
+      Value: 20240201T103617Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -30,11 +28,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1fa8b903-9151-430a-868a-6cfe2a3ca37b"
+      Value: "f63dd008-9f43-4ce0-be91-64711639625d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240202T104334Z
+      Value: 20240202T091711Z

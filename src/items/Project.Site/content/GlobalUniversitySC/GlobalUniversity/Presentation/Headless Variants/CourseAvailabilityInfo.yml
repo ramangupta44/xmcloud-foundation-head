@@ -1,17 +1,16 @@
 ﻿---
-ID: "73cd70cf-c91e-4c02-a176-195436cf52c1"
-Parent: "54dd2e7f-86c6-403e-ac52-341d5ac2c715"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Available Renderings/Global University Components
+ID: "09c57a89-a0d8-4ab8-a354-f57ca7fb6ab5"
+Parent: "4ca3b218-330f-4b61-8ab3-782f6c3b2068"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Headless Variants/CourseAvailabilityInfo
+BranchID: "2c42ac87-6f2f-4803-8777-c5dfee5cd941"
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
-  Value: |
-    {A349AA61-B2E8-491E-A62C-1BC114A395C0}
-    {B973A7DC-7B58-4B0A-8230-B49568A4024B}
-    {49E6F4CE-8B6E-4214-A563-3D6BDA0A7CE1}
-    {46B98669-CC06-4377-BCB2-1B45AD33AF6A}
-    {713CA5BF-E748-451D-84C7-0066A866A54F}
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{89095E8D-013F-4C98-B7CF-D8261922B0BC}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240123T051704Z
+      Value: 20240109T102647Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -30,11 +29,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1fa8b903-9151-430a-868a-6cfe2a3ca37b"
+      Value: "fa5d8ea1-259d-4f29-82c5-0f8f37db6823"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240202T104334Z
+      Value: 20240202T091806Z
