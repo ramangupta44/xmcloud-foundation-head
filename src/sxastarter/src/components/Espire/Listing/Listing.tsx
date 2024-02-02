@@ -2,7 +2,7 @@ import { apolloClient } from 'lib/graphql/graphql-apollo-client';
 import { Listing_Query } from 'lib/graphql/query/listing';
 import { useRouter } from 'next/router';
 import { GlobalUniversity_Course_Listing_Query } from 'lib/graphql/query/globaluniversity-course-listing';
-import { SetStateAction, useEffect, useState } from 'react';
+import { ReactNode, SetStateAction, useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import {
   ActualData,
@@ -10,7 +10,8 @@ import {
   list,
   result,
 } from 'lib/component-props/EspireTemplateProps/Listing/ListingProps';
-import { Field, ImageField, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, ImageField, useSitecoreContext, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
+import React from 'react';
 
 type CourseListingData = {
   CourseListingData: {
@@ -19,12 +20,37 @@ type CourseListingData = {
 };
 
 type CourseListingResult = {
-  Image: ImageField;
-
+  image: ImageProps;
+  thumbnailImage: ImageProps;
   title: Field<string>;
   courseDescription: Field<string>;
+  courseType: TagTreeListProps;
+  location: TagTreeListProps;
+  studyMode: TagTreeListProps;
 };
 //Listing
+type ImageProps = ImageField & {
+  jsonValue: {
+    value: {
+      src: string;
+      alt: string;
+    };
+  };
+};
+
+type TagTreeListProps = {
+  targetItems: TagTreeListData[];
+};
+
+type TagTreeListData = {
+  name: string;
+};
+
+const IterateData = (input: TagTreeListProps): ReactNode => {
+  return input?.targetItems?.map((item, index) => {
+    return <React.Fragment key={index}> {item?.name}</React.Fragment>;
+  });
+};
 
 const Listing = (props: ListingProps): JSX.Element => {
   const [data, setData] = useState<ListingProps>();
@@ -268,6 +294,7 @@ export const ListCard = (props: ListingProps): JSX.Element => {
 
   finalData?.forEach((item: list) => {
     let items = [];
+
     items = item?.fields as unknown as [];
     const filteredData = items?.filter((item: result) => {
       return item.name === 'Title' || item?.name === 'Content' || item?.name === 'Image';
@@ -381,13 +408,14 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
     ? (category = '*')
     : router?.query?.category;
   type == undefined || type == null || type == '' ? (type = '*') : router?.query?.type;
-
+  console.log(type, category);
   const GetCourseData = async (
     path: string,
     keyword: string,
     type: string,
     category: string
   ): Promise<unknown> => {
+    console.log(keyword, type, category);
     const { data } = await apolloClient.query({
       query: GlobalUniversity_Course_Listing_Query,
       variables: {
@@ -432,12 +460,26 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
   }, [path, keyword, type, category]);
 
   return (
-    <div>
+    <div className="container course-listing">
       {courseListData?.CourseListingData?.results?.map((list, index) => {
         return (
-          <div key={index}>
-            <p>{list?.title?.value} </p>
-            <p>{list?.courseDescription?.value} </p>
+          <div className="row" key={index}>
+            <div className="col-4">
+              <img
+                src={list?.thumbnailImage?.jsonValue?.value?.src}
+                alt={list?.thumbnailImage?.jsonValue?.value?.alt}
+              />
+            </div>
+            <div className="col-8">
+              <h6> {IterateData(list?.courseType)}</h6>
+              <h5>{list?.title?.value} </h5>
+              <RichText field={list?.courseDescription} tag="div" />
+              <hr />
+              <ul className="d-flex list-group-horizontal list-unstyled">
+                <li> {IterateData(list?.studyMode)}</li>
+                <li> {IterateData(list?.location)}</li>
+              </ul>
+            </div>
           </div>
         );
       })}

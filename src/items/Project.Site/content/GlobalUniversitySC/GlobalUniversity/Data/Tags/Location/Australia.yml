@@ -1,8 +1,8 @@
 ﻿---
-ID: "a0aa1698-6dc4-4f56-955b-554fdd0e9a3b"
-Parent: "299550c9-06de-497d-b76f-c980553f5040"
+ID: "c25a99d3-0021-45ff-90c7-b8bde7a02180"
+Parent: "35890c59-4c7d-4c74-8a8b-97c5bf92c245"
 Template: "6b40e84c-8785-49fc-8a10-6bca862ff7ea"
-Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Tags/Study Mode/Online
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Tags/Location/Australia
 Languages:
 - Language: en
   Versions:
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240122T093731Z
+      Value: 20240202T055922Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,14 +21,14 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "91bce9a7-e876-4653-be19-8488bebb065a"
+      Value: "dff74734-9a20-4452-ae09-e6055b1ae4af"
     - ID: "b8a8b6c9-4757-496b-9aae-5f46ff381563"
       Hint: Title
-      Value: Online
+      Value: Australia
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240122T093731Z
+      Value: 20240202T055922Z
