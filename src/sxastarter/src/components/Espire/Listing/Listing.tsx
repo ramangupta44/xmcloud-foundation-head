@@ -464,13 +464,13 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
       {courseListData?.CourseListingData?.results?.map((list, index) => {
         return (
           <div className="row" key={index}>
-            <div className="col-4">
+            <div className="col-12 col-md-5 course-listing-image">
               <img
                 src={list?.thumbnailImage?.jsonValue?.value?.src}
                 alt={list?.thumbnailImage?.jsonValue?.value?.alt}
               />
             </div>
-            <div className="col-8">
+            <div className="col-12 col-md-7 course-listing-details">
               <h6> {IterateData(list?.courseType)}</h6>
               <h5>{list?.title?.value} </h5>
               <RichText field={list?.courseDescription} tag="div" />

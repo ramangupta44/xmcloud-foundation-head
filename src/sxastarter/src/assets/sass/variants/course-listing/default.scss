@@ -1,7 +1,8 @@
-@import "../sass/abstracts/vars/headings";
-@import "../sass/abstracts/vars/colors";
+@import "../../abstracts/vars/headings";
+@import "../../abstracts/vars/colors";
 
-#course-listing{
+.course-listing{
+    padding: 3rem 0;
     .course-listing-image{
         img{
             width: auto;
@@ -26,14 +27,38 @@
             font-family: poppins-regular;
         }   
         ul{
+            gap:40px;
             li{
                 font-size:$listing-font;
                 color:$black;
                 font-family: poppins-regular;
-                img{
-                    height:24px;
-                    width:24px;
-                    vertical-align: bottom;
+                padding-left: 3rem;
+                position: relative;
+                &:nth-child(1){
+                    &:after{
+                        content:"";
+                        background-image: url('../../../images/campus.svg');
+                        background-repeat: no-repeat;
+                        height: 30px;
+                        width: 30px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+                &:nth-child(2){
+                    &:after{
+                        content:"";
+                        background-image: url('../../../images/location.svg');
+                        background-repeat: no-repeat;
+                        height: 30px;
+                        width: 30px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
                 }
             }
         }
