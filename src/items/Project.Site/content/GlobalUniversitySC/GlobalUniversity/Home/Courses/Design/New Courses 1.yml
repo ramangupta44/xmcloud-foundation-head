@@ -42,9 +42,13 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\manoj.chopkar@espire.com
+    - ID: "7894a1b3-2f32-4dbc-8946-aa303d8edcfd"
+      Hint: ThumbnailImage
+      Value: |
+        <image mediaid="{76EB033E-780D-45F5-BF48-E447204B88FA}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d5a7a484-035e-46df-9728-201964fd1729"
+      Value: "64d1be52-9d36-468d-aeee-16d395e59cf4"
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: New Courses 1
@@ -52,6 +56,10 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
+    - ID: "bd640a5a-750d-4d19-8200-0bbb9860df78"
+      Hint: Image
+      Value: |
+        <image mediaid="{DE305E7D-D74B-4ABB-BEA0-4A3A9D0137EF}" />
     - ID: "cae4fcf3-3c5d-4bcb-9a99-065776f745f1"
       Hint: AvailableSeat
       Value: 1
@@ -60,4 +68,4 @@ Languages:
       Value: "{26C4F9E5-81D4-41D9-8C5E-F2771BCBEC8A}"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240131T142936Z
+      Value: 20240202T052402Z

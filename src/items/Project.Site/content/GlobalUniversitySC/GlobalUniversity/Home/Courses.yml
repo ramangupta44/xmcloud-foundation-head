@@ -24,19 +24,19 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{4BBC5670-3D6A-4784-A60A-6ACA6808EFF7}"
+              uid="{EBB83D35-E751-405D-935D-AB7C88373556}"
               p:before="*"
-              s:ds=""
-              s:id="{09D6C16B-DDE1-42C0-B8C3-FB60F38927E6}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;Scope=%7B6E8FF81B-F7D6-45F3-967E-092B9CD631E3%7D&amp;Template=%7BFAB30E6E-F3CE-4AC2-9AD5-607355A93858%7D&amp;Display Count=5&amp;Lazy Loading&amp;Show More&amp;FieldNames=%7BF413F4E3-8F50-4BDB-84AC-6ECA9155C66C%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ds="{F8CB88BB-A8EA-4953-90C4-D31538E247A7}"
+              s:id="{A349AA61-B2E8-491E-A62C-1BC114A395C0}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
               s:ph="headless-main"
               s:ccb="Clear on publish" />
             <r
-              uid="{30C5B171-449A-478D-B256-BD3EF50DCCC7}"
+              uid="{4BBC5670-3D6A-4784-A60A-6ACA6808EFF7}"
               p:after="*[1=2]"
-              s:ds="{F8CB88BB-A8EA-4953-90C4-D31538E247A7}"
-              s:id="{C5FC501B-EC34-4D92-A9F0-E90BA2961C70}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ds=""
+              s:id="{09D6C16B-DDE1-42C0-B8C3-FB60F38927E6}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;Scope=%7B6E8FF81B-F7D6-45F3-967E-092B9CD631E3%7D&amp;Template=%7BFAB30E6E-F3CE-4AC2-9AD5-607355A93858%7D&amp;Display Count=5&amp;Lazy Loading&amp;Show More&amp;FieldNames=%7BF413F4E3-8F50-4BDB-84AC-6ECA9155C66C%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="headless-main"
               s:ccb="Clear on publish" />
           </d>
@@ -57,7 +57,7 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0cb3dbc5-9961-4409-afbf-cb59c2c81f1c"
+      Value: "b9ce3e2f-db13-4a10-be07-40692e8eb70b"
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: Courses
@@ -67,4 +67,4 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240131T073554Z
+      Value: 20240202T043635Z

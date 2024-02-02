@@ -29,6 +29,11 @@ export const GlobalUniversity_Course_Listing_Query = gql`
           }
           image {
             value
+            jsonValue
+          }
+          thumbnailImage {
+            value
+            jsonValue
           }
           courseDescription {
             value
@@ -38,7 +43,12 @@ export const GlobalUniversity_Course_Listing_Query = gql`
               name
             }
           }
-          studentType {
+          studyMode {
+            targetItems {
+              name
+            }
+          }
+          location {
             targetItems {
               name
             }

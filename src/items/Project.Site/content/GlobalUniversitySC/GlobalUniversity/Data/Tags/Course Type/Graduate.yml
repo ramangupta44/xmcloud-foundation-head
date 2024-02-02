@@ -1,8 +1,8 @@
 ﻿---
-ID: "02cef515-5bdc-4a1a-b7f2-a6c9c8e6be1e"
+ID: "1b67009f-44c9-4556-a28a-3c0605f9fff8"
 Parent: "d3137ad4-4082-4f04-b19f-43104f897928"
 Template: "6b40e84c-8785-49fc-8a10-6bca862ff7ea"
-Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Tags/Course Type/Partime
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Tags/Course Type/Graduate
 Languages:
 - Language: en
   Versions:
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240122T084437Z
+      Value: 20240122T084428Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,14 +21,14 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b84d71bd-5f9a-4c05-9fcf-9dc42b6fa6bd"
+      Value: "bcaa6239-c54b-450c-aa41-a57ef9dd5929"
     - ID: "b8a8b6c9-4757-496b-9aae-5f46ff381563"
       Hint: Title
-      Value: Partime
+      Value: Graduate
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240122T084437Z
+      Value: 20240202T055837Z
