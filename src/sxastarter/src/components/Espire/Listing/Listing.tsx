@@ -401,6 +401,7 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
   const [courseListData, setCourseListData] = useState<CourseListingData>();
   const path = props?.params?.Scope;
   let { keyword, category, type } = router?.query;
+  console.log('First', router?.query?.type, router?.query?.category);
   keyword == undefined || keyword == null || keyword == ''
     ? (keyword = '*')
     : router?.query?.keyword;
@@ -408,14 +409,14 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
     ? (category = '*')
     : router?.query?.category;
   type == undefined || type == null || type == '' ? (type = '*') : router?.query?.type;
-  console.log(type, category);
+  console.log(type, category, 'AFTER');
   const GetCourseData = async (
     path: string,
     keyword: string,
     type: string,
     category: string
   ): Promise<unknown> => {
-    console.log(keyword, type, category);
+    console.log('Inside Function', keyword, type, category);
     const { data } = await apolloClient.query({
       query: GlobalUniversity_Course_Listing_Query,
       variables: {
