@@ -1,0 +1,26 @@
+@import "../../abstracts/vars";
+
+.courseavailabilityinfo{
+    padding: 3rem 1rem;
+    .course-information{
+        display: flex;
+        justify-content: space-between;
+        .course-information-cell{
+            span.label{
+                font-size:small;
+                color: $grey;
+                padding: 0.5rem 0;
+                display: block;
+            }
+            span.value{
+                font-size:calc($small + 2px);
+                color:$black;
+                padding: 0.5rem 0;
+                display: block;
+                font-family: poppins-bold;
+            }
+        }
+    }
+
+}
+

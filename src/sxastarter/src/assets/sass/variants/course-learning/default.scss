@@ -1,0 +1,15 @@
+@import "../../abstracts/vars/media-screen";
+
+.courselearningobjectives{
+    ul{
+        li{
+            font-size: $small;
+            margin: 0.5rem 0;
+            color:$black;
+            font-family:poppins-regular;
+            span{
+                margin-right:1rem;
+            }
+        }
+    }
+}
