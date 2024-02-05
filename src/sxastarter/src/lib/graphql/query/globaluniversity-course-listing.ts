@@ -2,17 +2,19 @@ import { gql } from '@apollo/client';
 export const GlobalUniversity_Course_Listing_Query = gql`
   query CourseListing(
     $path: String
-    $keyword: String
-    $CourseType: String
-    $CourseCategory: String
+    $template: String
+    $keyword: ItemSearchPredicate
+    $courseType: ItemSearchPredicate
+    $courseCategory: ItemSearchPredicate
   ) {
     CourseListingData: search(
       where: {
         AND: [
           { name: "_path", value: $path, operator: CONTAINS }
-          { name: "Title", value: $keyword, operator: CONTAINS }
-          { name: "CourseType", value: $CourseType, operator: CONTAINS }
-          { name: "CourseCategory", value: $CourseCategory, operator: CONTAINS }
+          { name: "_templates", value: $template, operator: EQ }
+          $keyword
+          $courseType
+          $courseCategory
         ]
       }
       first: 10
@@ -35,7 +37,10 @@ export const GlobalUniversity_Course_Listing_Query = gql`
             value
             jsonValue
           }
-          courseDescription {
+          applyNowURL {
+            jsonValue
+          }
+          content {
             value
           }
           courseType {
