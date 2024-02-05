@@ -16,6 +16,7 @@ import React from 'react';
 type CourseListingData = {
   CourseListingData: {
     results: CourseListingResult[];
+    total: number;
   };
 };
 
@@ -23,11 +24,21 @@ type CourseListingResult = {
   image: ImageProps;
   thumbnailImage: ImageProps;
   title: Field<string>;
-  courseDescription: Field<string>;
+  applyNowURL: LinkField;
+  content: Field<string>;
   courseType: TagTreeListProps;
   location: TagTreeListProps;
   studyMode: TagTreeListProps;
 };
+
+type LinkField = {
+  jsonValue: {
+    value: {
+      [key: string]: string;
+    };
+  };
+};
+
 //Listing
 type ImageProps = ImageField & {
   jsonValue: {
@@ -44,6 +55,12 @@ type TagTreeListProps = {
 
 type TagTreeListData = {
   name: string;
+};
+
+type ItemSearchPredicate = {
+  name: string;
+  value: string;
+  operator: string;
 };
 
 const IterateData = (input: TagTreeListProps): ReactNode => {
@@ -400,30 +417,40 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
   const router = useRouter();
   const [courseListData, setCourseListData] = useState<CourseListingData>();
   const path = props?.params?.Scope;
-  let { keyword, category, type } = router?.query;
-  console.log('First', router?.query?.type, router?.query?.category);
-  keyword == undefined || keyword == null || keyword == ''
-    ? (keyword = '*')
-    : router?.query?.keyword;
-  category == undefined || category == null || category == ''
-    ? (category = '*')
-    : router?.query?.category;
-  type == undefined || type == null || type == '' ? (type = '*') : router?.query?.type;
-  console.log(type, category, 'AFTER');
+  const template = props?.params?.Template;
+  const { keyword, category, type } = router?.query;
+
+  const defaultCourseTypeObject = {
+    name: 'CourseType',
+    value: '*',
+    operator: 'NCONTAINS',
+  };
+  const defaultCourseCategoryObject = {
+    name: 'CourseCategory',
+    value: '*',
+    operator: 'NCONTAINS',
+  };
+  const defaultKeywordObject = {
+    name: 'Title',
+    value: '*',
+    operator: 'CONTAINS',
+  };
+
   const GetCourseData = async (
     path: string,
-    keyword: string,
-    type: string,
-    category: string
+    template: string,
+    keyword: ItemSearchPredicate = defaultKeywordObject,
+    courseType: ItemSearchPredicate = defaultCourseTypeObject,
+    courseCategory: ItemSearchPredicate = defaultCourseCategoryObject
   ): Promise<unknown> => {
-    console.log('Inside Function', keyword, type, category);
     const { data } = await apolloClient.query({
       query: GlobalUniversity_Course_Listing_Query,
       variables: {
         path: path,
+        template: template,
         keyword: keyword,
-        CourseType: type,
-        CourseCategory: category,
+        courseType: courseType,
+        courseCategory: courseCategory,
       },
     });
     return data;
@@ -440,28 +467,130 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
     (async () => {
       if (
         path != undefined &&
-        keyword != undefined &&
-        keyword != '' &&
+        template != undefined &&
         type != undefined &&
-        type != ' ' &&
         category != undefined &&
-        category != ' '
+        keyword != undefined
       ) {
-        const courseData = await GetCourseData(
-          path,
-          toPascalCase(keyword as string),
-          toPascalCase(type as string),
-          toPascalCase(category as string)
-        );
-
-        console.log(courseData, 'coursedata');
-        setCourseListData(courseData as CourseListingData);
+        //When all fields are empty
+        if (keyword == '' && type == ' ' && category == ' ') {
+          const courseData = await GetCourseData(path, template);
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword == '' && type != ' ' && category != ' ') {
+          //when only keyword is empty
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedCourseType,
+            updatedCourseCategory
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type == ' ' && category != ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            updatedCourseCategory
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type != ' ' && category == ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            updatedCourseType
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type != ' ' && category != ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            updatedCourseType,
+            updatedCourseCategory
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword == '' && type == ' ' && category != ' ') {
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(path, template, updatedCourseCategory);
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword == '' && type != ' ' && category == ' ') {
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(path, template, updatedCourseType);
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type == ' ' && category == ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(path, template, updatedKeywordObject);
+          setCourseListData(courseData as CourseListingData);
+        } else '';
       }
     })();
   }, [path, keyword, type, category]);
-
   return (
     <div className="container course-listing">
+      {courseListData?.CourseListingData?.total == 0 ||
+      courseListData?.CourseListingData?.total == undefined ? (
+        <h4> No Results</h4>
+      ) : (
+        <h1> Total Count : {courseListData?.CourseListingData?.total}</h1>
+      )}
       {courseListData?.CourseListingData?.results?.map((list, index) => {
         return (
           <div className="row" key={index}>
@@ -474,13 +603,18 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
             <div className="col-12 col-md-7 course-listing-details">
               <h6> {IterateData(list?.courseType)}</h6>
               <h5>{list?.title?.value} </h5>
-              <RichText field={list?.courseDescription} tag="div" />
+              <RichText field={list?.content} tag="div" />
               <hr />
               <ul className="d-flex list-group-horizontal list-unstyled">
                 <li> {IterateData(list?.studyMode)}</li>
                 <li> {IterateData(list?.location)}</li>
               </ul>
             </div>
+            {list?.applyNowURL?.jsonValue?.value?.href && (
+              <a href={list?.applyNowURL?.jsonValue?.value?.href}>
+                {list?.applyNowURL?.jsonValue?.value?.text}
+              </a>
+            )}
           </div>
         );
       })}
