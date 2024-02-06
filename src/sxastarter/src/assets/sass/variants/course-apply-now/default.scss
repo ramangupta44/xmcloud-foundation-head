@@ -1,0 +1,48 @@
+@import "../../abstracts/vars/";
+
+.courseapplynow{
+    padding-left:4rem;
+   .field-courseapplynow{
+        background-color:$light-grey;
+        border:1px solid $light-grey;
+        border-radius: 8px;
+        padding:2rem;
+        ul{
+            li{
+                font-size: $small;
+                margin: .5rem 0;
+                color:$black;
+                font-family:poppins-regular;
+                span{
+                    margin-right:1.5rem;
+                }
+            }
+        }
+        .course-actions{
+            li{
+                a{
+                    text-transform: uppercase;
+                    padding: 0.6rem 1.6rem;
+                    border-radius: 3px;
+                    text-align: center;
+                    background-color: $secondry;
+                    height: 3.7rem;
+                    color: $white;
+                    border:1px solid $white;
+                    font-size:$navigation-font-basic;
+                }
+                button{
+                    text-transform: uppercase;
+                    padding: 0.6rem 1.6rem;
+                    border-radius: 3px;
+                    text-align: center;
+                    background-color: $light-grey;
+                    height: 3.7rem;
+                    color: $grey;
+                    border:1px solid $grey;
+                    font-size:$navigation-font-basic;
+                }
+            }
+        }
+   }
+}
