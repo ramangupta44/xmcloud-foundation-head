@@ -57,3 +57,11 @@ export const Default = (props: PageContentProps): JSX.Element => {
     </ComponentContent>
   );
 };
+export const CoursePageContent= (props: PageContentProps): JSX.Element => {
+  return(
+    <div className="component content coursepagecontent">
+    <Default params={props?.params} fields={props?.fields}/>
+    </div>
+  )
+}
+
