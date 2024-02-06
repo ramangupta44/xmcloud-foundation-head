@@ -589,18 +589,18 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
       courseListData?.CourseListingData?.total == undefined ? (
         <h4> No Results</h4>
       ) : (
-        <h1> Total Count : {courseListData?.CourseListingData?.total}</h1>
+        <h5> All courses {courseListData?.CourseListingData?.total}</h5>
       )}
       {courseListData?.CourseListingData?.results?.map((list, index) => {
         return (
           <div className="row" key={index}>
-            <div className="col-12 col-md-5 course-listing-image">
+            <div className="col-12 col-md-4 course-listing-image">
               <img
                 src={list?.thumbnailImage?.jsonValue?.value?.src}
                 alt={list?.thumbnailImage?.jsonValue?.value?.alt}
               />
             </div>
-            <div className="col-12 col-md-7 course-listing-details">
+            <div className="col-12 col-md-8 course-listing-details">
               <h6> {IterateData(list?.courseType)}</h6>
               <h5>{list?.title?.value} </h5>
               <RichText field={list?.content} tag="div" />
@@ -610,11 +610,13 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
                 <li> {IterateData(list?.location)}</li>
               </ul>
             </div>
-            {list?.applyNowURL?.jsonValue?.value?.href && (
-              <a href={list?.applyNowURL?.jsonValue?.value?.href}>
-                {list?.applyNowURL?.jsonValue?.value?.text}
-              </a>
-            )}
+            <div>
+              {list?.applyNowURL?.jsonValue?.value?.href && (
+                <a href={list?.applyNowURL?.jsonValue?.value?.href} className="view-details">
+                  {list?.applyNowURL?.jsonValue?.value?.text}
+                </a>
+              )}
+            </div>
           </div>
         );
       })}
