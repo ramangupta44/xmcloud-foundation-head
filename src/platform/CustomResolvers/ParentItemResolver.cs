@@ -9,7 +9,7 @@ using Sitecore.Mvc.Presentation;
 
 namespace XmCloudSXAStarter.CustomResolvers
 {
-    public class DatasourceWithParentItemResolver : RenderingContentsResolver
+    public class ParentItemResolver : RenderingContentsResolver
     {
         public override object ResolveContents(Rendering rendering, IRenderingConfiguration renderingConfig)
         {
