@@ -3,6 +3,25 @@
 
 .course-listing{
     padding: 3rem 0;
+    h5{
+        font-size:$font-small;
+        color:$black;
+        font-family: poppins-bold;
+        margin-bottom:1.5rem;
+    }
+    a.view-details{
+        float: right;
+        text-transform: uppercase;
+        padding: 0.6rem 1.6rem;
+        border-radius: 3px;
+        width: 12%;
+        text-align: center;
+        background-color: $secondry;
+        height: 3.7rem;
+        color: $white;
+        border:1px solid $white;
+        font-size:$navigation-font-basic;
+    }
     .course-listing-image{
         img{
             width: auto;
@@ -11,6 +30,7 @@
         }
     }
     .course-listing-details{
+        padding-left: 2rem;
         h6{
             font-size:$small;
             color:$grey;
@@ -20,6 +40,7 @@
             font-size:$font-small;
             color:$black;
             font-family: poppins-bold;
+            margin-bottom:1.5rem;
         }
         p{
             font-size: $small;
