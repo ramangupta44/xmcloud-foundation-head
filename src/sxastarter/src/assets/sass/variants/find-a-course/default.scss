@@ -31,10 +31,10 @@
             box-shadow: none;
         }
     }
-    button{
+    button, a{
         font-size: 14px;
         text-transform: uppercase;
-        padding: 0.5rem 1.6rem;
+        padding: .6rem 1.6rem;
         background-color: $secondry;
         border: 1px solid $secondry;
         border-radius: 3px;
