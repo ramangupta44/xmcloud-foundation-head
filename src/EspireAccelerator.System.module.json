@@ -18,6 +18,11 @@
                         "allowedPushOperations": "createUpdateAndDelete",
                         "scope": "itemAndDescendants"
                     },
+					{
+                        "path": "/Modules/Layout Service/Rendering Contents Resolvers/GlobalUniversityResolver",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
                     {
                         "path": "/Modules/Layout Service/Rendering Contents Resolvers",
                         "allowedPushOperations": "createUpdateAndDelete",
