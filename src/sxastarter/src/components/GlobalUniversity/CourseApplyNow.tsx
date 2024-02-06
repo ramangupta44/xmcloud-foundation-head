@@ -48,14 +48,18 @@ export const Default = (props: CourseApplyNowProps): JSX.Element => {
     <ComponentCourseApplyNow styles={props?.params?.styles} id={id}>
       <div>
         <RichText field={CourseIncludeField} />
-        <div className="course-actions">
-          <Link field={ApplyNowURLField} className="btn btn-primary">
-            Apply Now
-          </Link>
-          <button type="button" className="btn btn-secondary">
-            Add to Favorites
-          </button>
-        </div>
+        <ul className="course-actions">
+          <li>
+            <Link field={ApplyNowURLField} className="btn btn-primary">
+              Apply Now
+            </Link>
+          </li>
+          <li>
+            <button type="button" className="btn btn-secondary">
+              Add to Favorites
+            </button>
+          </li>
+        </ul>
       </div>
     </ComponentCourseApplyNow>
   );

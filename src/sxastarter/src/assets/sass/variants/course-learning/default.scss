@@ -1,14 +1,17 @@
 @import "../../abstracts/vars/media-screen";
 
 .courselearningobjectives{
+    h5{
+        margin-bottom:2rem;
+    }
     ul{
         li{
             font-size: $small;
-            margin: 0.5rem 0;
+            margin: 1.5rem 0;
             color:$black;
             font-family:poppins-regular;
             span{
-                margin-right:1rem;
+                margin-right:1.5rem;
             }
         }
     }
