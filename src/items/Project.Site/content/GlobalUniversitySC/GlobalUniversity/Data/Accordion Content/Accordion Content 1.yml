@@ -1,0 +1,29 @@
+﻿---
+ID: "5736a9e2-0038-4648-9fdc-b43f9ae9085a"
+Parent: "26cbd88a-8d27-4fb2-82b1-95734b371ae5"
+Template: "969f1cb1-3bc4-4901-8253-174aa4c643b9"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Accordion Content/Accordion Content 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240207T084118Z
+    - ID: "86bf227e-1f7d-48b5-9344-158b15938fbd"
+      Hint: Title
+      Value: Accordion Content Title 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "531636eb-abbd-41f2-ba6d-d26e528cea9b"
+    - ID: "adbf8619-9ee7-455b-9dd2-a7adeec55116"
+      Hint: Description
+      Value: Accordion Content Description 1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240207T103437Z
