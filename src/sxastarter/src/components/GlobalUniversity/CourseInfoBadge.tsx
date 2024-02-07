@@ -54,7 +54,7 @@ export const Default = (props: CourseInfoBadgeProps): JSX.Element => {
     <ComponentCourseInfoBadge styles={props?.params?.styles} id={id}>
       <div className={`component courseinfobadge ${props.params.styles}`} id={id ? id : undefined}>
         <div className="component-courseinfobadge">
-          <Text field={field} tag="h3" className="field-title" />
+          <Text field={field} tag="h6" className="field-title" />
         </div>
       </div>
     </ComponentCourseInfoBadge>
