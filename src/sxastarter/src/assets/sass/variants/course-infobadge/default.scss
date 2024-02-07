@@ -1,0 +1,10 @@
+@import "../../abstracts/vars";
+
+.courseinfobadge{
+    h6{
+        font-size:$breadcrumb-font;
+        color:$black;
+        font-family: 'poppins-regular';
+        margin-bottom:2rem;
+    }
+}
