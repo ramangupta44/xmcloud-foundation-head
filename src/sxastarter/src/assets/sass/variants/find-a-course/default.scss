@@ -1,4 +1,4 @@
-@import "../../abstracts/vars";
+@import "../../abstracts/vars/media-screen";
 
 #find-a-course{
     background-color: $light-grey;
@@ -31,12 +31,15 @@
             box-shadow: none;
         }
     }
-    a{
+    button, a{
         font-size: 14px;
         text-transform: uppercase;
         padding: .6rem 1.6rem;
         background-color: $secondry;
         border: 1px solid $secondry;
         border-radius: 3px;
+        // ::before{
+        //     background-image: url('../../../images/');
+        // }
     }
 }
