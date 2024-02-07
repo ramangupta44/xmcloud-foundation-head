@@ -10,7 +10,7 @@
         ul{
             li{
                 font-size: $small;
-                margin: .5rem 0;
+                margin: 1.5rem 0;
                 color:$black;
                 font-family:poppins-regular;
                 span{
@@ -30,6 +30,8 @@
                     color: $white;
                     border:1px solid $white;
                     font-size:$navigation-font-basic;
+                    width: 100%;
+                    margin-top: 1rem;
                 }
                 button{
                     text-transform: uppercase;
@@ -41,6 +43,8 @@
                     color: $grey;
                     border:1px solid $grey;
                     font-size:$navigation-font-basic;
+                    width:100%;
+                    margin-top:1rem;
                 }
             }
         }
