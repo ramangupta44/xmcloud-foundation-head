@@ -60,7 +60,7 @@ type TagTreeListData = {
   name: string;
 };
 
-type ItemSearchPredicate = {
+type ItemSearchPredicateInput = {
   name: string;
   value: string;
   operator: string;
@@ -452,9 +452,9 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
   const GetCourseData = async (
     path: string,
     template: string,
-    keyword: ItemSearchPredicate = defaultKeywordObject,
-    courseType: ItemSearchPredicate = defaultCourseTypeObject,
-    courseCategory: ItemSearchPredicate = defaultCourseCategoryObject,
+    keyword: ItemSearchPredicateInput = defaultKeywordObject,
+    courseType: ItemSearchPredicateInput = defaultCourseTypeObject,
+    courseCategory: ItemSearchPredicateInput = defaultCourseCategoryObject,
     orderBy: ItemSearchOrderByInput = defaultOrderBy
   ): Promise<unknown> => {
     const { data } = await apolloClient.query({
@@ -477,7 +477,6 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
       ?.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       ?.join(' ');
   }
-
   useEffect(() => {
     (async () => {
       if (
@@ -596,10 +595,13 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
           const courseData = await GetCourseData(path, template, updatedKeywordObject);
           setCourseListData(courseData as CourseListingData);
         } else '';
+      } else {
+        const courseData = await GetCourseData(path, template);
+        setCourseListData(courseData as CourseListingData);
       }
     })();
   }, [path, keyword, type, category]);
-
+  console.log('courseListData', courseListData);
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSortBy(e.target.value);
     if (toPascalCase(e.target.value) == 'Title') {
