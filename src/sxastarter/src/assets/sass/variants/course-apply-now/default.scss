@@ -2,6 +2,9 @@
 
 .courseapplynow{
     padding-left:4rem;
+    @media screen and (max-width:$screen-md ) {
+        padding-left:1rem;
+    }
    .field-courseapplynow{
         background-color:$light-grey;
         border:1px solid $light-grey;
@@ -28,7 +31,7 @@
                     background-color: $secondry;
                     height: 3.7rem;
                     color: $white;
-                    border:1px solid $white;
+                    border:1px solid $secondry;
                     font-size:$navigation-font-basic;
                     width: 100%;
                     margin-top: 1rem;

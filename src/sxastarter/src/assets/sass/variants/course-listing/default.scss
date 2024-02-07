@@ -3,6 +3,9 @@
 
 .course-listing {
     padding: 3rem 0;
+    @media screen and (max-width:$screen-md ) {
+        padding: 3rem 1rem;
+    }
     h5 {
         font-size: $font-small;
         color: $black;
@@ -23,6 +26,9 @@
         font-size: $navigation-font-basic;
         font-family: 'poppins-regular';
         position: relative;
+        @media screen and (max-width:$screen-md ) {
+            width:50%;
+        }
         &:before{
             content: "";
             background-image: url(/_next/static/media/Arrow_white.2e219508.png);
@@ -40,11 +46,18 @@
         display: flex;
         justify-content: flex-end;
         gap: 40px;
+        @media screen and (max-width:$screen-md ) {
+            justify-content: flex-start;
+        }
         select {
             width: 35%;
             padding: 0.8rem;
             font-size: 12px;
             color: $grey;
+            @media screen and (max-width:$screen-md ) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
         }
         .sorting-list {
             height: 40px;
@@ -52,6 +65,9 @@
             background-color: $grey;
             border-radius: 5px;
             padding-top: 9px;
+            @media screen and (max-width:$screen-md ) {
+                display: none;
+            }
             span {
                 height: 2px;
                 width: 14px;
@@ -67,6 +83,9 @@
             border: 1px solid $grey;
             border-radius: 5px;
             padding-top: 8px;
+            @media screen and (max-width:$screen-md ) {
+                display: none;
+            }
             span {
                 height: 15px;
                 width: 14px;
@@ -86,11 +105,17 @@
     }
     .course-listing-details {
         padding-left: 4rem;
+        @media screen and (max-width:$screen-md ) {
+            padding-left:1rem;
+        }
         h6 {
             font-size: $small;
             color: $grey;
             font-family: poppins-regular;
             font-weight: 400;
+            @media screen and (max-width:$screen-md ) {
+                margin-top:2rem;
+            }
         }
         h5 {
             font-size: $font-small;
@@ -105,6 +130,9 @@
         }
         ul {
             gap: 40px;
+            @media screen and (max-width:$screen-md ) {
+               margin-bottom:3rem;
+            }
             li {
                 font-size: $listing-font;
                 color: $black;

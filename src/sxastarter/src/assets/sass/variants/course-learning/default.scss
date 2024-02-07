@@ -10,8 +10,10 @@
             margin: 1.5rem 0;
             color:$black;
             font-family:poppins-regular;
+            padding-left: 3rem;
             span{
-                margin-right:1.5rem;
+                position: absolute;
+                left: 1.2rem;
             }
         }
     }
