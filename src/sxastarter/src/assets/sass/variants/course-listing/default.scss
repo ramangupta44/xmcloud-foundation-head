@@ -1,8 +1,27 @@
 // imort basic style 
-@import "../../abstracts/vars/";
+@import "../../abstracts/vars";
 
 .course-listing {
     padding: 3rem 0;
+    h5 {
+        font-size: $font-small;
+        color: $black;
+        font-family: poppins-bold;
+        margin-bottom: 1.5rem;
+    }
+    a.view-details {
+        float: right;
+        text-transform: uppercase;
+        padding: 0.6rem 1.6rem;
+        border-radius: 3px;
+        width: 12%;
+        text-align: center;
+        background-color: $secondry;
+        height: 3.7rem;
+        color: $white;
+        border: 1px solid $white;
+        font-size: $navigation-font-basic;
+    }
     .sorting {
         display: flex;
         justify-content: flex-end;
@@ -50,79 +69,61 @@
             max-width: 100%;
             border-radius: 16px;
         }
+    }
+    .course-listing-details {
+        padding-left: 4rem;
+        h6 {
+            font-size: $small;
+            color: $grey;
+            font-family: poppins-regular;
+        }
         h5 {
             font-size: $font-small;
             color: $black;
             font-family: poppins-bold;
             margin-bottom: 1.5rem;
         }
-        a.view-details {
-            float: right;
-            text-transform: uppercase;
-            padding: 0.6rem 1.6rem;
-            border-radius: 3px;
-            width: 12%;
-            text-align: center;
-            background-color: $secondry;
-            height: 3.7rem;
-            color: $white;
-            border: 1px solid $white;
-            font-size: $navigation-font-basic;
+        p {
+            font-size: $small;
+            color: $black;
+            font-family: poppins-regular;
         }
-        .course-listing-details {
-            padding-left: 2rem;
-            h6 {
-                font-size: $small;
-                color: $grey;
-                font-family: poppins-regular;
-            }
-            h5 {
-                font-size: $font-small;
-                color: $black;
-                font-family: poppins-bold;
-                margin-bottom: 1.5rem;
-            }
-            p {
-                font-size: $small;
+        ul {
+            gap: 40px;
+            li {
+                font-size: $listing-font;
                 color: $black;
                 font-family: poppins-regular;
-            }
-            ul {
-                gap: 40px;
-                li {
-                    font-size: $listing-font;
-                    color: $black;
-                    font-family: poppins-regular;
-                    padding-left: 3rem;
-                    position: relative;
-                    &:nth-child(1) {
-                        &:after {
-                            content: "";
-                            background-image: url("../../../images/campus.svg");
-                            background-repeat: no-repeat;
-                            height: 30px;
-                            width: 30px;
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                        }
+                padding-left: 3rem;
+                position: relative;
+                &:nth-child(1) {
+                    &:after {
+                        content: "";
+                        background-image: url("../../../images/campus.svg");
+                        background-repeat: no-repeat;
+                        height: 30px;
+                        width: 30px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
                     }
-                    &:nth-child(2) {
-                        &:after {
-                            content: "";
-                            background-image: url("../../../images/location.svg");
-                            background-repeat: no-repeat;
-                            height: 30px;
-                            width: 30px;
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                        }
+                }
+                &:nth-child(2) {
+                    &:after {
+                        content: "";
+                        background-image: url("../../../images/location.svg");
+                        background-repeat: no-repeat;
+                        height: 30px;
+                        width: 30px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
                     }
                 }
             }
         }
     }
 }
+
