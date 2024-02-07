@@ -29,6 +29,9 @@ type CourseListingResult = {
   courseType: TagTreeListProps;
   location: TagTreeListProps;
   studyMode: TagTreeListProps;
+  url: {
+    path: string;
+  };
 };
 
 type LinkField = {
@@ -61,6 +64,11 @@ type ItemSearchPredicate = {
   name: string;
   value: string;
   operator: string;
+};
+
+type ItemSearchOrderByInput = {
+  name: string;
+  direction: string;
 };
 
 const IterateData = (input: TagTreeListProps): ReactNode => {
@@ -416,6 +424,7 @@ export const ListCard = (props: ListingProps): JSX.Element => {
 export const CourseListing = (props: ListingProps): JSX.Element => {
   const router = useRouter();
   const [courseListData, setCourseListData] = useState<CourseListingData>();
+  const [sortBy, setSortBy] = useState('relevance');
   const path = props?.params?.Scope;
   const template = props?.params?.Template;
   const { keyword, category, type } = router?.query;
@@ -436,12 +445,17 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
     operator: 'CONTAINS',
   };
 
+  const defaultOrderBy = {
+    name: 'Title',
+    direction: 'DESC',
+  };
   const GetCourseData = async (
     path: string,
     template: string,
     keyword: ItemSearchPredicate = defaultKeywordObject,
     courseType: ItemSearchPredicate = defaultCourseTypeObject,
-    courseCategory: ItemSearchPredicate = defaultCourseCategoryObject
+    courseCategory: ItemSearchPredicate = defaultCourseCategoryObject,
+    orderBy: ItemSearchOrderByInput = defaultOrderBy
   ): Promise<unknown> => {
     const { data } = await apolloClient.query({
       query: GlobalUniversity_Course_Listing_Query,
@@ -451,6 +465,7 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
         keyword: keyword,
         courseType: courseType,
         courseCategory: courseCategory,
+        orderBy: orderBy,
       },
     });
     return data;
@@ -473,6 +488,7 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
         keyword != undefined
       ) {
         //When all fields are empty
+
         if (keyword == '' && type == ' ' && category == ' ') {
           const courseData = await GetCourseData(path, template);
           setCourseListData(courseData as CourseListingData);
@@ -583,24 +599,204 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
       }
     })();
   }, [path, keyword, type, category]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSortBy(e.target.value);
+    if (toPascalCase(e.target.value) == 'Title') {
+      const updatedTitleFilter = {
+        ...defaultOrderBy,
+        direction: 'ASC',
+      };
+      (async () => {
+        if (keyword == '' && type == ' ' && category == ' ') {
+          const courseData = await GetCourseData(
+            path,
+            template,
+            defaultKeywordObject,
+            defaultCourseTypeObject,
+            defaultCourseCategoryObject,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword == '' && type != ' ' && category != ' ') {
+          //when only keyword is empty
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            defaultKeywordObject,
+            updatedCourseType,
+            updatedCourseCategory,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type == ' ' && category != ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            defaultCourseTypeObject,
+            updatedCourseCategory,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type != ' ' && category == ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            updatedCourseType,
+            defaultCourseCategoryObject,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type != ' ' && category != ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            updatedCourseType,
+            updatedCourseCategory,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword == '' && type == ' ' && category != ' ') {
+          const updatedCourseCategory = {
+            ...defaultCourseCategoryObject,
+            value: toPascalCase(router?.query?.category as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            defaultKeywordObject,
+            defaultCourseTypeObject,
+            updatedCourseCategory,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword == '' && type != ' ' && category == ' ') {
+          const updatedCourseType = {
+            ...defaultCourseTypeObject,
+            value: toPascalCase(router?.query?.type as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            defaultKeywordObject,
+            updatedCourseType,
+            defaultCourseCategoryObject,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else if (keyword != '' && type == ' ' && category == ' ') {
+          const updatedKeywordObject = {
+            ...defaultKeywordObject,
+            value: toPascalCase(router?.query?.keyword as string),
+            operator: 'CONTAINS',
+          };
+          const courseData = await GetCourseData(
+            path,
+            template,
+            updatedKeywordObject,
+            defaultCourseTypeObject,
+            defaultCourseCategoryObject,
+            updatedTitleFilter
+          );
+          setCourseListData(courseData as CourseListingData);
+        } else '';
+      })();
+    }
+  };
   return (
     <div className="container course-listing">
-      {courseListData?.CourseListingData?.total == 0 ||
-      courseListData?.CourseListingData?.total == undefined ? (
-        <h4> No Results</h4>
-      ) : (
-        <h5> All courses {courseListData?.CourseListingData?.total}</h5>
-      )}
+      <div className="row">
+        <div className="col-lg-6">
+          {courseListData?.CourseListingData?.total == 0 ||
+          courseListData?.CourseListingData?.total == undefined ? (
+            <h4> No Results</h4>
+          ) : (
+            <h1> Total Count : {courseListData?.CourseListingData?.total}</h1>
+          )}
+        </div>
+        <div className="col-lg-6">
+          <div className="sorting">
+            <select
+              className="form-select"
+              aria-label="Default select example"
+              name={'sortby'}
+              defaultValue={sortBy}
+              onChange={handleChange}
+            >
+              <option value="title">Sort By : Name </option>
+              <option value="relevance">Sort By : Relevance </option>
+            </select>
+            <div className="sorting-list">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className="sorting-grid-view">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
       {courseListData?.CourseListingData?.results?.map((list, index) => {
         return (
           <div className="row" key={index}>
-            <div className="col-12 col-md-4 course-listing-image">
+            <div className="col-12 col-md-5 course-listing-image">
               <img
                 src={list?.thumbnailImage?.jsonValue?.value?.src}
                 alt={list?.thumbnailImage?.jsonValue?.value?.alt}
               />
             </div>
-            <div className="col-12 col-md-8 course-listing-details">
+            <div className="col-12 col-md-7 course-listing-details">
               <h6> {IterateData(list?.courseType)}</h6>
               <h5>{list?.title?.value} </h5>
               <RichText field={list?.content} tag="div" />
@@ -611,11 +807,9 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
               </ul>
             </div>
             <div>
-              {list?.applyNowURL?.jsonValue?.value?.href && (
-                <a href={list?.applyNowURL?.jsonValue?.value?.href} className="view-details">
-                  {list?.applyNowURL?.jsonValue?.value?.text}
-                </a>
-              )}
+              <a href={list?.url?.path} className="view-details">
+                DETAILS
+              </a>
             </div>
           </div>
         );

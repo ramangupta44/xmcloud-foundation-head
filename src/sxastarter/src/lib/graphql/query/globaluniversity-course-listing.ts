@@ -6,6 +6,7 @@ export const GlobalUniversity_Course_Listing_Query = gql`
     $keyword: ItemSearchPredicate
     $courseType: ItemSearchPredicate
     $courseCategory: ItemSearchPredicate
+    $orderBy: ItemSearchOrderByInput
   ) {
     CourseListingData: search(
       where: {
@@ -18,6 +19,7 @@ export const GlobalUniversity_Course_Listing_Query = gql`
         ]
       }
       first: 10
+      orderBy: $orderBy
     ) {
       total
       pageInfo {
