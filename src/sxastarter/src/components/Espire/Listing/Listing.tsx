@@ -808,7 +808,7 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
             </div>
             <div>
               <a href={list?.url?.path} className="view-details">
-                DETAILS
+                View Details
               </a>
             </div>
           </div>
