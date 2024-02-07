@@ -601,7 +601,6 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
       }
     })();
   }, [path, keyword, type, category]);
-  console.log('courseListData', courseListData);
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSortBy(e.target.value);
     if (toPascalCase(e.target.value) == 'Title') {
