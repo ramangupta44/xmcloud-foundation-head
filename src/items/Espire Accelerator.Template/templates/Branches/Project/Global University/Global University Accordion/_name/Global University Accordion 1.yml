@@ -1,0 +1,29 @@
+﻿---
+ID: "27dd8cff-fbfc-44d3-b0b6-c356ed1a1e85"
+Parent: "6b161cf5-ee7b-4daf-884c-15d1e51603ba"
+Template: "73fd368a-f26b-48e4-912a-23c22589997e"
+Path: /sitecore/templates/Branches/Project/Global University/Global University Accordion/$name/Global University Accordion 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240207T104353Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0694ec7f-dc3f-4c57-93ca-3f5cd7a01831"
+    - ID: "a17b5cb2-f244-44d4-9330-78545dc67757"
+      Hint: Content
+      Value: "{5736A9E2-0038-4648-9FDC-B43F9AE9085A}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240207T105805Z
+    - ID: "e58232b0-cda3-41c7-b676-9f5500bfc427"
+      Hint: Title
+      Value: Global University Accordion 1
