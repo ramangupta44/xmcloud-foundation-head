@@ -1,0 +1,7 @@
+<svg id="favourite" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="bound" width="32" height="32" rx="8" fill="#030404" opacity="0.24"/>
+  <g id="heart" transform="translate(4 4)">
+    <rect id="bound-2" data-name="bound" width="24" height="24" fill="none"/>
+    <path id="Icon_feather-heart" data-name="Icon feather-heart" d="M17.089,5.735a4.2,4.2,0,0,0-5.955,0l-.811.814-.811-.814a4.218,4.218,0,1,0-5.955,5.974l.811.814L10.323,18.5l5.955-5.974.811-.814a4.233,4.233,0,0,0,0-5.974Z" transform="translate(1.677 0.503)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
