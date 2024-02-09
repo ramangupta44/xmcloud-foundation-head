@@ -26,6 +26,7 @@
 *.log*
 
 # sitecore
+scjssconfig.json
 *.deploysecret.config
 
 # vercel

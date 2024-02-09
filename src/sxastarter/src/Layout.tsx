@@ -4,14 +4,14 @@
 import React from 'react';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs/utils';
+import config from 'temp/config';
 import Scripts from 'src/Scripts';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 import Cookie from 'components/Espire/Header/Cookie';
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
-const publicUrl = getPublicUrl();
+const publicUrl = config.publicUrl;
 
 interface LayoutProps {
   layoutData: LayoutServiceData;
