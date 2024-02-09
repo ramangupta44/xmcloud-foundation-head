@@ -85,7 +85,10 @@ export const Badge = (props: CourseInfoBadgeProps): JSX.Element => {
 
   return (
     <ComponentCourseInfoBadge styles={props?.params?.styles} id={id}>
-      <div className={`component courseinfobadge badge ${props.params.styles}`} id={id ? id : undefined}>
+      <div
+        className={`component courseinfobadge badge ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         <div className="component-courseinfobadge badge">
           <Text field={field} tag="h6" className="field-title" />
         </div>
