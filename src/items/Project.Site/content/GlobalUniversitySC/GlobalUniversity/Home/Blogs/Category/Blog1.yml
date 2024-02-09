@@ -1,0 +1,81 @@
+﻿---
+ID: "2683341f-c300-4719-855e-075bcddd1396"
+Parent: "b094872d-d331-4f7a-be7d-d070e5d054d7"
+Template: "767ca4c3-8e0c-4097-8c86-6e9bb18bdaca"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Blogs/Category/Blog1
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{2D5C3B0A-6F48-45F6-AAF1-AEDE45F1D2AD}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{61C7025B-BCB3-4817-A9E6-4A4C450CEFA1}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{BC9DA5EF-F161-413A-A000-447C352FC73E}"
+              p:before="*"
+              s:ds=""
+              s:id="{2BA964AE-64FD-43D6-A08B-F41B7042D96A}"
+              s:par="GridParameters&amp;FieldNames=%7B1977DC28-B525-4618-B553-DF128B6E47BA%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+            <r
+              uid="{C4CBB1E8-BF3C-4249-87A7-109A1E6B6FA5}"
+              p:after="r[@uid='{BC9DA5EF-F161-413A-A000-447C352FC73E}']"
+              s:ds=""
+              s:id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
+              s:par="Reset Caching Options&amp;GridParameters&amp;FieldNames=%7B1328371F-26DF-4EE5-91AC-9FC1A9D84F6B%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+            <r
+              uid="{F87EB8C0-7BD7-4F03-9732-35ADF500B0A2}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{B973A7DC-7B58-4B0A-8230-B49568A4024B}"
+              s:par="GridParameters&amp;FieldNames=%7BD30A6DD8-9CC3-4908-8130-54DD965FAD61%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240209T080159Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Blog1
+    - ID: "6eada2d9-c04f-4e6d-b478-ee49d56d8c1d"
+      Hint: ThumbnailImage
+      Value: |
+        <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
+    - ID: "897ebcfb-a5f6-40ed-ace7-e11176fd7c20"
+      Hint: Content
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f56eba40-28c9-4368-ba8d-f0a12cf6c95a"
+    - ID: "8ee6bced-a8d9-4677-a99b-817b527a714c"
+      Hint: Image
+      Value: |
+        <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
+    - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
+      Hint: Title
+      Value: Blog1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240209T081811Z
