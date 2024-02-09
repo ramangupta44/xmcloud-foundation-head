@@ -40,6 +40,14 @@ Languages:
               s:ph="headless-main"
               s:ccb="Clear on publish" />
             <r
+              uid="{F7E618F5-3D14-4078-8C15-B8A7A793691A}"
+              p:after="r[@uid='{C4CBB1E8-BF3C-4249-87A7-109A1E6B6FA5}']"
+              s:ds=""
+              s:id="{C8D5D160-8F1E-42B1-ADA9-FBC3DE9980F2}"
+              s:par="GridParameters&amp;FieldNames=%7B391BF0E7-CFB1-44EB-AEAA-60CED7374F67%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+            <r
               uid="{F87EB8C0-7BD7-4F03-9732-35ADF500B0A2}"
               p:after="*[1=2]"
               s:ds=""
@@ -64,11 +72,14 @@ Languages:
       Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f56eba40-28c9-4368-ba8d-f0a12cf6c95a"
+      Value: "f12592fd-f7a9-4644-9ba9-016e01e153e3"
     - ID: "8ee6bced-a8d9-4677-a99b-817b527a714c"
       Hint: Image
       Value: |
         <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
+    - ID: "9e6a4e23-2254-47d0-9bcf-5732feefa465"
+      Hint: PublishingDate
+      Value: 20240209T094200Z
     - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
       Hint: Title
       Value: Blog1
@@ -78,4 +89,4 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240209T081811Z
+      Value: 20240209T094254Z
