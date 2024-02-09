@@ -12,6 +12,10 @@
         font-family: poppins-bold;
         margin-bottom: 1.5rem;
     }
+    img{
+        padding-top: 0.5rem;
+        margin-right: 2rem;
+    }
     a.view-details {
         float: right;
         text-transform: uppercase;
@@ -26,6 +30,7 @@
         font-size: $navigation-font-basic;
         font-family: 'poppins-regular';
         position: relative;
+        margin-bottom:3rem;
         @media screen and (max-width:$screen-md ) {
             width:50%;
         }
