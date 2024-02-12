@@ -1,0 +1,32 @@
+﻿---
+ID: "e444bec6-757b-4444-adb4-202c6bd755f6"
+Parent: "69fb17ca-b13a-4648-8a2b-b3df7a748038"
+Template: "de7c8785-d56b-44cc-858b-2034349fb222"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Author Details/Author2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240212T072111Z
+    - ID: "85ca2380-480a-4fa2-a714-326874e39e7e"
+      Hint: Image
+      Value: 
+    - ID: "86bf227e-1f7d-48b5-9344-158b15938fbd"
+      Hint: Title
+      Value: check1212
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fe39be47-d2f4-406b-930f-6bf8072a3049"
+    - ID: "adbf8619-9ee7-455b-9dd2-a7adeec55116"
+      Hint: Description
+      Value: test1212
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240212T104335Z

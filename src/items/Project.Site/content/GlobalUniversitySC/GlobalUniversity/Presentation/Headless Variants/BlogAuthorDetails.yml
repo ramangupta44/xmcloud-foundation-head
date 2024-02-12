@@ -1,18 +1,16 @@
 ﻿---
-ID: "adbf8619-9ee7-455b-9dd2-a7adeec55116"
-Parent: "c3db10dc-1e79-48c8-9067-12b30db513bc"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/Global University/Global University Title With Description/Deatils/Description
+ID: "c48b7a4c-4ab9-4d2f-9f12-8b0951a36fb9"
+Parent: "4ca3b218-330f-4b61-8ab3-782f6c3b2068"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Headless Variants/BlogAuthorDetails
+BranchID: "2c42ac87-6f2f-4803-8777-c5dfee5cd941"
 SharedFields:
-- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
-  Hint: Source
-  Value: "query:$xaRichTextProfile"
-- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
-  Hint: Type
-  Value: Rich Text
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 200
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{89095E8D-013F-4C98-B7CF-D8261922B0BC}"
 Languages:
 - Language: en
   Versions:
@@ -20,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240207T084008Z
+      Value: 20240109T102647Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -31,11 +29,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "925eac42-2892-4eb1-8380-22ca3fcd9e38"
+      Value: "bfed779c-ca5f-48dd-a892-3aa9eaa06086"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240207T084008Z
+      Value: 20240209T094057Z
