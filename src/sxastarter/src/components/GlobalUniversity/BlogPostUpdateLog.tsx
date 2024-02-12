@@ -61,10 +61,10 @@ export const Default = (props: BlogPostUpdateLogProps): JSX.Element => {
       >
         <div className="component-blogpostupdatelog">
           <div className="last-updated-container">
-            <h6 className="field-publishingdate">
+            <p className="field-publishingdate">
               <span>Last Updated: </span>
               {formattedDate}
-            </h6>
+            </p>
           </div>
         </div>
       </div>
