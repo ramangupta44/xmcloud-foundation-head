@@ -9,6 +9,7 @@
   }
   a {
     color: $white;
+    font-size: $navigation-font-basic;
   }
   .link {
     padding: 10px;
@@ -40,7 +41,7 @@
       }
       li {
         display: inline-block;
-        padding-left: 2.5rem;
+        margin: 0 1rem;
       }
     }
   }
@@ -49,6 +50,10 @@
     font-size: 1.2rem;
     background-color: #0c1f31;
     color: $white;
+    margin-top: 0.5rem;
+    &:focus {
+      border: none;
+    }
   }
   img {
     max-width: 90px;
@@ -56,7 +61,13 @@
       max-width: 60px;
     }
   }
-
+  .navigation.navigation-main {
+    .component-content > nav {
+      .rel-level1 {
+        margin:0 1rem;
+      }
+    }
+  }
   .navigation.navigation-main .rel-level1.submenu > .navigation-title {
     a {
       &::after {
@@ -69,7 +80,7 @@
       .rel-level1 {
         &:hover {
           .rel-level2 {
-            background: $white;
+            background: white;
             .navigation-title {
               span {
                 color: black;
@@ -77,11 +88,11 @@
             }
           }
         }
-        // &.last {
-        //   a {
-        //     padding-right: 0;
-        //   }
-        // }
+        &.last {
+          a {
+            padding-right: 0;
+          }
+        }
         > .navigation-title {
           a {
             &:hover {
@@ -114,11 +125,11 @@
 
   .search-bar-default {
     margin: auto;
+    input{
+      padding: 0.7rem;
+    }
     @include respond-to(below-laptop) {
       padding: 0 3rem 0 2rem;
-    }
-    @include respond-to(mobile-to-tablet) {
-      padding-right: 0;
     }
   }
 
@@ -172,23 +183,11 @@
         &::before {
           content: url("../../../public/hamburger-icon.svg");
           display: inline-block;
-          @include respond-to(mobile-to-tablet) {
-            margin-top: 10px;
-          }
         }
-      }
-      @include respond-to(mobile-to-tablet) {
-        padding-right: 0;
       }
     }
     .image {
-      padding-top: 15px;
-      a{
-        @include respond-to(mobile-to-tablet) {
-          padding-bottom: 10px;
-        }
-       
-      }
+      padding-bottom: 10px;
     }
     &.container {
       @include respond-to(below-laptop) {
