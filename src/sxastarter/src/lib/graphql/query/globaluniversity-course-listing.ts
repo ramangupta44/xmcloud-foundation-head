@@ -3,9 +3,9 @@ export const GlobalUniversity_Course_Listing_Query = gql`
   query CourseListing(
     $path: String
     $template: String
-    $keyword: ItemSearchPredicate
-    $courseType: ItemSearchPredicate
-    $courseCategory: ItemSearchPredicate
+    $keyword: ItemSearchPredicateInput
+    $courseType: ItemSearchPredicateInput
+    $courseCategory: ItemSearchPredicateInput
     $orderBy: ItemSearchOrderByInput
   ) {
     CourseListingData: search(

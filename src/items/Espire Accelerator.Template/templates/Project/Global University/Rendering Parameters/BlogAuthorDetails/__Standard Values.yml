@@ -1,0 +1,27 @@
+﻿---
+ID: "8fbb7290-efa6-42b8-8af1-67f0e73a3390"
+Parent: "8891cf32-428c-4698-a5d0-7c8de18c2a12"
+Template: "8891cf32-428c-4698-a5d0-7c8de18c2a12"
+Path: /sitecore/templates/Project/Global University/Rendering Parameters/BlogAuthorDetails/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4cfc161a-3a9e-4e37-9530-bab3a8b2b109"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240212T075817Z

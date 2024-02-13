@@ -1,18 +1,14 @@
 ﻿---
-ID: "49e6f4ce-8b6e-4214-a563-3d6bda0a7ce1"
-Parent: "d8772b6d-b942-4ab1-b200-eb77e16db11e"
-Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Project/Global University/CourseLearningObjectives
+ID: "e96763cb-bde2-4808-b4b6-051f3d416394"
+Parent: "6149a0a1-d933-4c7d-97fb-11e0b45dc7b2"
+Template: "6149a0a1-d933-4c7d-97fb-11e0b45dc7b2"
+Path: /sitecore/templates/Project/Global University/BlogAuthorDetailsFolder/__Standard Values
 SharedFields:
-- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
-  Hint: componentName
-  Value: CourseLearningObjectives
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
-  Hint: __Icon
-  Value: Applications/32x32/document_check.png
-- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
-  Hint: Parameters Template
-  Value: "{D7B30C4E-57F5-4F63-B173-4A720760ECB2}"
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {6149A0A1-D933-4C7D-97FB-11E0B45DC7B2}
+    {DE7C8785-D56B-44CC-858B-2034349FB222}
 Languages:
 - Language: en
   Versions:
@@ -20,7 +16,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240201T103617Z
+      Value: 20240207T083529Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -31,11 +27,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "59d5f0db-574b-4bf9-8ed2-6b2806da4533"
+      Value: "41856b2b-8bbb-4ef8-9421-230446251850"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240212T103442Z
+      Value: 20240212T093923Z
