@@ -25,13 +25,13 @@ type Accordion = {
 };
 export const GlobalUniversityAccordion = (props: GlobalUniversityAccordionProps): JSX.Element => {
   return (
-    <div className={`accordion ${props.params.styles}`}>
+    <div className={`container accordion ${props.params.styles}`}>
       <Accordion>
         {props?.fields?.items?.map((item, index) => {
           return (
             <Accordion.Item eventKey={index as unknown as string} key={index}>
               <Accordion.Header>
-                <Text field={item?.fields?.Title} tag="div" />
+                <Text field={item?.fields?.Title} tag="h6" />
               </Accordion.Header>
               {item?.fields?.Content?.map((body, index) => {
                 return (

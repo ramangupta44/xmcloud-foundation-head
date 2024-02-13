@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { GlobalUniversity_Course_Listing_Query } from 'lib/graphql/query/globaluniversity-course-listing';
 import { ReactNode, SetStateAction, useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Fav from '../../../assets/images/favourite.svg';
+import Images from '../../../assets/images/favourite.svg';
 
 import {
   ActualData,
@@ -811,7 +811,7 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
             </div>
             <div className="d-flex justify-content-end">
               <span>
-                <img src={Fav} alt="favourite" />
+                <img src={Images} alt="Fav Icon" />
               </span>
               <a href={list?.url?.path} className="view-details">
                 View Details

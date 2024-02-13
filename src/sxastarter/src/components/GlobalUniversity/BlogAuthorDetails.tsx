@@ -1,5 +1,11 @@
 import React from 'react';
-import { Field, ImageField, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  RichText as JssRichText,
+  Field,
+  ImageField,
+  RichTextField,
+  useSitecoreContext,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Author: AuthorCategory[];
@@ -7,7 +13,7 @@ interface Fields {
 type AuthorCategory = {
   fields: {
     Title: Field<string>;
-    Description: Field<string>;
+    Description: RichTextField;
     Image: ImageField;
   };
 };
@@ -46,21 +52,23 @@ export const Default = (props: BlogAuthorDetailsProps): JSX.Element => {
       typeof author.fields.Image?.value?.alt === 'string'
         ? author.fields.Image.value.alt
         : 'Author image';
-
     return (
-      <div key={index}>
-        {author.fields.Image?.value?.src && (
-          <img src={author.fields.Image.value.src} alt={altText} />
-        )}
-        <h2>{author.fields.Title.value}</h2>
-        <p>{author.fields.Description.value}</p>
+      <div key={index} className="row">
+        <div className="col-lg-2">
+          {author.fields.Image?.value?.src && (
+            <img src={author.fields.Image.value.src} alt={altText} />
+          )}
+        </div>
+        <div className="col-lg-10">
+          <h5>{author.fields.Title.value}</h5>
+          <JssRichText field={author.fields.Description} />
+        </div>
       </div>
     );
   });
-
   return (
     <ComponentBlogAuthorDetails styles={props?.params?.styles} id={id}>
-      <div className={`BlogAuthor-information ${props?.params?.styles}`} id={id}>
+      <div className={`blogAuthor-information ${props?.params?.styles}`} id={id}>
         {authorDetailsComponent}
       </div>
     </ComponentBlogAuthorDetails>
