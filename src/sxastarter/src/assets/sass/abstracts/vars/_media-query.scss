@@ -1,0 +1,36 @@
+
+/**
+ * Screen size variables
+ *
+ * Use these variables when creating media queries for responsive
+ * design implementation
+ * Styleguide: Sass.Variables.Responsive.Screen sizes
+ *
+ */
+
+
+$content-width-xs: 510px;
+$content-width-sm: 690px;
+$content-width-md: 930px;
+$content-width-lg: 1140px;
+$container-width: 1365px;
+
+$screen-xs: 480px !default;
+$screen-phone: $screen-xs !default;
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+$screen-md: 992px !default;
+
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$ipad:1024px;

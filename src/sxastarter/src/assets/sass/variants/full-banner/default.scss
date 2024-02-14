@@ -1,0 +1,23 @@
+@import "../../abstracts/vars/";
+
+.banner-default{
+  &::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+  }
+  h1{
+    margin-bottom: 2rem;
+    line-height: 66px;
+    @media screen and (max-width:$screen-sm) {
+      font-size:$font-medium;
+      line-height: 1.2;
+    }
+  }
+}
