@@ -1,3 +1,4 @@
+@import "../sass/abstracts/vars/";
 #header {
   color: $white;
   > .container {
@@ -47,10 +48,10 @@
   }
   select,
   option {
-    font-size: 1.2rem;
-    background-color: #0c1f31;
-    color: $white;
-    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    background-color: $white;
+    color: $brand-color;
+    padding: 0.7rem;
     &:focus {
       border: none;
     }
@@ -120,13 +121,33 @@
         }
       }
     }
-    margin: auto 0 auto auto;
+    margin: auto 0 0 auto;
   }
 
   .search-bar-default {
     margin: auto;
+    button#search-btn{
+      padding: 0.7rem;
+      background-color: $primary-light;
+      border: 1px solid $primary-light;
+      outline:0;
+      box-shadow:none;
+      i{
+        font-size: $small;
+        padding-left: 0.3rem;
+      }
+    }
     input{
       padding: 0.7rem;
+      background-color: $primary-light;
+      border: 1px solid $primary-light;
+      &::placeholder{
+        color:$white;
+        font-size: $small;
+      }
+      &:focus{
+        border:none;
+      }
     }
     @include respond-to(below-laptop) {
       padding: 0 3rem 0 2rem;
