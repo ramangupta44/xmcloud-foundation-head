@@ -12,13 +12,13 @@ SharedFields:
   Value: /~/icon/businessv2/32x32/credit_cards_add.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Branches/Project/Global University/Global University Accordion
+  Value: /sitecore/templates/Project/Global University/Global University Accordion
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{3A81E6A5-A82C-4143-9387-8753AB8B88B1}"
 - ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
   Hint: Rendering Contents Resolver
-  Value: "{2F5C334E-5615-423C-8281-9FC180191302}"
+  Value: 
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "query:$site/*[@@name='Data']/*[@@templatename='Global University Accordion Data Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Global University Accordion Data Folder']"
@@ -44,11 +44,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cc9c8094-a2eb-4f94-b986-9cacbaadfa90"
+      Value: "d8845134-3386-4c98-abac-8a9a6c4c565f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240207T105647Z
+      Value: 20240215T125825Z
