@@ -60,6 +60,7 @@ export const Default = (props: BlogAuthorDetailsProps): JSX.Element => {
           )}
         </div>
         <div className="col-lg-10">
+          <p>Author</p>
           <h5>{author.fields.Title.value}</h5>
           <JssRichText field={author.fields.Description} />
         </div>
