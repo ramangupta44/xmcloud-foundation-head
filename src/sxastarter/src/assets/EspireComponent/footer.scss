@@ -30,7 +30,6 @@
     a{
       @media screen and (max-width: $screen-md) {
         display: block;
-        text-align: left;
       }
     img {
       max-width: 90px;
@@ -65,6 +64,7 @@
       right:-3.5rem;
       @include respond-to(below-laptop) {
         flex: 1;
+        display: none;
       }
     }
 
@@ -83,7 +83,6 @@
         justify-content: flex-end;
         @media screen and (max-width: $screen-md) {
           display: block;
-          text-align: left;
         }
         li{
 
@@ -116,6 +115,10 @@
     }
     .social-media-share{
       ul{
+        @media screen and (max-width: $screen-md){
+          display: block;
+          text-align: center !important;
+        }  
         li.facebook{
           svg{
             border: 2px solid $white;

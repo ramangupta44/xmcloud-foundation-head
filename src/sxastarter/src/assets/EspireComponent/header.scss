@@ -257,9 +257,14 @@
             z-index: 4;
           }
           input[type="checkbox"]:checked ~ .menu-humburger {
-            background-image: url(../images/close.svg);
+            background-image: url(../images/close.png);
             z-index: 4;
             background-size: cover;
+            top:-3.2rem;
+            right: 2rem;
+            rotate: 45deg;
+            height: 35px;
+            width: 35px;
           }
           input[type="checkbox"]:checked ~ .component-content > nav {
             display: block;
