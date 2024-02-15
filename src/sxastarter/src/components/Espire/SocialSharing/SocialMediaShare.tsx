@@ -34,7 +34,7 @@ export const SocialMediaShare = (props: SocialMediaShareProps): JSX.Element => {
           return (() => {
             if (item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'linkedin') {
               return (
-                <li key={index}>
+                <li key={index} className="linkedin">
                   <LinkedinShareButton url={process?.env?.PUBLIC_URL + (pageURL as string)}>
                     <LinkedinIcon size={32} round />
                   </LinkedinShareButton>
@@ -44,7 +44,7 @@ export const SocialMediaShare = (props: SocialMediaShareProps): JSX.Element => {
               item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'facebook'
             ) {
               return (
-                <li key={index}>
+                <li key={index} className="facebook">
                   <FacebookShareButton url={process?.env?.PUBLIC_URL + (pageURL as string)}>
                     <FacebookIcon size={32} round />
                   </FacebookShareButton>
@@ -54,7 +54,7 @@ export const SocialMediaShare = (props: SocialMediaShareProps): JSX.Element => {
               item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'twitter'
             ) {
               return (
-                <li key={index}>
+                <li key={index} className="twitter">
                   <TwitterShareButton url={process?.env?.PUBLIC_URL + (pageURL as string)}>
                     <TwitterIcon size={32} round />
                   </TwitterShareButton>
@@ -64,7 +64,7 @@ export const SocialMediaShare = (props: SocialMediaShareProps): JSX.Element => {
               item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'instagram'
             ) {
               return (
-                <li key={index}>
+                <li key={index} className="insta">
                   <InstapaperShareButton url={process?.env?.PUBLIC_URL + (pageURL as string)}>
                     <InstagramIcon size={32} round />
                   </InstapaperShareButton>
@@ -74,7 +74,7 @@ export const SocialMediaShare = (props: SocialMediaShareProps): JSX.Element => {
               item?.fields?.['Social Media Name']?.value?.toLocaleLowerCase() == 'pinterest'
             ) {
               return (
-                <li key={index}>
+                <li key={index} className="pinterest">
                   <PinterestShareButton
                     url={process?.env?.PUBLIC_URL + (pageURL as string)}
                     media={pageURL as string}

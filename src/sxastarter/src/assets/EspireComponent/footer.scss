@@ -54,7 +54,7 @@
     .btn {
       border: 0;
       font-size: 1.8rem;
-
+      right:-3.5rem;
       @include respond-to(below-laptop) {
         flex: 1;
       }
@@ -101,6 +101,55 @@
     }
     p{
       font-size: $small;
+    }
+    .social-media-share{
+      ul{
+        li.facebook{
+          svg{
+            border: 2px solid $white;
+            border-radius: 50%;
+            circle{
+              fill:transparent;
+            }
+          }
+        }
+        li.linkedin{
+          svg{
+            border: 2px solid $white;
+            border-radius: 50%;
+            circle{
+              fill:transparent;
+            }
+          }
+        }
+        li.insta{
+          svg{
+            border: 2px solid $white;
+            border-radius: 50%;
+            circle{
+              fill:transparent;
+            }
+          }
+        }
+        li.twitter{
+          svg{
+            border: 2px solid $white;
+            border-radius: 50%;
+            circle{
+              fill:transparent;
+            }
+          }
+        }
+        li.pinterest{
+          svg{
+            border: 2px solid $white;
+            border-radius: 50%;
+            circle{
+              fill:transparent;
+            }
+          }
+        }
+      }
     }
   }
 

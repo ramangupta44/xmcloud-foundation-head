@@ -1,4 +1,5 @@
 @import "../sass/abstracts/vars/";
+
 #header {
   color: $white;
   > .container {
@@ -65,7 +66,7 @@
   .navigation.navigation-main {
     .component-content > nav {
       .rel-level1 {
-        margin:0 1rem;
+        margin: 0 1rem;
       }
     }
   }
@@ -88,6 +89,9 @@
               }
             }
           }
+        }
+        > ul{
+         box-shadow: 1px 3px 3px 1px #dee2e6;
         }
         &.last {
           a {
@@ -126,27 +130,27 @@
 
   .search-bar-default {
     margin: auto;
-    button#search-btn{
+    button#search-btn {
       padding: 0.7rem;
       background-color: $primary-light;
       border: 1px solid $primary-light;
-      outline:0;
-      box-shadow:none;
-      i{
+      outline: 0;
+      box-shadow: none;
+      i {
         font-size: $small;
         padding-left: 0.3rem;
       }
     }
-    input{
+    input {
       padding: 0.7rem;
       background-color: $primary-light;
       border: 1px solid $primary-light;
-      &::placeholder{
-        color:$white;
+      &::placeholder {
+        color: $white;
         font-size: $small;
       }
-      &:focus{
-        border:none;
+      &:focus {
+        border: none;
       }
     }
     @include respond-to(below-laptop) {
@@ -223,6 +227,30 @@
     .link-list {
       h3 {
         display: none;
+      }
+    }
+    .navigation.navigation-main {
+      .component-content > nav {
+        .rel-level1 {
+          margin: 0 0.5rem;
+          > .navigation-title {
+            a {
+              padding: 0.8rem 0.8rem 2.5rem;
+            }
+          }
+          &.submenu {
+            &:hover a {
+              span {
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+    #top-nav {
+      .link-list {
+        float: right;
       }
     }
   }
