@@ -27,10 +27,18 @@
   }
 
   #footer-top-section {
+    a{
+      @media screen and (max-width: $screen-md) {
+        display: block;
+        text-align: left;
+      }
     img {
       max-width: 90px;
+      @media screen and (max-width: $screen-md) {
+        margin-bottom:2rem;
+      }
     }
-
+  }
     .row {
       align-items: center;
     }
@@ -73,6 +81,10 @@
       ul{
         display: flex;
         justify-content: flex-end;
+        @media screen and (max-width: $screen-md) {
+          display: block;
+          text-align: left;
+        }
         li{
 
           a{
