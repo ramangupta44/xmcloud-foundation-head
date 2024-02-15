@@ -6,7 +6,8 @@ import Accordion from 'react-bootstrap/Accordion';
 type GlobalUniversityAccordionProps = ComponentProps & {
   params: { [key: string]: string };
   fields: {
-    items: Accordion[];
+    Title: Field<string>;
+    Content: AccordionData[];
   };
 };
 
@@ -17,33 +18,23 @@ type AccordionData = {
   };
 };
 
-type Accordion = {
-  fields: {
-    Title: Field<string>;
-    Content: AccordionData[];
-  };
-};
 export const GlobalUniversityAccordion = (props: GlobalUniversityAccordionProps): JSX.Element => {
   return (
     <div className={`container accordion ${props.params.styles}`}>
+      <Text field={props?.fields?.Title} tag="h6" />
       <Accordion>
-        {props?.fields?.items?.map((item, index) => {
-          return (
-            <Accordion.Item eventKey={index as unknown as string} key={index}>
-              <Accordion.Header>
-                <Text field={item?.fields?.Title} tag="h6" />
-              </Accordion.Header>
-              {item?.fields?.Content?.map((body, index) => {
-                return (
-                  <Accordion.Body key={index}>
-                    <Text field={body?.fields?.Title} tag="div" />
-                    <RichText field={body?.fields?.Description} />
-                  </Accordion.Body>
-                );
-              })}
-            </Accordion.Item>
-          );
-        })}
+        {props?.fields?.Content?.map((item, itemIndex) => (
+          <Accordion.Item eventKey={String(itemIndex)} key={itemIndex}>
+            <Accordion.Header>
+              <Text field={item?.fields?.Title} tag="h6" />
+            </Accordion.Header>
+            <Accordion.Body>
+              <div>
+                <RichText field={item?.fields?.Description} />
+              </div>
+            </Accordion.Body>
+          </Accordion.Item>
+        ))}
       </Accordion>
     </div>
   );
