@@ -54,7 +54,8 @@
     color: $brand-color;
     padding: 0.7rem;
     &:focus {
-      border: none;
+      border: 1px solid transparent;
+      box-shadow: none;
     }
   }
   img {
@@ -104,6 +105,7 @@
               border: 0;
             }
             border: 0;
+            margin:0;
           }
         }
       }
@@ -235,7 +237,7 @@
         img {
           width: auto;
           position: relative;
-          bottom: 2.4rem;
+          bottom: 1.4rem;
           margin-bottom: -1.9rem;
 
           @media screen and (max-width: $screen-md) {
@@ -368,6 +370,7 @@
           > .navigation-title {
             a {
               padding: 0.8rem 0.8rem 2.5rem;
+              margin:0;
             }
           }
           &.submenu {
