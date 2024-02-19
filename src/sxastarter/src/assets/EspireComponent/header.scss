@@ -199,7 +199,7 @@
   }
 
   #bottom-nav {
-    padding-top: 15px;
+    padding: 1rem;
     .link {
       @include respond-to(below-laptop) {
         text-align: right;
@@ -240,7 +240,7 @@
 
           @media screen and (max-width: $screen-md) {
             width: 100%;
-            top: -2rem;
+            top: -.5rem;
           }
         }
       }

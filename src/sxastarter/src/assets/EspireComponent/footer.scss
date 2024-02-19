@@ -117,7 +117,7 @@
       ul{
         @media screen and (max-width: $screen-md){
           display: block;
-          text-align: center !important;
+          text-align: center;
         }  
         li.facebook{
           svg{
