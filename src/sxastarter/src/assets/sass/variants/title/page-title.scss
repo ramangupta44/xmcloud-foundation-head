@@ -1,0 +1,16 @@
+@import "title-center-align.scss";
+
+.title {
+    &.page-title {
+        background: none;
+        width: 100%;
+        text-align: left;
+        .field-title {
+            color: $brand-color;
+            font-weight: revert;
+            @include respond-to(mobile-to-tablet) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

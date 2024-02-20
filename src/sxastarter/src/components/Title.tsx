@@ -146,9 +146,9 @@ export const PageTitle = (props: TitleOnlyProps): JSX.Element => {
       text.value = 'Title field';
     }
   }
-
+  console.log(props, 'props');
   return (
-    <div className={`component title ${props.styles}`} id={id ? id : undefined}>
+    <div className={`component title page-title ${props?.params?.styles}`} id={id ? id : undefined}>
       <div className="component-content">
         <Text field={text} tag="h1" className="field-title" />
       </div>
