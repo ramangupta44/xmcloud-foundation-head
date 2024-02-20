@@ -2,8 +2,6 @@
 
 .banner-default{
   h1{
-    margin-bottom: 2rem;
-    line-height: 66px;
     @media screen and (max-width:$screen-sm) {
       font-size:$font-medium;
       line-height: 1.2;
