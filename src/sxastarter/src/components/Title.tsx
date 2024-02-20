@@ -130,3 +130,28 @@ export const TitleCenterAlign = (props: TitleOnlyProps): JSX.Element => {
     </div>
   );
 };
+
+export const PageTitle = (props: TitleOnlyProps): JSX.Element => {
+  const id = props.id;
+  const datasource = props.fields?.data?.datasource || props.fields?.data?.contextItem;
+  const { sitecoreContext } = useSitecoreContext();
+
+  const text: TextField = {
+    value: datasource?.field?.jsonValue?.value,
+    editable: datasource?.field?.jsonValue?.editable,
+  };
+
+  if (sitecoreContext.pageState !== 'normal') {
+    if (!text.value) {
+      text.value = 'Title field';
+    }
+  }
+
+  return (
+    <div className={`component title ${props.styles}`} id={id ? id : undefined}>
+      <div className="component-content">
+        <Text field={text} tag="h1" className="field-title" />
+      </div>
+    </div>
+  );
+};
