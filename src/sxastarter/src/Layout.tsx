@@ -81,11 +81,11 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         </footer>
       </div>
       {/* This is Civic UK */}
-      <Script
+      {/* <Script
         src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"
         strategy={'beforeInteractive'}
       ></Script>
-      <Cookie />
+      <Cookie /> */}
       {/* Uncomment this and change URL's for Cookiebot */}
       {/* <Script
          id="Cookiebot"
