@@ -6,7 +6,7 @@
         width: 100%;
         text-align: left;
         .field-title {
-            color: $brand-color;
+            color: $black-shade;
             font-weight: revert;
             @include respond-to(mobile-to-tablet) {
                 font-size: 2.5rem;
