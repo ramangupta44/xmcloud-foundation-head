@@ -13,10 +13,17 @@ import {
 } from 'lib/component-props/EspireTemplateProps/Listing/ListingProps';
 import { Field, ImageField, useSitecoreContext, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
 import React from 'react';
+import { GlobalUniversity_Blog_Listing_Query } from 'lib/graphql/query/globaluniversity-blog-listing';
 
 type CourseListingData = {
   CourseListingData: {
     results: CourseListingResult[];
+    total: number;
+  };
+};
+type BlogListingData = {
+  BlogListingData: {
+    results: BlogListingResult[];
     total: number;
   };
 };
@@ -30,6 +37,14 @@ type CourseListingResult = {
   courseType: TagTreeListProps;
   location: TagTreeListProps;
   studyMode: TagTreeListProps;
+  url: {
+    path: string;
+  };
+};
+type BlogListingResult = {
+  thumbnailImage: ImageProps;
+  title: Field<string>;
+  content: Field<string>;
   url: {
     path: string;
   };
@@ -807,6 +822,118 @@ export const CourseListing = (props: ListingProps): JSX.Element => {
                 <li> {IterateData(list?.studyMode)}</li>
                 <li> {IterateData(list?.location)}</li>
               </ul>
+            </div>
+            <div className="d-flex justify-content-end">
+              <a href={list?.url?.path} className="view-details">
+                View Details
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+export const BlogListing = (props: ListingProps): JSX.Element => {
+  const [blogListData, setBlogListData] = useState<BlogListingData>();
+  const [sortBy, setSortBy] = useState('relevance');
+  const path = props?.params?.Scope;
+  const template = props?.params?.Template;
+
+  const defaultOrderBy = {
+    name: 'Title',
+    direction: 'DESC',
+  };
+  const GetCourseData = async (
+    path: string,
+    template: string,
+    orderBy: ItemSearchOrderByInput = defaultOrderBy
+  ): Promise<unknown> => {
+    const { data } = await apolloClient.query({
+      query: GlobalUniversity_Blog_Listing_Query,
+      variables: {
+        path: path,
+        template: template,
+        orderBy: orderBy,
+      },
+    });
+    return data;
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const courseData = await GetCourseData(path, template);
+      setBlogListData(courseData as BlogListingData); // Corrected setter function name
+    };
+
+    fetchData();
+  }, [path, template]);
+  const handleChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSortBy(e.target.value); // Update the sortBy state with the new value
+
+    // Assuming you want to change the sorting order based on the selection
+    let orderByDirection = 'ASC'; // Default sorting order
+    if (e?.target?.value === 'Title') {
+      orderByDirection = 'DESC'; // Change sorting order if the selected value is 'Title'
+    }
+
+    const updatedOrderBy = {
+      ...defaultOrderBy,
+      direction: orderByDirection,
+    };
+
+    // Fetch new course data based on the updated sorting order
+    const courseData = await GetCourseData(path, template, updatedOrderBy);
+    setBlogListData(courseData as BlogListingData); // Ensure this matches the expected type
+  };
+
+  return (
+    <div className="container course-listing">
+      <div className="row">
+        <div className="col-lg-6">
+          {blogListData?.BlogListingData?.total == 0 ||
+          blogListData?.BlogListingData?.total == undefined ? (
+            <h5> No Results</h5>
+          ) : (
+            <h5>All Blogs {blogListData?.BlogListingData?.total}</h5>
+          )}
+        </div>
+        <div className="col-lg-6">
+          <div className="sorting">
+            <select
+              className="form-select"
+              aria-label="Default select example"
+              name={'sortby'}
+              defaultValue={sortBy}
+              onChange={handleChange}
+            >
+              <option value="title">Sort By : Name </option>
+              <option value="relevance">Sort By : Relevance </option>
+            </select>
+            <div className="sorting-list">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className="sorting-grid-view">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {blogListData?.BlogListingData?.results?.map((list, index) => {
+        return (
+          <div className="row" key={index}>
+            <div className="col-12 col-md-4 course-listing-image">
+              <img
+                src={list?.thumbnailImage?.jsonValue?.value?.src}
+                alt={list?.thumbnailImage?.jsonValue?.value?.alt}
+              />
+            </div>
+            <div className="col-12 col-md-8 course-listing-details">
+              <h5>{list?.title?.value} </h5>
+              <RichText field={list?.content} tag="div" />
+              <hr />
             </div>
             <div className="d-flex justify-content-end">
               <a href={list?.url?.path} className="view-details">
