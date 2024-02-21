@@ -932,7 +932,6 @@ export const BlogListing = (props: ListingProps): JSX.Element => {
             </div>
             <div className="col-12 col-md-8 course-listing-details">
               <h5>{list?.title?.value} </h5>
-              <RichText field={list?.content} tag="div" />
               <hr />
             </div>
             <div className="d-flex justify-content-end">
