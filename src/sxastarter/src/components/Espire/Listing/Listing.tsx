@@ -873,7 +873,7 @@ export const BlogListing = (props: ListingProps): JSX.Element => {
 
     // Assuming you want to change the sorting order based on the selection
     let orderByDirection = 'ASC'; // Default sorting order
-    if (e.target.value === 'Title') {
+    if (e?.target?.value === 'Title') {
       orderByDirection = 'DESC'; // Change sorting order if the selected value is 'Title'
     }
 

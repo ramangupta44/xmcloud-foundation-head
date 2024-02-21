@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 export const GlobalUniversity_Blog_Listing_Query = gql`
-  query BlogListing($path: String, $template: String) {
+  query BlogListing($path: String, $template: String, $orderBy: ItemSearchOrderByInput) {
     BlogListingData: search(
       where: {
         AND: [
@@ -9,6 +9,7 @@ export const GlobalUniversity_Blog_Listing_Query = gql`
         ]
       }
       first: 10
+      orderBy: $orderBy
     ) {
       total
       pageInfo {
