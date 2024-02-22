@@ -1,18 +1,21 @@
 @import "../../abstracts/vars";
-.banner {
-  .banner-with-overlay {
-    &::before {
-      content: none;
-    }
-    .banner-content {
-      max-width: 50%;
-      background: #292531;
-      padding: 4rem 2rem;
-      border-radius: 15px;
-      opacity: 0.9;
-      @media screen and (max-width: $screen-md) {
-        width: 100%;
-        padding: 2rem;
+
+.banner-with-overlay {
+  .banner {
+    .banner-default {
+      &::before {
+        content: none;
+      }
+      .banner-content {
+        max-width: 50%;
+        background: #292531;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        opacity: 0.9;
+        @media screen and (max-width: $screen-md) {
+          width: 100%;
+          padding: 2rem;
+        }
       }
     }
   }
