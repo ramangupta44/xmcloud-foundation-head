@@ -35,3 +35,11 @@ export const Banner = (props: BannerTemplateProps): JSX.Element => {
 };
 
 export default withDatasourceCheck()<BannerTemplateProps>(Banner);
+
+export const BannerWithOverlay = (props: BannerTemplateProps): JSX.Element => {
+  return (
+    <div className="banner-with-overlay">
+      <Banner {...props} />
+    </div>
+  );
+};
