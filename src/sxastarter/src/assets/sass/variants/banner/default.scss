@@ -84,7 +84,11 @@
 
     @include respond-to(desktop-and-above) {
       .banner-content {
-        max-width: 60%;
+        max-width: 50%;
+        background: #292531;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        opacity: .9;
       }
     }
   }
