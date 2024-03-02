@@ -70,7 +70,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
         className="rte-text"
         onChange={handleChange}
       />
-      {!isEdit && (
+      {isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
             Answer
