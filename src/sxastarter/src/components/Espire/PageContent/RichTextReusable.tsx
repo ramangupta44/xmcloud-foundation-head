@@ -18,11 +18,9 @@ type ChatGPTResponse = {
 
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
-  let input = props?.fields?.RichText?.value;
-
   const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
-
+    let input = '';
     if (typeof document != undefined) {
       input = (document.querySelector('.richtext-reusable .rte-text >input') &&
         (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
