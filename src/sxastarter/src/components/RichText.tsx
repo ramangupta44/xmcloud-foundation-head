@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { Field, useSitecoreContext, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
 import axios from 'axios';
 interface Fields {
@@ -20,15 +20,18 @@ export type RichTextProps = {
 
 export const Default = (props: RichTextProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
+  const [showAccept, setShowAccept] = useState<boolean>(false);
   const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
-    let input = '';
+    let input = props?.fields?.Text?.value;
     if (typeof document != undefined) {
       input = (document.querySelector('.richtext-reusable .rte-text >input') &&
         (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
           ?.value) as string;
     }
-
+    if (input == null || input == undefined) {
+      input = props?.fields?.Text?.value;
+    }
     const finalText = buttonText + ' ' + input;
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
@@ -50,8 +53,24 @@ export const Default = (props: RichTextProps): JSX.Element => {
     setResponseData([
       { role: 'assistant', content: response.data.choices[0].message.content },
     ] as unknown as ChatGPTProps);
+    setShowAccept(true);
   };
-
+  const responseMessage = (): ReactNode => {
+    return responseData?.map((data: ChatGPTResponse) => {
+      return data?.content;
+    });
+  };
+  const updateTextValue = () => {
+    if (typeof document != undefined) {
+      if (document.querySelector('.richtext-reusable .rte-text .ql-editor')) {
+        const updateDOM = document.querySelector('.richtext-reusable .rte-text .ql-editor');
+        if (updateDOM) {
+          updateDOM.innerHTML = responseMessage() as string;
+        }
+      }
+    }
+    setShowAccept(false);
+  };
   const { sitecoreContext } = useSitecoreContext();
   const isEdit = sitecoreContext?.pageEditing;
 
@@ -61,7 +80,7 @@ export const Default = (props: RichTextProps): JSX.Element => {
       {isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
-            Answer
+            Generate
           </button>
           <button onClick={fetchMessage} className="button">
             Rewrite
@@ -75,11 +94,16 @@ export const Default = (props: RichTextProps): JSX.Element => {
         </>
       )}
       <div>
-        {responseData.map((data: ChatGPTResponse, index) => (
-          <div key={index} className={data?.role}>
-            {data?.content}
-          </div>
-        ))}
+        {showAccept && (
+          <>
+            <div>{responseMessage()}</div>
+            {(responseMessage() as string)?.length > 0 && (
+              <button onClick={updateTextValue} className="button">
+                Accept
+              </button>
+            )}
+          </>
+        )}
       </div>
     </div>
   );
