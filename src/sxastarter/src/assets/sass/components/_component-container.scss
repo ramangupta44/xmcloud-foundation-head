@@ -15,15 +15,13 @@ $size-padding: 8px;
 }
 
 .container {
-  &.container-default {
-    padding: 0;
+  padding: 0;
 
-    &.container-full-width {
-      max-width: unset;
-    }
+  &.fullwidth-container {
+    max-width: unset;
+  }
 
-    .component-content {
-      @include clearfix();
-    }
+  .component-content {
+    @include clearfix();
   }
 }

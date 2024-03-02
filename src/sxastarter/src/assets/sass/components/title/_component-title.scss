@@ -8,17 +8,15 @@
     >a, >span {
       @include border-basic(bottom, $border-basic-color);
       font-size: $font-extrabig;
-      margin-top: $small-margin;
       margin-bottom: $small-margin;
-      color: $white;
+      color: $title-color;
       line-height: normal;
       padding-bottom: 10px;
       display: block;
       text-decoration: none;
       cursor: pointer;
       &:hover {
-        // color: $title-color-active;
-        text-decoration: underline;
+        color: $title-color-active;
       }
   }
 }

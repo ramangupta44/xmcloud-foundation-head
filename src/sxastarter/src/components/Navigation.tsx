@@ -89,21 +89,20 @@ export const Default = (props: NavigationProps): JSX.Element => {
 
   return (
     <div className={`component navigation ${styles}`} id={id ? id : undefined}>
-      <div className="menu-mobile-navigate-wrapper">
+      <label className="menu-mobile-navigate-wrapper">
         <input
           type="checkbox"
-          id="menu-mobile-navigate"
           className="menu-mobile-navigate"
           checked={isOpenMenu}
           onChange={() => handleToggleMenu()}
         />
-        <label className="menu-humburger" htmlFor="menu-mobile-navigate" />
+        <div className="menu-humburger" />
         <div className="component-content">
           <nav>
             <ul className="clearfix">{list}</ul>
           </nav>
         </div>
-      </div>
+      </label>
     </div>
   );
 };

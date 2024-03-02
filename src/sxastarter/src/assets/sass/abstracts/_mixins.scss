@@ -6,14 +6,6 @@ $break-desktop: 1024px;
 $break-mobile: 380px;
 $break-mobile-horizontal: 640px;
 $break-mobile-large: 992px;
-
-//Custom created
-$mobile : 320px;
-$tablet : 768px;
-$laptop : 992px;
-$desktop : 1200px;
-
-// ----*******-------
 @mixin wrapper() {
     max-width: 960px;
     margin: 0 auto !important;
@@ -83,49 +75,6 @@ $desktop : 1200px;
             @content;
         }
     }
-
-    //custom created 
-    @else if $media==mobile-to-tablet {
-        @media only screen and (min-width: $mobile) and (max-width: 767.98px) {
-            @content;
-        }
-    }
-    @else if $media==tablet-to-laptop {
-        @media only screen and (min-width: $tablet) and (max-width: 991.98px) {
-            @content;
-        }
-    }
-    @else if $media==laptop-to-desktop {
-        @media only screen and (min-width: $laptop) and (max-width: $desktop) {
-            @content;
-        }
-    }
-    @else if $media==desktop-and-above {
-        @media only screen and (min-width: $desktop) {
-            @content;
-        }
-    }
-    @else if $media==laptop-and-above {
-        @media only screen and (min-width: $laptop) {
-            @content;
-        }
-    }
-    @else if $media==tablet-and-above {
-        @media only screen and (min-width: $tablet) {
-            @content;
-        }
-    }
-    @else if $media==mobile-and-above {
-        @media only screen and (min-width: $mobile) {
-            @content;
-        }
-    }
-    @else if $media==below-laptop {
-        @media only screen and (max-width: 991.98px) {
-            @content;
-        }
-    }
-    // custom created ends here
 }
 @mixin border-basic($position:all, $border-color:$border-gray, $border-width:1px) {
     @if($position!=all) {

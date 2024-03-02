@@ -14,83 +14,74 @@ $borderSize: 2px;
     }
   }
   .rel-level1 {
-      float: left;
-      
-      &.active {
-          >.navigation-title>a {
-              border-color: $nav-border-root;
-          }
+    float: left;
+    &.active {
+      > .navigation-title > a {
+        border-color: $nav-border-root;
       }
-      >.navigation-title>a {
-          border-width: 2px 0 0 0;
-          border-color: transparent;
-          padding:0.8rem 1.2rem 2.1rem 1.2rem;
-          &:hover {
-              border-color: $nav-border-root;
-              
-          }
+    }
+    > .navigation-title > a {
+      border-width: 2px 0 0 0;
+      border-color: transparent;
+      &:hover {
+        border-color: $nav-border-root;
       }
-      &.submenu {
-        &:hover a{
-            background-color:$white;
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
-            span{
-                color: $text-basic;
-            }
-          }
-          >.navigation-title a {
-              position: relative;
-              
-              &:after {
-                  @include fa-icon();
-                  font-size: 10px;
-                  content: $fa-var-chevron-down;
-                  position: absolute;
-                  transform: translateY(-50%);
-                  top: 50%;
-                  right: 0;
-              }
-          }
-      }
-      //submenu
-      >ul {
-          overflow: hidden;
-          display: none;
-          z-index: 10;
+    }
+    &.submenu {
+      > .navigation-title a {
+        position: relative;
+        padding-right: 15px;
+        &:after {
+          @include fa-icon();
+          font-size: 10px;
+          content: $fa-var-chevron-down;
           position: absolute;
-          top: 100%;
-          background: $white;
-          margin-left: 0;
-          margin-top: -8px;
-        //   border-top: $borderSize solid $nav-border-submenu;
-        //   border-left: 1px solid $nav-submenu-item-border;
-        //   border-bottom: 1px solid $nav-submenu-item-border;
+          transform: translateY(-50%);
+          top: 50%;
+          right: 0;
+        }
       }
-      &:active, &:hover {
-          >a {
-              &+ul {
-                  display: block !important;
-              }
-          }
-          >ul {
-              display: block !important;
-              min-width: 60px;
-          }
+    }
+    //submenu
+    > ul {
+      overflow: hidden;
+      display: none;
+      z-index: 10;
+      position: absolute;
+      top: 100%;
+      background: $nav-bg-submenu;
+      margin-left: 0;
+      margin-top: -$borderSize;
+      border-top: $borderSize solid $nav-border-submenu;
+      border-left: 1px solid $nav-submenu-item-border;
+      border-bottom: 1px solid $nav-submenu-item-border;
+    }
+    &:active,
+    &:hover {
+      > a {
+        & + ul {
+          display: block !important;
+        }
       }
-      &.active {
-          >.navigation-title>a:link, >.navigation-title>a:visited {
-              color: $text-basic-active;
-          }
-          >span {
-              display: block;
-              padding: 10px 20px;
-              color: $text-white;
-          }
+      > ul {
+        display: block !important;
+        min-width: 60px;
       }
-      &.submenu.active {
-          border-color: $menu-active-color;
+    }
+    &.active {
+      > .navigation-title > a:link,
+      > .navigation-title > a:visited {
+        color: $text-basic-active;
       }
+      > span {
+        display: block;
+        padding: 10px 20px;
+        color: $text-white;
+      }
+    }
+    &.submenu.active {
+      border-color: $menu-active-color;
+    }
   }
   .rel-level2 {
     &:hover,
@@ -121,36 +112,36 @@ $borderSize: 2px;
   }
   // Additional styles fot drop down horizontal navigation
   &.navigation-main-horizontal {
-      .submenu>ul {
-          padding-left: 0;
-      }
-      .rel-level1 {
-          &:active, &:hover {
-              >a {
-                  &+ul {
-                      display: inline-flex !important;
-                      flex-wrap: wrap;
-                  }
-              }
-              >ul {
-                  display: inline-flex !important;
-                  flex-wrap: wrap;
-              }
+    .submenu > ul {
+      padding-left: 0;
+    }
+    .rel-level1 {
+      &:active,
+      &:hover {
+        > a {
+          & + ul {
+            display: inline-flex !important;
+            flex-wrap: wrap;
           }
-          >ul {
-              width: 100%;
-              clear: both;
-              left: 0;
-              border-radius: 5px;
-          }
+        }
+        > ul {
+          display: inline-flex !important;
+          flex-wrap: wrap;
+        }
       }
-      .rel-level2 {
-        //   float: left;
-          padding: 10px;
-        //   @include border-basic(right, $nav-submenu-item-border, 1px);
-          flex-grow: 0;
-          flex-basis: 25%;
+      > ul {
+        width: 100%;
+        clear: both;
+        left: 0;
       }
+    }
+    .rel-level2 {
+      float: left;
+      padding: 10px;
+      @include border-basic(right, $nav-submenu-item-border, 1px);
+      flex-grow: 1;
+      flex-basis: 23%;
+    }
   }
   // Additional styles fot drop down vertical navigation
   &.navigation-main-vertical {
