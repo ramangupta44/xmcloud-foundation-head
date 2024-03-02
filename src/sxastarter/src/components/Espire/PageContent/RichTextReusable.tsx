@@ -57,21 +57,11 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
     ] as unknown as ChatGPTProps);
   };
 
-  const handleChange = () => {
-    input = props?.fields?.RichText?.value;
-    console.log('hello from OnChange Props', props?.fields?.RichText?.value);
-    console.log('Updated Input Value is :::: ', input);
-  };
   const { sitecoreContext } = useSitecoreContext();
   const isEdit = sitecoreContext?.pageEditing;
   return (
     <div className={`richtext-reusable ${props.params.styles}`}>
-      <RichText
-        field={props?.fields?.RichText}
-        tag="div"
-        className="rte-text"
-        onChange={handleChange}
-      />
+      <RichText field={props?.fields?.RichText} tag="div" className="rte-text" />
       {isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
