@@ -4,7 +4,7 @@ import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplat
 import { RichText, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import axios from 'axios';
 
-const OpenAIAPIKey = process.env.RichTextAuto;
+const OpenAIAPIKey = process.env.NEXT_PUBLIC_CHAT_GPT_KEY;
 
 type ChatGPTProps = [role: string, content: unknown];
 
