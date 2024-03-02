@@ -4,7 +4,7 @@ import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplat
 import { RichText, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import axios from 'axios';
 
-const OpenAIAPIKey = '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';
+const OpenAIAPIKey = process.env.RichTextAuto;
 
 type ChatGPTProps = [role: string, content: unknown];
 
@@ -12,7 +12,6 @@ type ChatGPTResponse = {
   role: string;
   content: string;
 };
-
 
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
