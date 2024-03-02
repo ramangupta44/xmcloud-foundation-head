@@ -47,6 +47,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
     <div className={`richtext-reusable ${props.params.styles}`}>
       <RichText field={props?.fields?.RichText} />
       <button onClick={fetchMessage}>{props?.fields?.Button?.value}</button>
+      <button onClick={fetchMessage}>{process.env.RTEButtonText}</button>
       <div>
         {responseData.map((data: ChatGPTResponse, index) => (
           <div key={index} className={data?.role}>
