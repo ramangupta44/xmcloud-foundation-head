@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/RichTextReusableTemplateProps';
 import {
   RichText,
@@ -19,6 +19,7 @@ type ChatGPTResponse = {
 
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
+  const [data, setData] = useState('');
   let input = props?.fields?.RichText?.value;
   const buttonText = props?.fields?.Button?.value;
   const finalText = buttonText + ' ' + input;
@@ -46,6 +47,13 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
 
     console.log(response, 'response');
   };
+
+  useEffect(() => {
+    setData(props?.fields?.RichText?.value);
+  }, [props?.fields?.RichText?.value]);
+
+  console.log(props?.fields?.RichText?.value, 'RTE VAlue');
+  console.log('State Value', data);
 
   const handleChange = () => {
     input = props?.fields?.RichText?.value;
