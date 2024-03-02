@@ -1,0 +1,37 @@
+﻿---
+ID: "e394a902-ea5a-4f2e-a4f8-128fa95f5732"
+Parent: "68e150f3-6783-4d5a-b3fa-9d1117280f35"
+Template: "cd09933c-74e4-4169-af16-a36ef0946734"
+Path: /sitecore/content/EspireDemo/Espire/Home/RTE/cHATgpt
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240302T053101Z
+    - ID: "290a9f0b-4d0e-41ae-b1ac-352d03539f22"
+      Hint: Button
+      Value: Rewrite
+    - ID: "50a4531c-3255-468d-9d56-6eebdd9851be"
+      Hint: RichText
+      Value: Chap GPT Text
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "465b6f5d-92b7-44de-848f-ed1b73add4a9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240302T053534Z
