@@ -65,8 +65,8 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
   };
   const updateTextValue = () => {
     if (typeof document != undefined) {
-      if (document.querySelector('.richtext-reusable .rte-text ')) {
-        const updateDOM = document.querySelector('.richtext-reusable .rte-text ');
+      if (document.querySelector('.richtext-reusable .rte-text .ql-editor')) {
+        const updateDOM = document.querySelector('.richtext-reusable .rte-text .ql-editor');
         if (updateDOM) {
           updateDOM.innerHTML = text;
         }
@@ -78,7 +78,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
   return (
     <div className={`richtext-reusable ${props.params.styles}`}>
       <RichText field={props?.fields?.RichText} tag="div" className="rte-text" />
-      {!isEdit && (
+      {isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
             Generate
@@ -99,7 +99,6 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
           <>
             <textarea
               className="updated-text"
-              name="w3review"
               rows={20}
               cols={150}
               defaultValue={responseMessage() as string}
