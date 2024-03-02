@@ -1,7 +1,11 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/RichTextReusableTemplateProps';
-import { RichText, useSitecoreContext, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  RichText,
+  useSitecoreContext,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import axios from 'axios';
 
 const OpenAIAPIKey = process.env.NEXT_PUBLIC_CHAT_GPT_KEY;
@@ -15,7 +19,7 @@ type ChatGPTResponse = {
 
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
-  const input = props?.fields?.RichText?.value;
+  let input = props?.fields?.RichText?.value;
   const buttonText = props?.fields?.Button?.value;
   const finalText = buttonText + ' ' + input;
   const fetchMessage = async () => {
@@ -40,14 +44,40 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
       { role: 'assistant', content: response.data.choices[0].message.content },
     ] as unknown as ChatGPTProps);
 
-    console.log(response , "response")
+    console.log(response, 'response');
   };
-const {sitecoreContext} = useSitecoreContext();
-const isEdit = sitecoreContext?.pageEditing;
+
+  const handleChange = () => {
+    input = props?.fields?.RichText?.value;
+    console.log('hello from OnChange Props', props?.fields?.RichText?.value);
+    console.log('Updated Input Value is :::: ', input);
+  };
+  const { sitecoreContext } = useSitecoreContext();
+  const isEdit = sitecoreContext?.pageEditing;
   return (
     <div className={`richtext-reusable ${props.params.styles}`}>
-      <RichText field={props?.fields?.RichText} />
-     { isEdit  && (<><button onClick={fetchMessage}>Answer</button><button onClick={fetchMessage}>{props?.fields?.Button?.value}</button><button onClick={fetchMessage}>Summarize</button><button onClick={fetchMessage}>Proof Read </button></>)}
+      <RichText
+        field={props?.fields?.RichText}
+        tag="div"
+        className="rte-text"
+        onChange={handleChange}
+      />
+      {!isEdit && (
+        <>
+          <button onClick={fetchMessage} className="button">
+            Answer
+          </button>
+          <button onClick={fetchMessage} className="button">
+            {props?.fields?.Button?.value}
+          </button>
+          <button onClick={fetchMessage} className="button">
+            Summarize
+          </button>
+          <button onClick={fetchMessage} className="button">
+            Proof Read{' '}
+          </button>
+        </>
+      )}
       <div>
         {responseData.map((data: ChatGPTResponse, index) => (
           <div key={index} className={data?.role}>
