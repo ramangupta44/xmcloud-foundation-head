@@ -1,5 +1,4 @@
-/* eslint-disable prettier/prettier */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/RichTextReusableTemplateProps';
 import {
   RichText,
@@ -19,12 +18,11 @@ type ChatGPTResponse = {
 
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
-  const [data, setData] = useState('');
   let input = props?.fields?.RichText?.value;
-  const buttonText = props?.fields?.Button?.value;
-  const finalText = buttonText + ' ' + input;
-  const fetchMessage = async () => {
-    console.log(props?.fields?.RichText?.value, 'RTE Value on Click');
+
+  const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    const buttonText = (e.target as HTMLButtonElement).innerText;
+    const finalText = buttonText + ' ' + input;
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
@@ -45,15 +43,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
     setResponseData([
       { role: 'assistant', content: response.data.choices[0].message.content },
     ] as unknown as ChatGPTProps);
-
-    console.log(response, 'response');
   };
-
-  useEffect(() => {
-    setData(props?.fields?.RichText?.value);
-  }, [props?.fields?.RichText?.value]);
-
-  console.log('State Value', data);
 
   const handleChange = () => {
     input = props?.fields?.RichText?.value;
