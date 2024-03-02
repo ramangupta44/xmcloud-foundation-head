@@ -19,6 +19,7 @@ type ChatGPTResponse = {
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
   const [showAccept, setShowAccept] = useState<boolean>(false);
+  const [text, setText] = useState('');
   const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
     let input = props?.fields?.RichText?.value;
@@ -64,10 +65,10 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
   };
   const updateTextValue = () => {
     if (typeof document != undefined) {
-      if (document.querySelector('.richtext-reusable .rte-text .ql-editor')) {
-        const updateDOM = document.querySelector('.richtext-reusable .rte-text .ql-editor');
+      if (document.querySelector('.richtext-reusable .rte-text ')) {
+        const updateDOM = document.querySelector('.richtext-reusable .rte-text ');
         if (updateDOM) {
-          updateDOM.innerHTML = responseMessage() as string;
+          updateDOM.innerHTML = text;
         }
       }
     }
@@ -77,7 +78,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
   return (
     <div className={`richtext-reusable ${props.params.styles}`}>
       <RichText field={props?.fields?.RichText} tag="div" className="rte-text" />
-      {isEdit && (
+      {!isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
             Generate
@@ -96,12 +97,23 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
       <div>
         {showAccept && (
           <>
-            <div>{responseMessage()}</div>
-            {(responseMessage() as string)?.length > 0 && (
-              <button onClick={updateTextValue} className="button">
-                Accept
-              </button>
-            )}
+            <textarea
+              className="updated-text"
+              name="w3review"
+              rows={20}
+              cols={150}
+              defaultValue={responseMessage() as string}
+              onChange={(e) => {
+                setText(e.target.value);
+              }}
+            ></textarea>
+            <div>
+              {(responseMessage() as string)?.length > 0 && (
+                <button onClick={updateTextValue} className="button">
+                  Accept
+                </button>
+              )}
+            </div>
           </>
         )}
       </div>
