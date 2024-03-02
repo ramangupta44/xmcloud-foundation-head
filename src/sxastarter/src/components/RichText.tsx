@@ -20,18 +20,13 @@ export type RichTextProps = {
 
 export const Default = (props: RichTextProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
-  let input = props?.fields?.Text?.value;
-
   const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
-
+    let input = '';
     if (typeof document != undefined) {
-      console.log(
-        document.querySelector('.richtext-reusable .rte-text >input') &&
-          (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
-            ?.value,
-        'RTE Value form JS'
-      );
+      input = (document.querySelector('.richtext-reusable .rte-text >input') &&
+        (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
+          ?.value) as string;
     }
 
     const finalText = buttonText + ' ' + input;
@@ -57,23 +52,12 @@ export const Default = (props: RichTextProps): JSX.Element => {
     ] as unknown as ChatGPTProps);
   };
 
-  const handleChange = () => {
-    input = props?.fields?.Text?.value;
-    console.log('hello from OnChange Props', props?.fields?.Text?.value);
-    console.log('Updated Input Value is :::: ', input);
-  };
-
   const { sitecoreContext } = useSitecoreContext();
   const isEdit = sitecoreContext?.pageEditing;
 
   return (
     <div>
-      <RichText
-        field={props?.fields?.Text}
-        tag="div"
-        className="rte-text"
-        onChange={handleChange}
-      />
+      <RichText field={props?.fields?.Text} tag="div" className="rte-text" />
       {isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
