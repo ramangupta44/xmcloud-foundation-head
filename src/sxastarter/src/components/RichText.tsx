@@ -21,7 +21,6 @@ export type RichTextProps = {
 export const Default = (props: RichTextProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
   const [showAccept, setShowAccept] = useState<boolean>(false);
-  const [text, setText] = useState('');
   const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
     let input = props?.fields?.Text?.value;
@@ -66,7 +65,7 @@ export const Default = (props: RichTextProps): JSX.Element => {
       if (document.querySelector('.richtext-reusable .rte-text .ql-editor')) {
         const updateDOM = document.querySelector('.richtext-reusable .rte-text .ql-editor');
         if (updateDOM) {
-          updateDOM.innerHTML = text;
+          updateDOM.innerHTML = responseMessage() as string;
         }
       }
     }
@@ -97,22 +96,12 @@ export const Default = (props: RichTextProps): JSX.Element => {
       <div>
         {showAccept && (
           <>
-            <textarea
-              className="updated-text"
-              rows={20}
-              cols={150}
-              defaultValue={responseMessage() as string}
-              onChange={(e) => {
-                setText(e.target.value);
-              }}
-            ></textarea>
-            <div>
-              {(responseMessage() as string)?.length > 0 && (
-                <button onClick={updateTextValue} className="button">
-                  Accept
-                </button>
-              )}
-            </div>
+            <div>{responseMessage()}</div>
+            {(responseMessage() as string)?.length > 0 && (
+              <button onClick={updateTextValue} className="button">
+                Accept
+              </button>
+            )}
           </>
         )}
       </div>
