@@ -24,6 +24,8 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
   const buttonText = props?.fields?.Button?.value;
   const finalText = buttonText + ' ' + input;
   const fetchMessage = async () => {
+
+    console.log(props?.fields?.RichText?.value, 'RTE Value on Click');
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
@@ -40,6 +42,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
         },
       }
     );
+   
     setResponseData([
       ...responseData,
       { role: 'assistant', content: response.data.choices[0].message.content },
@@ -52,7 +55,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
     setData(props?.fields?.RichText?.value);
   }, [props?.fields?.RichText?.value]);
 
-  console.log(props?.fields?.RichText?.value, 'RTE VAlue');
+
   console.log('State Value', data);
 
   const handleChange = () => {
