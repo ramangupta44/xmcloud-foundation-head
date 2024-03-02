@@ -62,7 +62,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
         className="rte-text"
         onChange={handleChange}
       />
-      {!isEdit && (
+      {isEdit && (
         <>
           <button onClick={fetchMessage} className="button">
             Answer
@@ -74,7 +74,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
             Summarize
           </button>
           <button onClick={fetchMessage} className="button">
-            Proof Read{' '}
+            Proof Read
           </button>
         </>
       )}
