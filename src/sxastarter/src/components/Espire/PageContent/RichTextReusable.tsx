@@ -99,7 +99,6 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
           <>
             <textarea
               className="updated-text"
-              name="w3review"
               rows={20}
               cols={150}
               defaultValue={responseMessage() as string}
