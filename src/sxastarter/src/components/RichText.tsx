@@ -25,9 +25,8 @@ export const Default = (props: RichTextProps): JSX.Element => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
     let input = props?.fields?.Text?.value;
     if (typeof document != undefined) {
-      input = (document.querySelector('.richtext-reusable .rte-text >input') &&
-        (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
-          ?.value) as string;
+      input = (document.querySelector('.rte-text >input') &&
+        (document.querySelector('.rte-text >input') as HTMLInputElement)?.value) as string;
     }
     if (input == null || input == undefined) {
       input = props?.fields?.Text?.value;
@@ -62,8 +61,8 @@ export const Default = (props: RichTextProps): JSX.Element => {
   };
   const updateTextValue = () => {
     if (typeof document != undefined) {
-      if (document.querySelector('.richtext-reusable .rte-text .ql-editor')) {
-        const updateDOM = document.querySelector('.richtext-reusable .rte-text .ql-editor');
+      if (document.querySelector('.rte-text .ql-editor')) {
+        const updateDOM = document.querySelector('.rte-text .ql-editor');
         if (updateDOM) {
           updateDOM.innerHTML = responseMessage() as string;
         }
