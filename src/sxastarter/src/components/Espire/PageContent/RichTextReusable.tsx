@@ -27,11 +27,8 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
     if (typeof document != undefined) {
       console.log(
         document.querySelector('.richtext-reusable .rte-text >input') &&
-          (
-            document.querySelector(
-              '.richtext-reusable .rte-text >input'
-            ) as unknown as HTMLInputElement
-          )?.value,
+          (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
+            ?.value,
         'RTE Value form JS'
       );
     }
