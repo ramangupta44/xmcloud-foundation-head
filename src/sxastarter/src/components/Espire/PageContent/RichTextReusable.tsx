@@ -22,16 +22,21 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
 
   const fetchMessage = async (e: React.MouseEvent<HTMLButtonElement>) => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
-    const finalText = buttonText + ' ' + input;
 
     if (typeof document != undefined) {
+      input = (document.querySelector('.richtext-reusable .rte-text >input') &&
+        (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
+          ?.value) as string;
       console.log(
         document.querySelector('.richtext-reusable .rte-text >input') &&
           (document.querySelector('.richtext-reusable .rte-text >input') as HTMLInputElement)
             ?.value,
         'RTE Value form JS'
       );
+      console.log(input, '---------- Input Value -------', input.replace(/(<([^>]+)>)/gi, ''));
     }
+
+    const finalText = buttonText + ' ' + input;
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
