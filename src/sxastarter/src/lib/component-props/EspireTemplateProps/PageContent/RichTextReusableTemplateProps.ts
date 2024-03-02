@@ -4,5 +4,6 @@ export type RichTextReusableTemplateProps = ComponentProps & {
   params: { [key: string]: string };
   fields: {
     RichText: Field<string>;
+    Button: Field<string>;
   };
 };
