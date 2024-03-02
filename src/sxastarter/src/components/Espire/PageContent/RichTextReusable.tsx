@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/RichTextReusableTemplateProps';
-import { RichText, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { RichText, useSitecoreContext, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import axios from 'axios';
 
 const OpenAIAPIKey = process.env.NEXT_PUBLIC_CHAT_GPT_KEY;
@@ -42,12 +42,12 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
 
     console.log(response , "response")
   };
-
+const {sitecoreContext} = useSitecoreContext();
+const isEdit = sitecoreContext?.pageEditing;
   return (
     <div className={`richtext-reusable ${props.params.styles}`}>
       <RichText field={props?.fields?.RichText} />
-      <button onClick={fetchMessage}>{props?.fields?.Button?.value}</button>
-      <button onClick={fetchMessage}>{process.env.RTEButtonText}</button>
+     { isEdit  && (<><button onClick={fetchMessage}>Answer</button><button onClick={fetchMessage}>{props?.fields?.Button?.value}</button><button onClick={fetchMessage}>Summarize</button><button onClick={fetchMessage}>Proof Read </button></>)}
       <div>
         {responseData.map((data: ChatGPTResponse, index) => (
           <div key={index} className={data?.role}>
