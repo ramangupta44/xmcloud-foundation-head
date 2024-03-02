@@ -1,9 +1,10 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import { RichTextReusableTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/RichTextReusableTemplateProps';
 import { RichText, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import axios from 'axios';
 
-const OpenAIAPIKey = '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';
+const OpenAIAPIKey = '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';
 
 type ChatGPTProps = [role: string, content: unknown];
 
@@ -11,6 +12,7 @@ type ChatGPTResponse = {
   role: string;
   content: string;
 };
+
 
 export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Element => {
   const [responseData, setResponseData] = useState<ChatGPTProps>([] as unknown as ChatGPTProps);
@@ -39,7 +41,7 @@ export const RichTextReusable = (props: RichTextReusableTemplateProps): JSX.Elem
       { role: 'assistant', content: response.data.choices[0].message.content },
     ] as unknown as ChatGPTProps);
 
-    console.log(response, 'response');
+    console.log(response , "response")
   };
 
   return (
