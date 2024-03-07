@@ -22,6 +22,7 @@ export const Login = (props: ComponentProps): JSX.Element => {
       <div className="login">
         <Form.Select aria-label="Login Functionality">
           <option>Login</option>
+          <option>Register</option>
         </Form.Select>
       </div>
     </div>
