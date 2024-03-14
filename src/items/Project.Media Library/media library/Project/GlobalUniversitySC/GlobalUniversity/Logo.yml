@@ -1,0 +1,48 @@
+﻿---
+ID: "79829415-1c66-43ff-8a0b-174fdaa469f3"
+Parent: "37e28aa7-746c-43cb-af63-7456d8c54dc3"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Project/GlobalUniversitySC/GlobalUniversity/Logo
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/798294151C6643FF8A0B174FDAA469F3.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "30c303c2-6e6c-4b4c-8a6d-9664e2f6a8b1"
+  Value: PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTMiIGhlaWdodD0iNjgiIHZpZXdCb3g9IjAgMCAyNTMgNjgiPgogIDxnIGlkPSJMb2dvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTIgLTI5KSI+CiAgICA8dGV4dCBpZD0iVGhlX0dsb2JhbF9Vbml2ZXJzaXR5IiBkYXRhLW5hbWU9IlRoZSAKR2xvYmFsIFVuaXZlcnNpdHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkyIDI5KSIgZmlsbD0iI2VmOGQzNiIgZm9udC1zaXplPSIyNCIgZm9udC1mYW1pbHk9IlBvcHBpbnMtRXh0cmFCb2xkLCBQb3BwaW5zIiBmb250LXdlaWdodD0iODAwIj48dHNwYW4geD0iMCIgeT0iMjUiPlRoZSA8L3RzcGFuPjx0c3BhbiB4PSIwIiB5PSI2MCI+R2xvYmFsIFVuaXZlcnNpdHk8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 422
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240117T084934Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3e10d0fb-047d-4e72-b510-c85e072d179b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240117T084934Z

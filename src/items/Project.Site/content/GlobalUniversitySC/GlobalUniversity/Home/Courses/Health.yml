@@ -1,0 +1,45 @@
+﻿---
+ID: "aa89d116-0d9c-48c4-9381-07ccb13033da"
+Parent: "6e8ff81b-f7d6-45f3-967e-092b9cd631e3"
+Template: "97779d41-866b-4682-9902-99588d954e78"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Courses/Health
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{903E7D93-B88E-495C-9624-B226D87A98E8}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240122T083327Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Health
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2f79c8a0-1372-44a5-b71f-e46efee1d883"
+    - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
+      Hint: Title
+      Value: Health
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240125T095227Z

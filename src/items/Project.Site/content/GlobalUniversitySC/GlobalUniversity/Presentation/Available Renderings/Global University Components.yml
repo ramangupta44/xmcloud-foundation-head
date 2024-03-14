@@ -1,0 +1,44 @@
+﻿---
+ID: "73cd70cf-c91e-4c02-a176-195436cf52c1"
+Parent: "54dd2e7f-86c6-403e-ac52-341d5ac2c715"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Available Renderings/Global University Components
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {A349AA61-B2E8-491E-A62C-1BC114A395C0}
+    {B973A7DC-7B58-4B0A-8230-B49568A4024B}
+    {49E6F4CE-8B6E-4214-A563-3D6BDA0A7CE1}
+    {46B98669-CC06-4377-BCB2-1B45AD33AF6A}
+    {713CA5BF-E748-451D-84C7-0066A866A54F}
+    {2BA964AE-64FD-43D6-A08B-F41B7042D96A}
+    {0D49FA6A-0836-43B2-80C0-924B8A2430C3}
+    {C8D5D160-8F1E-42B1-ADA9-FBC3DE9980F2}
+    {6CBF6477-9781-47C2-AD17-FED5341908FD}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240123T051704Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "899c3a45-85e2-4e43-a7ae-d18a84a851ae"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240212T075957Z

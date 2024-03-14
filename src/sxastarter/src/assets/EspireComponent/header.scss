@@ -1,351 +1,408 @@
-@import "../sass/abstracts/vars/";
+@import "../sass/abstracts/vars/headings";
+@import "../sass/abstracts/vars/colors";
+@import "../sass/abstracts/vars/media-screen";
 
-#header {
-  color: $white;
-  > .container {
-    width: 100%;
-    max-width: 100%;
-    @include respond-to(tablet-to-laptop) {
-      padding: 0 3rem;
-    }
-  }
-  a {
-    color: $white;
-    font-size: $navigation-font-basic;
-  }
-  .link {
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-    &.skip-to-content {
-      margin-top: 0;
-      padding-top: 0;
-      padding-left: 0;
-    }
-  }
+/**
+ * Import heading, media-screen & colors
+ *
+ * Header: style guides for global
+ */
 
-  .link-list {
-    > .component-content {
-      li {
-        a {
-          &::before {
-            content: "";
-          }
-          &:hover {
-            border: 0;
-          }
-        }
-      }
-    }
-    ul {
-      @include respond-to(desktop-and-above) {
-        float: right;
-      }
-      li {
-        display: inline-block;
-        margin: 0 1rem;
-      }
-    }
+ 
+#header{
+  background-color: $primary;
+  padding: 2rem 0 0;
+  border-bottom: 1px solid $grey-black;
+  @media screen and (max-width:$screen-md ) {
+    padding:1rem 2rem;
   }
-  select,
-  option {
-    font-size: 1.4rem;
-    background-color: $white;
-    color: $brand-color;
-    padding: 0.7rem;
-    &:focus {
-      border: 1px solid transparent;
-      box-shadow: none;
-    }
-  }
-  img {
-    max-width: 90px;
-    @include respond-to(below-laptop) {
-      max-width: 60px;
-    }
-  }
-  .navigation.navigation-main {
-    .component-content > nav {
-      .rel-level1 {
-        margin: 0 1rem;
-      }
-    }
-  }
-  .navigation.navigation-main .rel-level1.submenu > .navigation-title {
-    a {
-      &::after {
-        content: "";
-      }
-    }
-  }
-  .navigation {
-    &.navigation-main {
-      .rel-level1 {
-        &:hover {
-          .rel-level2 {
-            background: white;
-            .navigation-title {
-              span {
-                color: black;
+  #top-nav{
+    .search-bar-default{
+      .search-bar{
+        .input-group{
+          height:3.7rem;
+          border: 1px solid $grey-black;
+          border-radius: 3px;
+          #search-btn{
+            border-color:#6e7f75;
+            background-color: #6e7f75;
+            .fa-search{
+              &::before{
+                color:$white;
+                font-size:$breadcrumb-font;
+                display: inline;
               }
             }
           }
-        }
-        > ul {
-          box-shadow: 1px 3px 3px 1px #dee2e6;
-        }
-        &.last {
-          a {
-            padding-right: 0;
-          }
-        }
-        > .navigation-title {
-          a {
-            &:hover {
-              border: 0;
-            }
-            border: 0;
-            margin:0;
-          }
-        }
-      }
-      .component-content {
-        > nav {
-          position: static;
-        }
-      }
-    }
-    nav {
-      > ul {
-        float: right;
-        ul {
-          li {
-            a {
-              color: black;
+          input{
+            background-color: #6e7f75;
+            border: none;
+            border-color:$primary;
+            outline:0;
+            &::placeholder{
+              color:$medium-grey;
             }
           }
         }
       }
     }
-    margin: auto 0 0 auto;
-  }
-
-  .search-bar-default {
-    margin: auto;
-    button#search-btn {
-      padding: 0.7rem;
-      background-color: $primary-light;
-      border: 1px solid $primary-light;
-      outline: 0;
-      box-shadow: none;
-      i {
-        font-size: $small;
-        padding-left: 0.3rem;
+    .login{
+      @media screen and (max-width:$screen-md ) {
+        display:none;
       }
-    }
-    input {
-      padding: 0.7rem;
-      background-color: $primary-light;
-      border: 1px solid $primary-light;
-      &::placeholder {
+      select{
+        background-color: $secondry;
+        height: 3.7rem;
         color: $white;
-        font-size: $small;
-      }
-      &:focus {
-        border: none;
-      }
-    }
-    @include respond-to(below-laptop) {
-      padding: 0 3rem 0 2rem;
-    }
-  }
-
-  @include respond-to(laptop-to-desktop) {
-    .container {
-      .row > * {
-        max-width: 960px;
-      }
-    }
-    a {
-      font-size: 1.2rem;
-    }
-  }
-
-  #top-nav {
-    @media screen and (max-width: $screen-md) {
-      display: none;
-    }
-    .link-list {
-      .first {
-        display: none;
-        @include respond-to(laptop-and-above) {
-          display: inline-block;
-        }
-      }
-      @include respond-to(below-laptop) {
-        flex: 1;
-      }
-      .last {
-        @include respond-to(below-laptop) {
-          display: block;
-          text-align: right;
-        }
-      }
-    }
-    &.container {
-      @include respond-to(below-laptop) {
-        padding-left: 0;
-        padding-right: 0;
+        border:1px solid $white;
+        font-size:$navigation-font-basic;
       }
     }
   }
-
-  #bottom-nav {
-    padding: 1rem;
-    .link {
-      @include respond-to(below-laptop) {
-        text-align: right;
-        margin: 0;
-        a {
-          font-size: 0;
-        }
-
-        &::before {
-          content: url("../../../public/hamburger-icon.svg");
-          display: inline-block;
-        }
-      }
+  #bottom-nav{
+    @media screen and (max-width:$screen-md ) {
+      margin-top:2.5rem;
     }
-    .image {
-      padding-bottom: 10px;
-    }
-    &.container {
-      @include respond-to(below-laptop) {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-  }
-  #bottom-nav {
     .component-content {
-      > .row {
-        align-items: center;
+      > .row{
+      align-items: center;
       }
     }
-    .component.image {
-      a {
-        img {
+    .component.image{
+      a{
+        img{
           width: auto;
           position: relative;
-          bottom: 1.4rem;
+          bottom: 2.4rem;
           margin-bottom: -1.9rem;
-
-          @media screen and (max-width: $screen-md) {
+      
+          @media screen and (max-width:$screen-md ) {
             width: 100%;
-            top: -.5rem;
+            top: -2rem;
           }
         }
       }
     }
-    .navigation.navigation-main {
-      .menu-mobile-navigate-wrapper {
-        @media screen and (max-width: $screen-md) {
-          position: relative;
+    .navigation.navigation-main{
+      nav{
+        &:first-child{
+         float:right;
         }
-        @media screen and (max-width: $screen-md) {
-          input[type="checkbox"]:not(:checked) ~ .menu-humburger {
+        > ul{
+          display:flex;
+        }
+        ul{
+          @media screen and (max-width:$screen-md ) {
+            display:block;
+          }
+          li.rel-level1{
+            margin: 0 1rem;
+            padding: 1rem 0rem 0 1.2rem;
+            position: relative;
+             &:hover{
+              >.navigation-title >a{
+                border-bottom:4px solid $secondry;
+              }
+               ul{
+                display:block;
+              }
+            }
+            > ul{
+              padding: 0 !important;
+              li{
+                border-bottom:1px solid $grey-black;
+              }
+              
+            }
+            &.submenu {
+              &:hover >.navigation-title a span{ 
+                color: $white;
+              }
+            }
+            @media screen and (max-width:$screen-md ) {
+              float: none;
+              background-color:$light-grey;
+              border-radius: 3px;
+              padding:.5rem;
+              margin:1rem 1.5rem;
+              position:relative;
+              &:hover{
+                ul{
+                  display:block;
+                }
+              }
+            }
+            .navigation-title{
+              a{
+                color:$white;
+                font-family: poppins-regular;
+                border-top: 0;
+                padding: 0.8rem 0;
+                border-bottom: 4px solid transparent;
+                @media screen and (max-width:$screen-md ) {
+                  display:none;
+                }
+                &::after{
+                  top: 1.8rem;
+                   right: -1.5rem;
+                }
+              }
+              .mobile-title{
+                display:none;
+                  @media screen and (max-width:$screen-md ) {
+                    pointer-events: none;
+                    font-size:$navigation-font-basic;
+                    color:$black;
+                    border:none;
+                    padding:.5rem;
+                    background-color: transparent;
+                    display:block;
+                  }
+                &:hover{
+                  border-color:transparent;
+                  border-bottom: 4px solid $secondry;
+                  span{
+                    color:$white !important;
+                  }
+                }
+              }
+            }
+            &:last-child{
+              margin-right:0;
+              @media screen and (max-width:$screen-md ) {
+                margin-right: 1.5rem;
+              }
+              .mobile-title{
+                padding-right: 0;
+              }
+            }
+            ul{
+              width: 348px;
+              left: 1.2rem;
+              top: 6rem;
+              border-radius: 6px;
+              border-top-left-radius: 0;
+              padding: 1.2rem;
+              border:1px solid $primary;
+              @media screen and (max-width:$screen-md ) {
+                width: 100%;
+                position: relative;
+                left: 0rem;
+                top: .8rem;
+                border:1px solid $light-grey;
+                background-color: $light-grey;
+                padding: 0rem;
+                border-radius: 5px;
+                display:none;
+              }
+              li.rel-level2{
+                margin: 0;
+                padding: 0 1.2rem;
+
+                span{
+                  color:$grey;
+                }
+
+                &:hover{
+                    background-color: transparent;
+                    
+                }
+                .mobile-title{
+                  color:$black;
+                  text-decoration: none;
+                  font-size: $navigation-font-basic;
+                  padding:.8rem;
+                  
+                  &:hover{
+                    border-bottom: 1px solid $grey-black;
+                    &:last-child{
+                      border-bottom:none;
+                    }
+                    span{
+                      color:$secondry !important;
+                     
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+      .menu-mobile-navigate-wrapper{
+        @media screen and (max-width:$screen-md ) {
+          position:relative;
+        }
+        @media screen and (max-width:$screen-md ) {
+          input[type=checkbox]:not(:checked) ~ .menu-humburger{
             background-image: url(../images/menu-mobile.svg);
-            background-repeat: no-repeat;
-            z-index: 4;
+          
+            z-index:4;
           }
-          input[type="checkbox"]:checked ~ .menu-humburger {
+          input[type=checkbox]:checked ~ .menu-humburger{
             background-image: url(../images/close.svg);
-            z-index: 4;
-            background-size: cover;
-            top:-3.2rem;
-            right: 2rem;
-            rotate: 45deg;
-            height: 35px;
-            width: 35px;
+            z-index:4;
+            background-size:cover;
           }
-          input[type="checkbox"]:checked ~ .component-content > nav {
+          input[type=checkbox]:checked ~ .component-content >nav{
             display: block;
           }
-          input[type="checkbox"]:not(:checked) ~ .component-content > nav {
+          input[type=checkbox]:not(:checked)~ .component-content >nav{
             display: none;
           }
         }
-        .menu-humburger {
-          display: none;
-          @media screen and (max-width: $screen-md) {
-            display: block;
+        .menu-humburger{
+          display:none;
+          @media screen and (max-width:$screen-md ) {
+            display:block;
             height: 25px;
-            width: 25px;
+            width:25px;
             float: right;
             position: absolute;
             top: -4.5rem;
             right: -15rem;
           }
-          @media screen and (max-width: $screen-xs) {
-            top: -3.2rem;
+          @media screen and (max-width:$screen-xs ) {
+            top: -4.2rem;
             right: 0rem;
           }
         }
-        .menu-mobile-navigate {
+        .menu-mobile-navigate{
           display: block;
           position: absolute;
           height: 25px;
           width: 25px;
           z-index: -1;
-          top: -3.5rem;
-          right: 4rem;
+            top: -3.5rem;
+            right: 4rem;
         }
-        nav {
-          @media screen and (max-width: $screen-md) {
+        nav{
+          @media screen and (max-width:$screen-md ) {
             position: absolute;
             top: -6.2rem;
             right: -3rem;
-            background: $white;
+            background:$white;
             width: 90%;
             z-index: 3;
             padding-top: 8rem;
             padding-bottom: 8rem;
-            display: none;
-            background-color: $brand-color;
-            box-shadow: -1px -2px 8px 4px $primary-light;
+            display:none;
           }
-          @media screen and (max-width: $screen-sm-max) {
+          @media screen and (max-width:$screen-sm-max){
             top: -6.2rem;
             right: -22.9rem;
           }
-          @media screen and (max-width: $tablet-width) {
+          @media screen and (max-width:$tablet-width ) {
             right: -21.9rem;
             top: -7.9rem;
           }
-          @media screen and (max-width: $screen-xs) {
+          @media screen and (max-width:$screen-xs){
             top: -6.2rem;
             right: -2.9rem;
           }
-          ul {
-            @media screen and (max-width: $screen-md) {
-              padding: 1rem;
+        }
+      }
+      
+    }
+    .login{
+      select{
+        @media screen and (max-width:$screen-md ) {
+            position: absolute;
+            display:none;
+            top: -1.5rem;
+            right: 14.5rem;
+            width: 32%;
+            z-index: 23;
+            background-color: $secondry;
+            height: 3.7rem;
+            color: $white;
+            border:1px solid $white;
+            font-size:$navigation-font-basic;
+          }
+        }
+    }
+    .footer-search-bar{
+      .search-bar{
+        float:right;
+        button{
+          border:none;
+          top: -3px;
+          right: 2rem;
+          background: transparent;
+          @media screen and (max-width:$screen-md ) {
+            top: -8px;
+            right: -18rem;
+          }
+          @media screen and (max-width:$tablet-width ) {
+            top: -0.9rem;
+            right: -17rem;
+        
+          }
+          @media screen and (max-width:$content-width-xs){
+            top: -1rem;
+          }
+          @media screen and (max-width:$screen-xs){
+            top: -.8rem;
+            right: -1rem;
+          }
+          
+          .fa-search{
+            &:before{
+              color:$white;
+              font-size:$navigation-font-basic;
             }
-            li.rel-level1 {
-              @media screen and (max-width: $screen-md) {
-                width: 100%;
-                margin: 0.7rem 0;
-                background-color: $primary-light;
-                border-radius: 5px;
-              }
-              a {
-                @media screen and (max-width: $screen-md) {
-                  padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Editing Mode style
+
+.editing-mode{
+  .navigation.navigation-main{
+    nav{
+      ul{
+        li.rel-level1{
+          &:hover{
+            li.rel-level2 a{
+              color: $black;
+            }
+          }
+          ul{
+            li.rel-level2{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:$ipad) {
+    #header{
+      #bottom-nav{
+        .image{
+          img{
+            position: relative;
+            bottom: 1.3em;
+            margin-bottom: -1.9rem;
+          }
+        }
+        .navigation.navigation-main{
+          nav{
+            ul{
+              li.rel-level1{
+                &:hover{
+                  li.rel-level2 a{
+                    color: $black !important;
+                    text-decoration:none;
+                  }
                 }
-                span {
-                  @media screen and (max-width: $screen-md) {
-                    color: $white;
-                    font-family: poppins-bold;
-                    font-size: $small;
+                ul{
+                  li.rel-level2{
+                    text-decoration: none;
                   }
                 }
               }
@@ -355,12 +412,53 @@
       }
     }
   }
-}
-.editing-mode {
-  #header {
-    .link-list {
-      h3 {
-        display: none;
+  @media screen and (max-width:$tablet-width) {
+    #header{
+      .container{
+        max-width:100%;
+      }
+      #bottom-nav{
+        .navigation.navigation-main {
+          .menu-mobile-navigate-wrapper{
+            .menu-humburger{
+              right:1rem;
+              top: -4.9rem;
+            }
+          }
+        }
+        .footer-search-bar {
+          .search-bar{
+            button{
+              top: 0.4rem;
+              right: -3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:$screen-xs) {
+    #header{
+      .container{
+        max-width:100%;
+      }
+      #bottom-nav{
+        .navigation.navigation-main {
+          .menu-mobile-navigate-wrapper{
+            .menu-humburger{
+              right:1rem;
+              top: -4.2rem;
+            }
+          }
+        }
+        .footer-search-bar {
+          .search-bar{
+            button{
+              top: -0.9rem;
+              right: 1rem;
+            }
+          }
+        }
       }
     }
     .navigation.navigation-main {

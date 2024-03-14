@@ -1,0 +1,42 @@
+﻿---
+ID: "6eb48aab-b655-423e-a3b9-8d6d09133b21"
+Parent: "eb085602-1ce5-47a9-9d8b-f891d92766ad"
+Template: "97779d41-866b-4682-9902-99588d954e78"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Courses/Design/Course Design 2
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{673A3F42-B7C2-4676-8D62-630AF66A91A9}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240122T093207Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Course Design 2
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d54d678f-8fd5-44d3-962a-17dcfcafc029"
+    - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
+      Hint: Title
+      Value: Course Design 2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240122T093207Z

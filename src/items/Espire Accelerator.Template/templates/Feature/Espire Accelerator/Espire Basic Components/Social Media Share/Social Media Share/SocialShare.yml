@@ -6,7 +6,7 @@ Path: /sitecore/templates/Feature/Espire Accelerator/Espire Basic Components/Soc
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: /sitecore/content/EspireDemo/Espire/Data/Social Media Item
+  Value: "query:$site/*[@@name='Data']/*[@@name='Social Media Item']"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: TreelistEx
@@ -31,11 +31,11 @@ Languages:
         sitecore\manoj.chopkar@espire.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "aa96803d-b81f-4787-a5d7-fa088966e316"
+      Value: "0c90c4b0-9b88-492d-91e3-b2128842719d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240108T073132Z
+      Value: 20240122T060009Z

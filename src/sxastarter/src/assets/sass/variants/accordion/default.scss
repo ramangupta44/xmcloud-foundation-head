@@ -1,0 +1,31 @@
+@import "../../abstracts/vars";
+
+.accordion{
+    margin-top: 1rem;
+    .accordion-item{
+        background-color: $light-grey;
+        border: none !important;
+        border-radius: 7px;
+        margin-bottom: 3rem;
+        &:not(:first-of-type) {
+            border-top: 1px solid #ccc;
+        }
+        .accordion-header{
+            button{
+                background: transparent;
+                color:$black;
+                outline: none;
+                box-shadow: none;
+                padding: 1.5rem;
+                h6{
+                    font-size: $small;
+                }
+            }
+        }
+        .accordion-collapse{
+            background-color: $white;
+            border: 1px solid $light-grey;
+            border-top: 0;
+        }
+    }
+}

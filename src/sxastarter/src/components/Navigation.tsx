@@ -140,6 +140,7 @@ const NavigationList = (props: NavigationProps) => {
         >
           {getNavigationText(props)}
         </Link>
+        <div className="mobile-title"> {getNavigationText(props)}</div>
       </div>
       {children.length > 0 ? <ul className="clearfix">{children}</ul> : null}
     </li>

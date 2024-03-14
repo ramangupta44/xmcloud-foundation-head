@@ -1,0 +1,39 @@
+﻿---
+ID: "f39cbebf-c9de-419d-a54f-2abc6165e6ce"
+Parent: "4ca3b218-330f-4b61-8ab3-782f6c3b2068"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Presentation/Headless Variants/BlogPostUpdateLog
+BranchID: "2c42ac87-6f2f-4803-8777-c5dfee5cd941"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{89095E8D-013F-4C98-B7CF-D8261922B0BC}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240109T102647Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bfed779c-ca5f-48dd-a892-3aa9eaa06086"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240209T094057Z

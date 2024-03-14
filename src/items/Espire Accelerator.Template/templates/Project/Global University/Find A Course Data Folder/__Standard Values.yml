@@ -1,0 +1,37 @@
+﻿---
+ID: "4cd4a0c4-842b-485a-94bb-845448ac5227"
+Parent: "a6713cde-c3e6-46a8-8e02-fa82f1d08cda"
+Template: "a6713cde-c3e6-46a8-8e02-fa82f1d08cda"
+Path: /sitecore/templates/Project/Global University/Find A Course Data Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {15D84598-0680-4BAF-BF41-1C7ED2AB868A}
+    {A6713CDE-C3E6-46A8-8E02-FA82F1D08CDA}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240122T152929Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a6e1d8e7-930b-43ff-ab05-fda9796cd31f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240122T153016Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "be6b42cf-df36-411e-aae5-1d51c2da4995"
+Parent: "a59472d0-d141-4400-87a0-beae3dbeb7a1"
+Template: "7d56ad5e-7c4c-418d-8014-919750841454"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Tabs/Tabs Folder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T072039Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d7bfbc17-8866-47b8-adf5-f14921cac54c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240111T072039Z

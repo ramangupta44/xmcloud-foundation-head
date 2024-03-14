@@ -1,0 +1,25 @@
+@import "../../abstracts/vars";
+
+.courseinfobadge{
+    h6{
+        font-size:$breadcrumb-font;
+        color:$black;
+        font-family: 'poppins-regular';
+        margin-bottom:2rem;
+    }
+    .badge.blog-category{
+        margin-top:5rem;
+        display: flex;
+        h6{        
+            background-color: $grey;
+            color: $white;
+            padding: 0 0.5rem;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-bottom: 0;
+            text-align: left;
+            margin-left: -1rem;
+            line-height: 1.8;
+        }
+    }
+}

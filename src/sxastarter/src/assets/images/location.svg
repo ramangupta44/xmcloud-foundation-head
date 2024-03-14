@@ -1,0 +1,7 @@
+<svg id="location" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_192" data-name="Rectangle 192" width="24" height="24" fill="none"/>
+  <g id="map-pin_1_" data-name="map-pin (1)" transform="translate(2 2)">
+    <path id="Path_226" data-name="Path 226" d="M17,7.545C17,12.636,10,17,10,17S3,12.636,3,7.545A6.784,6.784,0,0,1,10,1,6.784,6.784,0,0,1,17,7.545Z" transform="translate(0 0)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="3" cy="3" r="3" transform="translate(7 4.75)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

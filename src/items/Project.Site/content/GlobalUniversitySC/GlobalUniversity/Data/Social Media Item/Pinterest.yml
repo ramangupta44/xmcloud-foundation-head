@@ -1,0 +1,34 @@
+﻿---
+ID: "e35f64b2-118e-40bf-8953-2c39ac9d6803"
+Parent: "e25d51be-8d84-4418-b495-11c17b8becac"
+Template: "91826226-4f91-4791-9b14-e201b1d9cb2c"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Social Media Item/Pinterest
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240117T095013Z
+    - ID: "440ca255-d3ae-47f1-91d6-0627c87e5435"
+      Hint: Social Media Name
+      Value: pinterest
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c30ea44-c463-4fa5-aea5-f301945dda78"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240117T095016Z

@@ -1,0 +1,37 @@
+﻿---
+ID: "c84ab108-1c48-402f-bf2c-14f05ebc14fb"
+Parent: "545e934d-1988-4e2b-8d56-c89d65cca9b5"
+Template: "545e934d-1988-4e2b-8d56-c89d65cca9b5"
+Path: /sitecore/templates/Project/Global University/Global University Accordion Data Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {1E87B25F-25BE-497B-8BEF-F8054F5FF7C6}
+    {545E934D-1988-4E2B-8D56-C89D65CCA9B5}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240207T083529Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "16e78b42-ca29-4145-9eff-8ee5cae449b6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240208T060200Z

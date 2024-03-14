@@ -34,7 +34,7 @@ const ComponentContent = (props: ComponentContentProps) => {
 export const Default = (props: PageContentProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
   const id = props?.params?.RenderingIdentifier;
-
+  //valueget
   if (!(props?.fields && props?.fields?.Content) && !sitecoreContext?.route?.fields?.Content) {
     return (
       <div className={`component content ${props?.params?.styles}`} id={id ? id : undefined}>
@@ -55,5 +55,12 @@ export const Default = (props: PageContentProps): JSX.Element => {
     <ComponentContent styles={props?.params?.styles} id={id}>
       <JssRichText field={field} />
     </ComponentContent>
+  );
+};
+export const CoursePageContent = (props: PageContentProps): JSX.Element => {
+  return (
+    <div className="component content coursepagecontent">
+      <Default params={props?.params} fields={props?.fields} />
+    </div>
   );
 };

@@ -1,0 +1,39 @@
+﻿---
+ID: "82cf3091-a67a-44d8-b030-40aaef3a6ed4"
+Parent: "db3c4558-b05a-4a35-9a00-17f71c6cb53d"
+Template: "705cc674-f84a-49f7-8103-3328de62e99b"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Social Media Share/GlobalUniversity Social Media Links
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240117T090110Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "81b8b2c9-87b4-44fb-9995-526002233c2e"
+      Hint: SocialShare
+      Value: |
+        {66A9D65D-8C11-4293-A214-BEB1ED10A8FB}
+        {D20E5F70-E576-4C06-A935-FF810679E63C}
+        {4F3471EE-F2A9-4059-BA63-3A2B191F5E47}
+        {76F78C00-A3F4-45C3-9EAA-A8375B4FA738}
+        {E35F64B2-118E-40BF-8953-2C39AC9D6803}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "94bbaaee-e822-4420-a7ec-d4e11a549f8a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240118T061553Z

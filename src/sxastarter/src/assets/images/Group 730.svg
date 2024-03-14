@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_730" data-name="Group 730" transform="translate(-1117 -571)">
+    <g id="Group_725" data-name="Group 725" transform="translate(43 -6)">
+      <rect id="Rectangle_195" data-name="Rectangle 195" width="24" height="24" transform="translate(1074 577)" fill="rgba(255,255,255,0)"/>
+      <g id="noun-list-969174" transform="translate(1075 577.5)">
+        <ellipse id="Ellipse_26" data-name="Ellipse 26" cx="1.333" cy="1.385" rx="1.333" ry="1.385" transform="translate(3 5.5)" fill="#fff"/>
+        <path id="Path_177" data-name="Path 177" d="M10.333,8.269h8a1.386,1.386,0,0,0,0-2.769h-8a1.386,1.386,0,0,0,0,2.769Z" transform="translate(-0.667 0)" fill="#fff"/>
+        <ellipse id="Ellipse_27" data-name="Ellipse 27" cx="1.333" cy="1.385" rx="1.333" ry="1.385" transform="translate(3 10.115)" fill="#fff"/>
+        <path id="Path_178" data-name="Path 178" d="M18.333,10.5h-8a1.386,1.386,0,0,0,0,2.769h8a1.386,1.386,0,0,0,0-2.769Z" transform="translate(-0.667 -0.385)" fill="#fff"/>
+        <ellipse id="Ellipse_28" data-name="Ellipse 28" cx="1.333" cy="1.385" rx="1.333" ry="1.385" transform="translate(3 14.731)" fill="#fff"/>
+        <path id="Path_179" data-name="Path 179" d="M18.333,15.5h-8a1.386,1.386,0,0,0,0,2.769h8a1.386,1.386,0,0,0,0-2.769Z" transform="translate(-0.667 -0.769)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

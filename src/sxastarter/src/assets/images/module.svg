@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="module" transform="translate(-73.598 2)">
+    <rect id="Rectangle_187" data-name="Rectangle 187" width="16" height="16" transform="translate(73.598 -2)" fill="none"/>
+    <g id="Icon_feather-book-open" data-name="Icon feather-book-open" transform="translate(73.598 -3.5)">
+      <path id="Path_171" data-name="Path 171" d="M3,4.5H6.2A2.178,2.178,0,0,1,8.329,6.722V14.5a1.634,1.634,0,0,0-1.6-1.667H3Z" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_172" data-name="Path 172" d="M23.329,4.5h-3.2A2.178,2.178,0,0,0,18,6.722V14.5a1.634,1.634,0,0,1,1.6-1.667h3.73Z" transform="translate(-9.714)" fill="none" stroke="#030404" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

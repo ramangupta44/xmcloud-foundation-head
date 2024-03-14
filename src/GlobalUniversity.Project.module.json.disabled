@@ -1,0 +1,37 @@
+    {
+        "namespace": "GlobalUniversity Project",
+        "items": {
+            "includes": [
+                {
+                    "name": "GlobalUniversity.Rendering.Project",
+                    "path": "/sitecore/layout/Renderings/Project",
+                    "allowedPushOperations": "createUpdateAndDelete",
+                    "scope": "itemAndDescendants"
+                },
+                {
+                    "name": "GlobalUniversity.Placeholder Settings.Project",
+                    "path": "/sitecore/layout/Placeholder Settings/Project",
+                    "allowedPushOperations": "createUpdateAndDelete",
+                    "scope": "itemAndDescendants"
+                },
+                {
+                    "name": "GlobalUniversity.Settings.Project",
+                    "path": "/sitecore/system/Settings/Project",
+                    "allowedPushOperations": "createUpdateAndDelete",
+                    "scope": "itemAndDescendants"
+                },
+                {
+                    "name": "GlobalUniversity.Template.Branches.Project",
+                    "path": "/sitecore/templates/Branches/Project",
+                    "allowedPushOperations": "createUpdateAndDelete",
+                    "scope": "itemAndDescendants"
+                },
+                {
+                    "name": "GlobalUniversity.MediaLibrary.Project",
+                    "path": "/sitecore/media library/Project/Global University",
+                    "allowedPushOperations": "createUpdateAndDelete",
+                    "scope": "itemAndDescendants"
+                }
+            ]
+        }
+    }

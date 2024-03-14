@@ -1,0 +1,70 @@
+﻿---
+ID: "6e8ff81b-f7d6-45f3-967e-092b9cd631e3"
+Parent: "c74739bb-394a-4f5d-a449-0df57c1545bd"
+Template: "97779d41-866b-4682-9902-99588d954e78"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Courses
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{622E73BD-8307-43BE-993F-CBCCE1C42617}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{EBB83D35-E751-405D-935D-AB7C88373556}"
+              p:before="*"
+              s:ds="{F8CB88BB-A8EA-4953-90C4-D31538E247A7}"
+              s:id="{A349AA61-B2E8-491E-A62C-1BC114A395C0}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+            <r
+              uid="{4BBC5670-3D6A-4784-A60A-6ACA6808EFF7}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{09D6C16B-DDE1-42C0-B8C3-FB60F38927E6}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;Scope=%7B6E8FF81B-F7D6-45F3-967E-092B9CD631E3%7D&amp;Template=%7BFAB30E6E-F3CE-4AC2-9AD5-607355A93858%7D&amp;Display Count=5&amp;Lazy Loading&amp;Show More&amp;FieldNames=%7BF413F4E3-8F50-4BDB-84AC-6ECA9155C66C%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T092239Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Courses
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b9ce3e2f-db13-4a10-be07-40692e8eb70b"
+    - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
+      Hint: Title
+      Value: Courses
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240202T043635Z

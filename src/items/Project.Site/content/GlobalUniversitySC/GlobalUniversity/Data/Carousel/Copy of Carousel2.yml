@@ -1,0 +1,39 @@
+﻿---
+ID: "1ced1517-2699-4f8c-85bf-81ae699c38b7"
+Parent: "4ef0b4ce-9e55-4a9a-bd3b-26a0dc5aa47f"
+Template: "7f9680a9-4a10-460d-88a2-54a225dcd98b"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Data/Carousel/Copy of Carousel2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0eac2369-c859-4a79-9de1-289cd851779d"
+      Hint: Title
+      Value: test2
+    - ID: "17d4c5c8-0253-4349-80b8-abefb0231a5c"
+      Hint: Slide
+      Value: |
+        {11F14D17-EE27-4214-882E-356AC07332FD}
+        {DBD45CE5-AA4B-4661-8148-7D217943DDA5}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240110T091620Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0d209bb0-c988-4f48-b463-743ab45dd6d5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\iwmkkOokji
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240111T065717Z

@@ -1,0 +1,44 @@
+﻿---
+ID: "cb8bc7c1-eb08-4358-8ea3-184c086c15ba"
+Parent: "9edb5899-fd47-4691-9e68-320adad19d82"
+Template: "15d84598-0680-4baf-bf41-1c7ed2ab868a"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Students/Data/demo
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "140275f9-eaa3-451b-9e1a-042af9cf32a0"
+      Hint: CourseCategory
+      Value: "{EA682604-DEB3-4B77-821E-5A19E4EFD3B2}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240122T154902Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "844fa01a-a9e3-4007-bdf9-771defef3894"
+      Hint: CourseType
+      Value: "{1B67009F-44C9-4556-A28A-3C0605F9FFF8}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9db60928-ec11-44b6-b03a-c93f26e3a7c3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "cdfb42f1-c895-4f99-80dc-f6c5ea86c130"
+      Hint: Link
+      Value: |
+        <link text="Go To Home" anchor="" linktype="internal" class="" title="" target="|Custom" querystring="" id="{B08758B4-02AB-4503-9446-C3E959FE5C2A}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240130T063708Z
+    - ID: "dbcbbd0a-d5ef-4934-9d13-f8ef3eb6832b"
+      Hint: Title
+      Value: this is title

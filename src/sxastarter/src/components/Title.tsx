@@ -131,7 +131,7 @@ export const TitleCenterAlign = (props: TitleOnlyProps): JSX.Element => {
   );
 };
 
-export const PageTitle = (props: TitleOnlyProps): JSX.Element => {
+export const HighlightedTitle = (props: TitleOnlyProps): JSX.Element => {
   const id = props.id;
   const datasource = props.fields?.data?.datasource || props.fields?.data?.contextItem;
   const { sitecoreContext } = useSitecoreContext();
@@ -146,8 +146,9 @@ export const PageTitle = (props: TitleOnlyProps): JSX.Element => {
       text.value = 'Title field';
     }
   }
+
   return (
-    <div className={`component title page-title ${props?.params?.styles}`} id={id ? id : undefined}>
+    <div className={`component title highlightedtitle ${props.styles}`} id={id ? id : undefined}>
       <div className="component-content">
         <Text field={text} tag="h3" className="field-title" />
       </div>

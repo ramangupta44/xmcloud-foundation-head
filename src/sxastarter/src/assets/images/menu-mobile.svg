@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="19.81" height="16" viewBox="0 0 19.81 16"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(-355 -25)"><rect class="a" width="19.81" height="3" transform="translate(355 25)"/><rect class="a" width="15.81" height="3" transform="translate(355 31.5)"/><rect class="a" width="11.81" height="3" transform="translate(355 38)"/></g></svg>
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="bound" width="24" height="24" fill="none"/>
+  <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-0.5 -3)">
+    <path id="Path_221" data-name="Path 221" d="M4.5,18h16" transform="translate(0 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_222" data-name="Path 222" d="M4.5,9h16" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_223" data-name="Path 223" d="M4.5,27h16" transform="translate(0 -6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

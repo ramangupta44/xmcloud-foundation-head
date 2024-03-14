@@ -1,0 +1,51 @@
+﻿---
+ID: "ccb28824-4d08-45e3-a144-5148f37560cd"
+Parent: "eb085602-1ce5-47a9-9d8b-f891d92766ad"
+Template: "fab30e6e-f3ce-4ac2-9ad5-607355a93858"
+Path: /sitecore/content/GlobalUniversitySC/GlobalUniversity/Home/Courses/Design/TestCourses
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DB857FC8-B7A8-4B6E-A079-703EBC86A48E}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240122T094155Z
+    - ID: "3d5df626-e3c5-4735-90a8-06ab08310672"
+      Hint: CourseType
+      Value: "{1B67009F-44C9-4556-A28A-3C0605F9FFF8}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: TestCourses
+    - ID: "7894a1b3-2f32-4dbc-8946-aa303d8edcfd"
+      Hint: ThumbnailImage
+      Value: |
+        <image mediaid="{1B11EBFE-E80F-4B32-8798-7639971913E1}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3c77bc07-3b8e-4bf6-9ed2-c98d81f433ee"
+    - ID: "b772797c-97c7-4e42-a99a-338b1db03e0c"
+      Hint: Title
+      Value: TestCourses
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "bd640a5a-750d-4d19-8200-0bbb9860df78"
+      Hint: Image
+      Value: |
+        <image mediaid="{C7BE3B45-A97F-4386-9A7F-740520368AE7}" />
+    - ID: "cae4fcf3-3c5d-4bcb-9a99-065776f745f1"
+      Hint: AvailableSeat
+      Value: 2
+    - ID: "d76fa400-5684-4d84-a5b8-ce89f58f34a2"
+      Hint: CourseCategory
+      Value: "{EA682604-DEB3-4B77-821E-5A19E4EFD3B2}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240202T052431Z
