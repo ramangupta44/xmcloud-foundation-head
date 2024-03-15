@@ -13,7 +13,7 @@ import { EditMode } from 'lib/component-props';
 export const Banner = (props: BannerTemplateProps): JSX.Element => {
   const isEditMode = EditMode();
   return (
-    <div className={`banner ${props.params.styles}`}>
+    <div className={`banner ${props.params.styles} ${props?.className}`}>
       <section className={`banner-default`}>
         <JssImage field={props?.fields?.Image} width={''} height={''} />
         <div className="container">
@@ -35,3 +35,7 @@ export const Banner = (props: BannerTemplateProps): JSX.Element => {
 };
 
 export default withDatasourceCheck()<BannerTemplateProps>(Banner);
+
+export const BannerWithOverlay = (props: BannerTemplateProps): JSX.Element => {
+  return <Banner {...props} className={'banner-with-overlay'} />;
+};

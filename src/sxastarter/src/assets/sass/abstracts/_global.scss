@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @include opensans-font-stack();
+  // @include opensans-font-stack();
   position: relative;
   overflow: auto;
   color: $text-basic;
@@ -34,44 +34,7 @@ h6 {
   font-weight: 600;
 }
 
-p {
-  font-family: $myriad-regular-font;
-  font-weight: $regular;
-  font-size: $font-medium;
-  color: #000;
-  line-height: 1.5;
-}
 
-h1 {
-  // font-weight: $regular;
-  font-size: $xl-font;
-  font-family: $secondary-font;
-}
-
-h2 {
-  font-size: $lg-font;
-  font-family: $secondary-font;
-  // font-weight: $regular;
-  color: $brand-color;
-  margin-bottom: 3rem;
-  filter: contrast(1);
-}
-
-h3 {
-  font-size: $md-font-tertiary;
-  font-family: $secondary-font;
-  // font-weight: $regular;
-  margin-bottom: 1.5rem;
-  color: $brand-color;
-}
-
-h4 {
-  font-size: $md-font-primary;
-  color: $brand-color;
-  font-family: $myriad-regular-font;
-  font-weight: $semi-bold;
-  margin-bottom: 1.3rem;
-}
 
 ul,
 li {

@@ -461,5 +461,30 @@
         }
       }
     }
+    .navigation.navigation-main {
+      .component-content > nav {
+        .rel-level1 {
+          margin: 0 0.5rem;
+          > .navigation-title {
+            a {
+              padding: 0.8rem 0.8rem 2.5rem;
+              margin:0;
+            }
+          }
+          &.submenu {
+            &:hover a {
+              span {
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+    #top-nav {
+      .link-list {
+        float: right;
+      }
+    }
   }
 }
