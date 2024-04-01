@@ -2,9 +2,9 @@ import React from 'react';
 import { BannerTemplateProps } from 'lib/component-props/EspireTemplateProps/PageContent/BannerTemplateProps';
 
 import {
-  Image as JssImage,
   Link as JssLink,
   RichText as JssRichText,
+  NextImage,
   Text,
   withDatasourceCheck,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -12,12 +12,10 @@ import { EditMode } from 'lib/component-props';
 
 export const Banner = (props: BannerTemplateProps): JSX.Element => {
   const isEditMode = EditMode();
-  const width = props?.fields?.Image?.value?.width ?? 'defaultWidth';
-  const height = props?.fields?.Image?.value?.height ?? 'defaultHeight';
   return (
     <div className={`banner ${props.params.styles} ${props?.className}`}>
       <section className={`banner-default`}>
-        <JssImage field={props?.fields?.Image} width={width} height={height} />
+        <NextImage field={props?.fields?.Image} />
         <div className="container">
           <div className="banner-content">
             <Text tag="h1" field={props?.fields?.Title} />
