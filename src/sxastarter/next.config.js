@@ -9,7 +9,7 @@ const publicUrl = jssConfig.publicUrl;
  */
 const nextConfig = {
   // Set assetPrefix to our public URL
-  assetPrefix:  process.env.XMC_DEFAULT_RH === "true" ? publicUrl : undefined,
+  assetPrefix: process.env.XMC_DEFAULT_RH === "true" ? publicUrl : undefined,
 
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
@@ -56,8 +56,10 @@ const nextConfig = {
       },
     ];
   },
-
- ...headerConfig,
+  images: {
+    domains: process.env.IMAGE_DOMAINS ? process.env.IMAGE_DOMAINS.split(',') : [],
+  },
+  ...headerConfig,
 };
 
 module.exports = () => {
