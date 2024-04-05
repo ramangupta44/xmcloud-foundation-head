@@ -43,6 +43,19 @@ if (-not $envCheck) {
 Write-Host "Keeping XM Cloud base image up to date" -ForegroundColor Green
 docker pull "$($sitecoreDockerRegistry)sitecore-xmcloud-cm:$($sitecoreVersion)"
 
+# *** DLL Copying Logic Starts Here ***
+$libDir = Join-Path $PSScriptRoot "src\lib"
+$binDir = Join-Path $PSScriptRoot "docker\deploy\platform\bin"
+Write-Host "Copying DLL files from '$libDir' to '$binDir'" -ForegroundColor Cyan
+if (-not (Test-Path -Path $binDir)) {
+    New-Item -ItemType Directory -Path $binDir
+}
+Get-ChildItem -Path $libDir -Filter *.dll | ForEach-Object {
+    Copy-Item -Path $_.FullName -Destination $binDir -Force
+}
+Write-Host "DLL copy operation completed successfully" -ForegroundColor Green
+# *** DLL Copying Logic Ends Here ***
+
 # Build all containers in the Sitecore instance, forcing a pull of latest base containers
 Write-Host "Building containers..." -ForegroundColor Green
 docker compose build
