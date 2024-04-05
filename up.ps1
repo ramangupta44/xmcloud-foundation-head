@@ -47,9 +47,7 @@ docker pull "$($sitecoreDockerRegistry)sitecore-xmcloud-cm:$($sitecoreVersion)"
 $libDir = Join-Path $PSScriptRoot "src\lib"
 $binDir = "C:\inetpub\wwwroot\bin"
 Write-Host "Copying DLL files from '$libDir' to '$binDir'" -ForegroundColor Cyan
-if (-not (Test-Path -Path $binDir)) {
-    New-Item -ItemType Directory -Path $binDir
-}
+
 Get-ChildItem -Path $libDir -Filter *.dll | ForEach-Object {
     Copy-Item -Path $_.FullName -Destination $binDir -Force
 }
