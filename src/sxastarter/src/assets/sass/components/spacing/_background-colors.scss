@@ -12,3 +12,14 @@
 .container-color-background {
   background: $bg-blue;
 }
+
+.primary-color{
+  background: $brand-color;
+  *{
+    color:$white;
+  }
+}
+
+.container-light-background {
+  background: $light-color;
+}

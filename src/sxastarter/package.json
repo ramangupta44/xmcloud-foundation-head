@@ -1,10 +1,10 @@
 {
-  "name": "sxastarter",
+  "name": "espire",
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
   "version": "21.7.1",
   "private": true,
   "config": {
-    "appName": "sxastarter",
+    "appName": "espire",
     "rootPlaceholders": [
       "jss-main"
     ],
@@ -31,20 +31,29 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@apollo/client": "^3.9.4",
     "@sitecore-cloudsdk/events": "^0.2.4",
     "@sitecore-feaas/clientside": "^0.5.17",
     "@sitecore-jss/sitecore-jss-nextjs": "~21.7.1",
     "@sitecore/components": "^1.1.10",
+    "@types/react-slick": "^0.23.10",
+    "axios": "^1.6.7",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
     "graphql": "~15.8.0",
     "graphql-tag": "^2.12.6",
     "next": "^14.1.0",
     "next-localization": "^0.12.0",
+    "next-share": "^0.25.0",
+    "openai": "^4.28.4",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-slick": "^0.29.0",
     "sass": "^1.52.3",
-    "sass-alias": "^1.0.5"
+    "sass-alias": "^1.0.5",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.0",
