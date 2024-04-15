@@ -31,9 +31,4 @@ https://espirechdemo.sitecoresandbox.cloud/"
       <customErrors mode="Off" />
     </system.web>
   </location>
-  <!--<system.webServer>
-    <handlers>
-      <add name="Sitecore.MediaRequestHandler" verb="*" path="sitecore_media.ashx" type="Dianoga.NextGenFormats.MediaRequestHandlerXA, Dianoga" xdt:Transform="Replace" xdt:Locator="Match(name)"/>
-    </handlers>
-  </system.webServer>-->
 </configuration>
