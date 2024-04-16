@@ -80,7 +80,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "xmc-espireinfol3993-espirestartef06-dev.sitecorecloud.io",
-      },
+      },    
+      {
+        protocol: "https",
+        hostname: "espire-starter-kit-dev-espire.vercel.app",
+      },  
     ],
   },
   ...headerConfig,
