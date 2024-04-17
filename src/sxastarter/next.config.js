@@ -75,11 +75,14 @@ const nextConfig = {
     ];
   },
   images: {
-    domains: process.env.IMAGE_DOMAINS ? process.env.IMAGE_DOMAINS.split(',') : [],
+    domains: [
+      'espire-starter-kit-dev-espire.vercel.app',
+      'edge.sitecorecloud.io'
+    ],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "xmc-espireinfol3993-espirestartef06-dev.sitecorecloud.io",
+        hostname: "edge.sitecorecloud.io",
       },    
       {
         protocol: "https",
