@@ -35,6 +35,11 @@ const nextConfig = {
   // can be served from the Next.js Image Optimization API
   // see https://nextjs.org/docs/app/api-reference/components/image#remotepatterns
   images: {
+    domains: [
+      'espire-starter-kit-dev-espire.vercel.app',
+      'edge.sitecorecloud.io',
+      'feaas.blob.core.windows.net',
+    ],
     remotePatterns: [
       {
         protocol: 'https',
@@ -46,7 +51,15 @@ const nextConfig = {
         hostname: 'feaas*.blob.core.windows.net',
         port: '',
       },
-    ]
+      {
+        protocol: 'https',
+        hostname: 'edge.sitecorecloud.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'espire-starter-kit-dev-espire.vercel.app',
+      },
+    ],
   },
 
   async rewrites() {
@@ -73,22 +86,6 @@ const nextConfig = {
         destination: `${jssConfig.sitecoreApiHost}/sitecore/service/:path*`,
       },
     ];
-  },
-  images: {
-    domains: [
-      'espire-starter-kit-dev-espire.vercel.app',
-      'edge.sitecorecloud.io'
-    ],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "edge.sitecorecloud.io",
-      },    
-      {
-        protocol: "https",
-        hostname: "espire-starter-kit-dev-espire.vercel.app",
-      },  
-    ],
   },
   ...headerConfig,
 };
