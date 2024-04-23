@@ -1,14 +1,12 @@
 const jssConfig = require('./src/temp/config');
 const plugins = require('./src/temp/next-config-plugins') || {};
 const headerConfig = require('./project-configs/header');
-const securityHeaderConfig = require('./src/security-headers/security-headers');
 const publicUrl = jssConfig.publicUrl;
 
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  ...securityHeaderConfig,
   // Set assetPrefix to our public URL
   assetPrefix: process.env.XMC_DEFAULT_RH === 'true' ? publicUrl : undefined,
 
