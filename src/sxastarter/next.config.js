@@ -1,7 +1,6 @@
 const jssConfig = require('./src/temp/config');
 const plugins = require('./src/temp/next-config-plugins') || {};
 const headerConfig = require('./project-configs/header');
-
 const publicUrl = jssConfig.publicUrl;
 
 /**

@@ -16,6 +16,18 @@ const securityHeaders = [
     value:
       "default-src *; style-src 'self' 'unsafe-inline' 'unsafe-eval' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; frame-src 'self' *; object-src 'self' ; img-src 'self' data: https:;  font-src 'self' data: * https://fonts.gstatic.com; connect-src 'self' *; media-src * data: https:; base-uri 'self';",
   },
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN',
+  },
+  {
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin',
+  },
+  {
+    key: 'permissions-policy',
+    value: 'accelerometer=(), camera=(), microphone=(), usb=(), interest-cohort=()',
+  },
 ];
 
 module.exports = {
