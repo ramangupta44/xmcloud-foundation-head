@@ -78,7 +78,9 @@ const nextConfig = {
   ...headerConfig,
 };
 
-module.exports = () => {
+module.exports = () => {  
+  console.log('Asset Prefix:', nextConfig.assetPrefix); // This will log the value of assetPrefix
+  
   // Run the base config through any configured plugins
   return Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
 };
