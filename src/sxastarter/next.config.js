@@ -80,7 +80,7 @@ const nextConfig = {
 
 module.exports = () => {  
   console.log('Asset Prefix:', nextConfig.assetPrefix); // This will log the value of assetPrefix
-  
+  console.log('Asset Prefix2:', process.env.NEXT_PUBLIC_XMC_DEFAULT_RH); // This will log the value of assetPrefix2
   // Run the base config through any configured plugins
   return Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
 };
