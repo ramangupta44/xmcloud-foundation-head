@@ -8,8 +8,8 @@ const publicUrl = jssConfig.publicUrl;
  */
 const nextConfig = {
   // Set assetPrefix to our public URL
-  assetPrefix: process.env.XMC_DEFAULT_RH === "true" ? publicUrl : undefined,
-  //assetPrefix: publicUrl,
+  //assetPrefix: process.env.XMC_DEFAULT_RH === "true" ? publicUrl : undefined,
+  assetPrefix: publicUrl,
 
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
@@ -79,8 +79,8 @@ const nextConfig = {
 };
 
 module.exports = () => {  
-  console.log('Asset Prefix:', nextConfig.assetPrefix); // This will log the value of assetPrefix
-  console.log('Asset Prefix2:', process.env.NEXT_PUBLIC_XMC_DEFAULT_RH); // This will log the value of assetPrefix2
+  // console.log('Asset Prefix:', nextConfig.assetPrefix); // This will log the value of assetPrefix
+  // console.log('Asset Prefix2:', process.env.NEXT_PUBLIC_XMC_DEFAULT_RH); // This will log the value of assetPrefix2
   // Run the base config through any configured plugins
   return Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
 };
