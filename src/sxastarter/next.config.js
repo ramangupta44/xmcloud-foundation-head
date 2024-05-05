@@ -8,7 +8,7 @@ const publicUrl = jssConfig.publicUrl;
  */
 const nextConfig = {
   // Set assetPrefix to our public URL
-  assetPrefix: process.env.NEXT_PUBLIC_XMC_DEFAULT_RH === "true" ? publicUrl : undefined,
+  assetPrefix: process.env.XMC_DEFAULT_RH === "true" ? publicUrl : undefined,
   //assetPrefix: publicUrl,
 
   // Allow specifying a distinct distDir when concurrently running app in a container
