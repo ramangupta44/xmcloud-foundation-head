@@ -23,29 +23,31 @@ export const Maps = (props: MapComponentProps): JSX.Element => {
         if (mapRef?.current) {
           const map = new google.maps.Map(mapRef?.current, {
             center: { lat: -34.397, lng: 150.644 },
-            zoom: 8,
+            zoom: 1,
             mapId: MapId,
           });
 
-          const address = props?.fields?.Address?.value; // Default address
           const geocoder = new google.maps.Geocoder();
-          geocoder.geocode({ address: address }, (results, status) => {
-            if (status === 'OK' && results && results[0]) {
-              map.setCenter(results[0]?.geometry?.location);
+          props?.fields?.AddressCollection?.forEach((addressItem) => {
+            const address = addressItem?.fields?.Address?.value;
+            geocoder.geocode({ address: address }, (results, status) => {
+              if (status === 'OK' && results && results[0]) {
+                map.setCenter(results[0]?.geometry?.location);
 
-              new AdvancedMarkerElement({
-                position: results[0]?.geometry?.location,
-                map: map,
-                title: address,
-              });
-            } else {
-              console.error('Geocode was not successful for the following reason: ' + status);
-            }
+                new AdvancedMarkerElement({
+                  position: results[0]?.geometry?.location,
+                  map,
+                  title: address,
+                });
+              } else {
+                console.error('Geocode was not successful for the following reason: ' + status);
+              }
+            });
           });
         }
       })
       .catch((e) => console.error('Failed to load Google Maps script:', e));
-  }, [MapId, props?.fields?.Address?.value]);
+  }, [MapId, props?.fields?.AddressCollection]);
 
   return (
     <div
@@ -57,4 +59,4 @@ export const Maps = (props: MapComponentProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<MapComponentProps>(Maps);
+export default withDatasourceCheck()(Maps);

@@ -1,8 +1,8 @@
 ﻿---
-ID: "6d5e4206-57fc-415b-8e5e-b449b8a02510"
+ID: "b161057c-2e3f-444a-a57c-aacedac45561"
 Parent: "79a7bec5-7c5b-4c4d-b333-2279dac412c5"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Espire Accelerator/Espire Advance Components/Maps
+Path: /sitecore/templates/Feature/Espire Accelerator/Espire Advance Components/MapLocation
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
@@ -17,7 +17,7 @@ SharedFields:
   Value: 100
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{D4D0EC3B-1D74-4034-9993-02349E0EF9C1}"
+  Value: "{FFBA895E-24F0-4061-8242-5349019A9E0C}"
 Languages:
 - Language: "de-DE"
   Fields:
@@ -65,14 +65,14 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e61630bd-32c8-4cb0-9e8d-818d42f5eb72"
+      Value: "9aa0af0e-28bc-4e03-8b53-99b3f1eb2d23"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240527T060016Z
+      Value: 20240527T073803Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

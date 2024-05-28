@@ -1,29 +1,30 @@
 ﻿---
-ID: "6d5e4206-57fc-415b-8e5e-b449b8a02510"
-Parent: "79a7bec5-7c5b-4c4d-b333-2279dac412c5"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Espire Accelerator/Espire Advance Components/Maps
+ID: "f8ead8d1-3ca0-45c2-a2ec-41eaa48f6b50"
+Parent: "e86fe441-2260-42c0-95e2-ee169cc7b0a6"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Espire Accelerator/Espire Advance Components/Maps/Maps/AddressCollection
 SharedFields:
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
-  Hint: __Icon
-  Value: Office/32x32/window_dialog.png
-- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
-  Hint: __Base template
-  Value: |
-    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
-    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "query:./*"
+- ID: "24cb32f0-e364-4f37-b400-0f2899097b5b"
+  Hint: Enable Shared Language Fallback
+  Value: 1
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Multilist
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 100
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{D4D0EC3B-1D74-4034-9993-02349E0EF9C1}"
 Languages:
 - Language: "de-DE"
   Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Text
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Promo
+    Value: PromoText
   Versions:
   - Version: 1
     Fields:
@@ -50,34 +51,36 @@ Languages:
       Value: 20240521T045857Z
 - Language: en
   Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: 
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: AddressCollection
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20111213T133000Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
+      Value: 20111213T143500Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e61630bd-32c8-4cb0-9e8d-818d42f5eb72"
+      Value: "cfb74028-79d7-4f5f-8e51-5cb13d96944e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\manoj.chopkar@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240527T060016Z
+      Value: 20240527T060325Z
+    - ID: "fa622538-0c13-4130-a001-45984241aa00"
+      Hint: Enable Language Fallback
+      Value: 1
 - Language: "ja-JP"
   Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: テキスト
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: プロモ
+    Value: プロモ テキスト
   Versions:
   - Version: 1
     Fields:
@@ -104,9 +107,12 @@ Languages:
       Value: 20240521T045857Z
 - Language: "zh-CN"
   Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: 文本
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 促销
+    Value: 促销文字
   Versions:
   - Version: 1
     Fields:
