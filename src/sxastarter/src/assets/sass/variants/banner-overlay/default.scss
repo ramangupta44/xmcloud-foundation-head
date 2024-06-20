@@ -1,7 +1,7 @@
 @import "../../abstracts/vars";
 
-.banner-with-overlay {
-  .banner {
+.banner-with-overlay{
+  &.banner{
     .banner-default {
       &::before {
         content: none;
