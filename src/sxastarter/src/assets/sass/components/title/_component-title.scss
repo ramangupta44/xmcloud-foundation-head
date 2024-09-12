@@ -3,28 +3,24 @@
 
 .title {
   background: $title-bg;
-
   h1,
   .field-title {
-    @include border-basic(bottom, $border-basic-color);
-    font-size: $font-extrabig;
-    margin-bottom: $small-margin;
-    color: $title-color;
-    line-height: normal;
-    padding-bottom: 10px;
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-
-    &:hover {
-      color: $title-color-active;
-    }
-
-    > a,
-    > span {
+    >a, >span {
+      @include border-basic(bottom, $border-basic-color);
+      font-size: $font-extrabig;
+      margin-top: $small-margin;
+      margin-bottom: $small-margin;
+      color: $white;
+      line-height: normal;
+      padding-bottom: 10px;
+      display: block;
       text-decoration: none;
-    }
+      cursor: pointer;
+      &:hover {
+        // color: $title-color-active;
+        text-decoration: underline;
+      }
   }
-
+}
   @import '@sass/variants/title';
 }

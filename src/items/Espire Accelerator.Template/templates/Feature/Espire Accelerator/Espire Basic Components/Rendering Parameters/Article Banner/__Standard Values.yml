@@ -1,0 +1,31 @@
+﻿---
+ID: "0b065e93-ff07-45f6-983f-36051177b252"
+Parent: "6f999ca5-9b42-4db0-b06a-33fd5bf5a17b"
+Template: "6f999ca5-9b42-4db0-b06a-33fd5bf5a17b"
+Path: /sitecore/templates/Feature/Espire Accelerator/Espire Basic Components/Rendering Parameters/Article Banner/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: multimedia/32x32/image_h.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "205a7f8c-924a-4588-9872-5bd8b6a05e74"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T045659Z

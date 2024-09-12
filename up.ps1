@@ -44,6 +44,7 @@ if (-not $envCheck) {
 Write-Host "Keeping XM Cloud base image up to date" -ForegroundColor Green
 docker pull "$($sitecoreDockerRegistry)sitecore-xmcloud-cm:$($sitecoreVersion)"
 
+
 Write-Host "Keeping XM Cloud Tools image up to date" -ForegroundColor Green
 docker pull "$($xmcloudDockerToolsImage):$($sitecoreVersion)"
 
