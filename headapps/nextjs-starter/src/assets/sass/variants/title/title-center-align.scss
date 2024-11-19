@@ -1,0 +1,27 @@
+.title {
+    &.title-center-align {
+        background: none;
+        width: 100%;
+        text-align: center;
+        .field-title{
+          color: $brand-color;
+          font-weight: revert;
+          @include respond-to(mobile-to-tablet) {
+            font-size: 2.5rem;
+          }
+        }
+    }
+}
+
+.editing-mode {
+  .title{
+    .field-title > span{
+       border-bottom: 0;
+       color : black;
+      &:hover{
+        text-decoration: none;
+      }
+
+    }
+  }
+}

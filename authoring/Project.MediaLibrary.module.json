@@ -1,0 +1,29 @@
+{
+    "namespace": "Project.Media Library",
+    "items": {
+        "includes": [
+            {
+                "name": "Project.Media Library",
+                "path": "/sitecore/media library",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants",
+                "rules": [
+                    {
+                        "path": "/Feature",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "ignored"
+                    },
+                    {
+                        "path": "/Project",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "*",
+                        "scope": "ignored"
+                    }
+                ]
+            }
+        ]
+    }
+}

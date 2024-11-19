@@ -1,0 +1,31 @@
+﻿---
+ID: "09838015-9e78-4403-b7d7-00b3d833906f"
+Parent: "8624cddf-089d-4412-8082-2c95d4d199f3"
+Template: "8624cddf-089d-4412-8082-2c95d4d199f3"
+Path: /sitecore/templates/Feature/Espire Accelerator/Espire Advance Components/Rendering Parameters/Carousel/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: /~/icon/apps/32x32/Carousel.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c42c66ec-e431-4390-9044-487dada50ffc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\manoj.chopkar@espire.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T081850Z

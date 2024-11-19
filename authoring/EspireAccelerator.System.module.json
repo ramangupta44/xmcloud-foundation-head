@@ -1,0 +1,59 @@
+{
+    "namespace": "Espire Accelerator.System",
+    "items": {
+        "includes": [
+            {
+                "name": "Espire Accelerator.System",
+                "path": "/sitecore/system",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants",
+                "rules": [
+                    {
+                        "path": "/Dictionary",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "/Modules/Layout Service/Rendering Contents Resolvers/Espire Accelerator",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "/Modules/Layout Service/Rendering Contents Resolvers",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "/Modules/Layout Service",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "/Modules",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "/Settings/Feature/Espire Accelerator",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "itemAndDescendants"
+                    },
+                    {
+                        "path": "/Settings/Feature",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "/Settings",
+                        "allowedPushOperations": "createUpdateAndDelete",
+                        "scope": "SingleItem"
+                    },
+                    {
+                        "path": "*",
+                        "scope": "ignored"
+                    }
+                ]
+            }
+        ]
+    }
+}

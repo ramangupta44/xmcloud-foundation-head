@@ -1,0 +1,24 @@
+@import "../../abstracts/_mixins.scss";
+
+.basic-cards {
+  .card-details {
+    font-size: 1.6rem;
+  }
+  &.promo {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  .card-wrapper {
+    margin: 0;
+  }
+  .card-details {
+    @include respond-to(mobile-to-tablet) {
+      padding-bottom: 10px;
+    }
+  }
+}
