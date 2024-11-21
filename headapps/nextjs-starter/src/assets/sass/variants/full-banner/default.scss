@@ -1,0 +1,10 @@
+@import "../../abstracts/vars/";
+
+.banner-default{
+  h1{
+    @media screen and (max-width:$screen-sm) {
+      font-size:$font-medium;
+      line-height: 1.2;
+    }
+  }
+}

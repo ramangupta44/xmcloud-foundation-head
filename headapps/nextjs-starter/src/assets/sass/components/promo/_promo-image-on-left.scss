@@ -1,0 +1,18 @@
+.image-left {
+
+  .card-wrapper {
+    flex-direction: row-reverse;
+  }  
+  &.rounded-image {
+    @include respond-to(tablet-and-above){
+    .image-section {
+      margin-right: 3rem;
+      margin-left: 0;
+    }
+    .text-section {
+      padding-left: 3rem;
+      padding-right: 0;
+    }
+  }
+  }
+}
