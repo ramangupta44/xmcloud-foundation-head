@@ -1,6 +1,6 @@
+const fetch = require('node-fetch'); // Import node-fetch for API calls
 const jssConfig = require('./src/temp/config');
 const plugins = require('./src/temp/next-config-plugins') || {};
-const headerConfig = require('./project-configs/header');
 const publicUrl = jssConfig.publicUrl;
 
 /**
@@ -55,6 +55,35 @@ const nextConfig = {
     ],
   },
 
+  async headers() {
+    try {
+      // Fetch headers data dynamically from Sitecore Layout Service
+      const apiKey = jssConfig.sitecoreApiKey;
+      const response = await fetch(
+        `${jssConfig.sitecoreApiHost}/sitecore/api/layout/render/jss?item=/sitecore/content/EspireDemo/Espire/Home&sc_lang=en&sc_database=master&sc_apikey=${apiKey}`
+      );
+      const data = await response.json();
+
+      // Extract headers from the fetched data
+      const dynamicHeaders =
+        data?.sitecore?.route?.fields?.Headers?.value?.split('&').map((header) => {
+          const [key, value] = header.split('='); // Use '=' to split the key and value
+          return { key: decodeURIComponent(key.trim()), value: decodeURIComponent(value.trim()) }; // Decode URI components and trim spaces
+        }) || [];
+
+      // Apply the dynamic headers globally
+      return [
+        {
+          source: '/:path*',
+          headers: dynamicHeaders,
+        },
+      ];
+    } catch (error) {
+      // Return an empty array if there is an error
+      return [];
+    }
+  },
+
   async rewrites() {
     // When in connected mode we want to proxy Sitecore paths off to Sitecore
     return [
@@ -80,10 +109,9 @@ const nextConfig = {
       },
     ];
   },
-  ...headerConfig,
 };
 
-module.exports = () => {  
+module.exports = () => {
   // console.log('Asset Prefix:', nextConfig.assetPrefix); // This will log the value of assetPrefix
   // console.log('Asset Prefix2:', process.env.NEXT_PUBLIC_XMC_DEFAULT_RH); // This will log the value of assetPrefix2
   // Run the base config through any configured plugins
