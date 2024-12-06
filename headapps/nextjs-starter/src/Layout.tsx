@@ -9,6 +9,8 @@ import Scripts from 'src/Scripts';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 import dynamic from 'next/dynamic';
+import { pathExtractor } from 'lib/extract-path';
+import { usePathname } from 'next/navigation';
 // import Cookie from 'components/Espire/Header/Cookie';
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -28,12 +30,19 @@ interface RouteFields {
   MetaKeywords?: Field;
 }
 
+function useRealPathName() {
+  const pathName = usePathname();
+  const path = pathExtractor.extract({ path: pathName });
+  return path;
+}
+
 const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const { route } = layoutData.sitecore;
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
   const { asPath } = useRouter();
+  const asnewpath = useRealPathName();
   const sitecoreSend = `!function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","https://cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
    mootrack('init', '7b502c96-d8a8-4089-b8c5-bdc2266e24eb');
    mootrack('trackPageView');
@@ -64,7 +73,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <meta name="googlebot" content="noodp" />
         <meta name="robots" content="index,follow" />
         <meta name="author" content="Espire Infolabs" />
-        <link rel="canonical" href={process.env.PUBLIC_URL + asPath} />
+        <link rel="canonical" href={process.env.PUBLIC_URL + asnewpath} />
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
