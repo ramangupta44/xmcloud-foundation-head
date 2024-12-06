@@ -8,6 +8,7 @@ import config from 'temp/config';
 import Scripts from 'src/Scripts';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
+import dynamic from 'next/dynamic';
 // import Cookie from 'components/Espire/Header/Cookie';
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -17,7 +18,9 @@ interface LayoutProps {
   layoutData: LayoutServiceData;
   headLinks: HTMLLink[];
 }
-
+const BlogPosts = dynamic(() => import('../src/components/Espire/APIComponent/BlogPostAPI'), {
+  ssr: false,
+});
 interface RouteFields {
   [key: string]: unknown;
   Title?: Field;
@@ -32,10 +35,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
   const { asPath } = useRouter();
   const sitecoreSend = `!function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","https://cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
-  mootrack('init', '7b502c96-d8a8-4089-b8c5-bdc2266e24eb');
-  mootrack('trackPageView');
-  
-  `;
+   mootrack('init', '7b502c96-d8a8-4089-b8c5-bdc2266e24eb');
+   mootrack('trackPageView');
+   
+   `;
 
   return (
     <>
@@ -75,6 +78,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         </header>
         <main>
           <div id="content">{route && <Placeholder name="headless-main" rendering={route} />}</div>
+          {asPath === '/Blog' && <BlogPosts />}
         </main>
         <footer>
           <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
@@ -82,22 +86,22 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       </div>
       {/* This is Civic UK */}
       {/* <Script
-        src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"
-        strategy={'beforeInteractive'}
-      ></Script>
-      <Cookie /> */}
-      {/* Uncomment this and change URL's for Cookiebot */}
-      {/* <Script
-         id="Cookiebot"
-         src="https://consent.cookiebot.com/uc.js"
-         data-cbid="c0371d7c-31e2-4caf-92a3-173569d47c4a"
+         src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"
          strategy={'beforeInteractive'}
        ></Script>
-       <Script
-         id="CookieDeclaration"
-         src="https://consent.cookiebot.com/c0371d7c-31e2-4caf-92a3-173569d47c4a/cd.js"
-         strategy={'beforeInteractive'}
-       ></Script> */}
+       <Cookie /> */}
+      {/* Uncomment this and change URL's for Cookiebot */}
+      {/* <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="c0371d7c-31e2-4caf-92a3-173569d47c4a"
+          strategy={'beforeInteractive'}
+        ></Script>
+        <Script
+          id="CookieDeclaration"
+          src="https://consent.cookiebot.com/c0371d7c-31e2-4caf-92a3-173569d47c4a/cd.js"
+          strategy={'beforeInteractive'}
+        ></Script> */}
 
       <Script
         id="sitecore-send"
