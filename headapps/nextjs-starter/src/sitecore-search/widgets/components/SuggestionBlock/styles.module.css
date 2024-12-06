@@ -1,0 +1,27 @@
+
+/* SearchGroupHeading */
+.sitecore-search-group-heading {
+  box-sizing: border-box;
+  padding-left: var(--sdc-spacing-s);
+}
+
+/* SuggestionGroupRoot */
+.sitecore-suggestion-group-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SuggestionGroupTrigger */
+.sitecore-suggestion-group-trigger {
+  cursor: pointer;
+  padding: var(--sdc-spacing-s) var(--sdc-spacing-s);
+
+  &[data-state='active'],
+  &:focus,
+  &:hover {
+    outline: none;
+    font-weight: bold;
+    background: #fff;
+  }
+}
