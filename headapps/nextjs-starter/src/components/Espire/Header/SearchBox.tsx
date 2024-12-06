@@ -1,23 +1,12 @@
 import { ComponentProps } from 'lib/component-props';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import PreviewSearchList from '../../../sitecore-search/widgets/PreviewSearchList';
 
 const SearchBox = (props: ComponentProps): JSX.Element => {
   return (
     <div className={`search-bar-default ${props.params.styles}`}>
-      <div className="search-bar">
-        <InputGroup>
-          <Button variant="outline-secondary" id="search-btn">
-            <i className="fa fa-search"></i>
-          </Button>
-          <Form.Control
-            aria-label="search bar"
-            aria-describedby="seacrh-bar"
-            placeholder="Search"
-          />
-        </InputGroup>
-      </div>
+      <PreviewSearchList rfkId="rfkid_6" defaultItemsPerPage={5} />
     </div>
   );
 };
