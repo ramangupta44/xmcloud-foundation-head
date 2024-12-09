@@ -101,12 +101,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       ></Script>
       <Cookie />
       {/* Uncomment this and change URL's for Cookiebot */}
-      <Script
+      {/* <Script
         id="Cookiebot"
         src="https://consent.cookiebot.com/uc.js"
         data-cbid="c0371d7c-31e2-4caf-92a3-173569d47c4a"
         strategy={'beforeInteractive'}
-      ></Script>
+      ></Script> */}
       <Script
         id="CookieDeclaration"
         src="https://consent.cookiebot.com/c0371d7c-31e2-4caf-92a3-173569d47c4a/cd.js"
