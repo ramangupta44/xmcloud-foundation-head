@@ -137,7 +137,7 @@ export const PreviewSearchListComponent = ({
                     >
                       <PreviewSearch.ItemLink
                         href={article.url}
-                        onClick={(e) => {
+                        onClick={() => {
                           // onItemClick is for tracking purposes
                           onItemClick({
                             id: article.id,
