@@ -10,7 +10,11 @@ import { createTheme } from '@sitecore-search/ui';
 import { ReactNode } from 'react';
 
 const SearchWrapper = ({ children }: { children: ReactNode }) =>
-  IsSearchEnabled() ? <WidgetsProvider {...SEARCH_CONFIG}>{children}</WidgetsProvider> : children;
+  IsSearchEnabled() ? (
+    <WidgetsProvider {...SEARCH_CONFIG}>{children}</WidgetsProvider>
+  ) : (
+    <>{children}</>
+  );
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;

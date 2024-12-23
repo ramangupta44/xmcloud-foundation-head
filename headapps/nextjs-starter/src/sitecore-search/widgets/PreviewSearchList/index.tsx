@@ -84,7 +84,7 @@ export const PreviewSearchListComponent = ({
     [onKeyphraseChange]
   );
   return (
-    <PreviewSearch.Root className={styles['sitecore-preview-search-root']}>
+    <PreviewSearch.Root>
       <form
         onSubmit={(e) => {
           e.preventDefault();
