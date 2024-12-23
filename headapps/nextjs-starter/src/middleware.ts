@@ -1,9 +1,14 @@
 import type { NextRequest, NextFetchEvent } from 'next/server';
+//import blogMiddleware from './blogmiddleware'; // Import the new blog middleware
 import middleware from 'lib/middleware';
 
 // eslint-disable-next-line
 export default async function (req: NextRequest, ev: NextFetchEvent) {
-  return middleware(req, ev);
+  // if (req.nextUrl.pathname === '/Blog') {
+  //   return await blogMiddleware(req); // Handle `/Blog` requests
+  // }
+
+  return middleware(req, ev); // Delegate other routes to the original middleware
 }
 
 export const config = {
