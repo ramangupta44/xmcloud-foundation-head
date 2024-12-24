@@ -1,0 +1,53 @@
+/* SelectTrigger */
+.sitecore-select-trigger {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  height: 2.5rem;
+  gap: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0;
+}
+  .sitecore-select-trigger:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+  }
+
+
+/* SelectContent */
+.sitecore-select-content {
+  background-color: white;
+  box-shadow: 2px 2px 4px #cfcfcf;
+  z-index: 100;
+}
+
+/* SelectItem */
+.sitecore-select-item {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  height: 1.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+  .sitecore-select-item:hover {
+    background-color: #6366f1;
+    color: white;
+  }
+
+  .sitecore-select-item[data-state='checked'] {
+    color: #6366f1;
+    background-color: white;
+  }
+
+  .sitecore-select-item:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+  }

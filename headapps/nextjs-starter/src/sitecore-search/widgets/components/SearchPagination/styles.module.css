@@ -1,0 +1,101 @@
+/* PaginationRoot */
+.sitecore-pagination-root {
+  color: var(--sdc-palette-text-primary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  display: flex;
+  margin-top: var(--sdc-spacing-m);
+}
+
+/* PaginationPrevPage */
+.sitecore-pagination-prev-page {
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+  .sitecore-pagination-prev-page:hover {
+    color: var(--sdc-palette-primary-main);
+  }
+
+  .sitecore-pagination-prev-page[data-current='true'] {
+    color: var(--sdc-palette-primary-main);
+    pointer-events: none;
+    text-decoration-line: none;
+    display: none;
+  }
+
+/* PaginationNextPage */
+.sitecore-pagination-next-page {
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+.sitecore-pagination-next-page :hover {
+    color: var(--sdc-palette-primary-main);
+  }
+
+  .sitecore-pagination-next-page [data-current='true'] {
+    color: var(--sdc-palette-primary-main);
+    pointer-events: none;
+    text-decoration-line: none;
+    display: none;
+  }
+
+/* PaginationFirstPage */
+.sitecore-pagination-first-page {
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+  .sitecore-pagination-first-page:hover {
+    color: var(--sdc-palette-primary-main);
+  }
+
+  .sitecore-pagination-first-page[data-current='true'] {
+    color: var(--sdc-palette-primary-main);
+    pointer-events: none;
+    text-decoration-line: none;
+    display: none;
+  }
+
+
+/* PaginationLastPage */
+.sitecore-pagination-last-page {
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+.sitecore-pagination-last-page:hover {
+    color: var(--sdc-palette-primary-main);
+  }
+
+  .sitecore-pagination-last-page[data-current='true'] {
+    color: var(--sdc-palette-primary-main);
+    pointer-events: none;
+    text-decoration-line: none;
+  }
+
+/* PaginationPage */
+.sitecore-pagination-page {
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+  .sitecore-pagination-page:hover {
+    color: var(--sdc-palette-primary-main);
+  }
+
+  .sitecore-pagination-page[data-current='true'] {
+    color: var(--sdc-palette-primary-main);
+    pointer-events: none;
+    text-decoration-line: none;
+  }
+

@@ -1,0 +1,75 @@
+/* FilterContainer */
+.sitecore-filter-container {
+  margin-bottom: var(--sdc-spacing-m);
+}
+
+/* FilterHeaderContainer */
+.sitecore-filter-header-container {
+  display: flex;
+  margin-bottom: var(--sdc-spacing-s);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FilterHeader */
+.sitecore-filter-header {
+  font-size: var(--sdc-typography-fontSize4-fontSize);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* SelectedFiltersList */
+.sitecore-selected-filters-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* SelectedFiltersListItem */
+.sitecore-selected-filters-list-item {
+  color: var(--sdc-palette-common-white);
+  cursor: pointer;
+  background-color: var(--sdc-palette-grey-600);
+  border: none;
+  border-radius: var(--sdc-border-radius);
+  padding: var(--sdc-spacing-s) 20px 6px var(--sdc-spacing-s);
+  margin: var(--sdc-spacing-xs);
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+  .sitecore-selected-filters-list-item::before {
+    content: ' ';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+  .sitecore-selected-filters-list-item::after {
+    content: ' ';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+
+
+/* ClearFilters */
+.sitecore-clear-filters {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: var(--sdc-typography-fontSize);
+}
+  .sitecore-clear-filters:hover {
+    color: var(--sdc-palette-primary-main);
+    cursor: pointer;
+  }

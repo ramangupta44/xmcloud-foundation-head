@@ -1,0 +1,71 @@
+/* SortSelectTrigger */
+.sitecore-sort-select-trigger {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sdc-spacing-xs);
+  background-color: transparent;
+  height: 40px;
+  padding: var(--sdc-spacing-xs) var(--sdc-spacing-m);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  border: none;
+}
+  .sitecore-sort-select-trigger:focus {
+    outline: none;
+  }
+
+/* SortSelectContent */
+.sitecore-sort-select-content {
+  background-color: var(--sdc-palette-primary-contrastText);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px var(--sdc-palette-grey-400);
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+}
+  .sitecore-sort-select-content:focus-within {
+    border-color: var(--sdc-palette-primary-dark);
+  }
+
+/* SortSelectViewport */
+.sitecore-sort-select-viewport {
+  padding: var(--sdc-spacing-xs);
+  z-index: 50000;
+}
+
+/* SortSelectOption */
+.sitecore-sort-select-option {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  height: 25px;
+  padding: 0 var(--sdc-spacing-xs);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  position: relative;
+  border-radius: 0px;
+}
+  .sitecore-sort-select-option[data-highlighted] {
+    border-radius: 0;
+    background-color: var(--sdc-palette-primary-dark);
+    color: var(--sdc-palette-primary-contrastText);
+  }
+  .sitecore-sort-select-option[data-disabled] {
+    color: var(--sdc-palette-grey-800);
+    font-style: italic;
+  }
+
+  .sitecore-sort-select-option[data-state='checked'] {
+    color: var(--sdc-palette-primary-main);
+    background-color: var(--sdc-palette-common-white);
+  }
+
+/* SortSelectValue */
+.sitecore-sort-select-value {
+  color: var(--sdc-palette-primary-main);
+}

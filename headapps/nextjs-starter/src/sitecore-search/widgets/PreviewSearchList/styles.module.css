@@ -1,0 +1,202 @@
+/* PreviewSearchInput */
+.sitecore-preview-search-input {
+  width: 600px;
+  box-sizing: border-box;
+}
+.sitecore-preview-search-input:focus {
+  outline: 1px solid var(--sdc-palette-grey-300);
+}
+
+/* PreviewSearchContent */
+.sitecore-preview-search-content {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  min-width: var(--radix-popover-trigger-width);
+  max-width: 600px;
+  max-height: var(--radix-popover-content-available-height);
+  box-shadow: 2px 5px 5px 5px var(--sdc-palette-grey-400);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--sdc-typography-fontFamilySystem);
+  /* background-color: white; */
+  padding: var(--sdc-spacing-s) 0;
+  z-index: 1;
+}
+.sitecore-preview-search-content[data-loading="true"] {
+  height: 300px;
+}
+
+@keyframes slide-up-and-fade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right-and-fade {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-down-and-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left-and-fade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sitecore-preview-search-content[data-state="open"][data-side="top"] {
+  animation-name: slide-down-and-fade;
+}
+
+.sitecore-preview-search-content[data-state="open"][data-side="right"] {
+  animation-name: slide-left-and-fade;
+}
+
+.sitecore-preview-search-content[data-state="open"][data-side="bottom"] {
+  animation-name: slide-up-and-fade;
+}
+
+.sitecore-preview-search-content[data-state="open"][data-side="left"] {
+  animation-name: slide-right-and-fade;
+}
+
+/* PreviewSearchSuggestions */
+.sitecore-preview-search-suggestions {
+  margin-top: var(--sdc-spacing-s);
+  border-top: var(--sdc-border-width) solid var(--sdc-palette-grey-300);
+  display: block;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+}
+
+/* PreviewSearchSuggestionItem */
+.sitecore-preview-search-suggestion-item {
+  cursor: pointer;
+  color: var(--sdc-palette-primary-main);
+  padding: var(--sdc-spacing-s) var(--sdc-spacing-s);
+  font-weight: bold;
+}
+
+/* PreviewSearchSuggestionsGroup */
+.sitecore-preview-search-suggestions-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PreviewSearchLink */
+.sitecore-preview-search-link {
+  color: var(--sdc-palette-text-primary);
+  display: flex;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+  height: 5rem;
+}
+
+/* PreviewSearchItems */
+.sitecore-preview-search-items {
+  flex: 1;
+  background: #203b72;
+  display: block;
+}
+
+/* ArticleRoot */
+.sitecore-article-root {
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  padding: var(--sdc-spacing-xs) var(--sdc-spacing-s);
+}
+
+/* ArticleImage */
+.sitecore-article-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* ArticleImageWrapper */
+.sitecore-article-image-wrapper {
+  box-sizing: border-box;
+  width: 10rem;
+  display: flex;
+  overflow: hidden;
+  align-items: start;
+  margin-right: var(--sdc-spacing-m);
+}
+
+/* ArticleTitle */
+.sitecore-article-title {
+  line-height: initial;
+  max-height: 32px;
+  /* overflow: hidden; */
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ArticleTitleWrapper */
+.sitecore-article-title-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+/* ArticleContent */
+.sitecore-article-content {
+  margin: 0;
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  font-weight: var(--sdc-typography-fontWeight);
+  line-height: var(--sdc-typography-lineHeight);
+  color: var(--sdc-palette-text-primary);
+}
+
+/* ArticleLink */
+.sitecore-article-link {
+  text-decoration: none;
+  color: var(--sdc-palette-text-primary);
+  font-size: var(--sdc-typography-fontSize4-fontSize);
+}
+
+/* ArticleAuthor */
+.sitecore-article-author {
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+}
+
+/* SearchGroupHeading */
+.sitecore-search-group-heading {
+  box-sizing: border-box;
+  font-size: 1.2em;
+  padding-left: var(--sdc-spacing-s);
+  margin-bottom: var(--sdc-spacing-xs);
+}
