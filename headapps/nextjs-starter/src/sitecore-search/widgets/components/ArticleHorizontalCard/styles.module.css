@@ -1,0 +1,107 @@
+/* ArticleRoot */
+.sitecore-article-root {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  padding: var(--sdc-spacing-m);
+  margin-top: var(--sdc-spacing-m);
+  margin-bottom: var(--sdc-spacing-m);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: var(--sdc-border-width) solid var(--sdc-palette-grey-400);
+  border-radius: var(--sdc-border-radius);
+  width: 100%;
+  max-height: 200px;
+}
+  .sitecore-article-root:focus-within {
+    border: solid 1px var(--sdc-palette-primary-main);
+  }
+  .sitecore-article-root:hover {
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 300ms;
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transform: scaleX(1.05) scaleY(1.05);
+  }
+
+/* ArticleTitle */
+.sitecore-article-title {
+  margin: 0 0 var(--sdc-spacing-s);
+  color: var(--sdc-palette-text-primary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize4-fontSize);
+  font-weight: var(--sdc-typography-fontSize4-fontWeight);
+  line-height: var(--sdc-typography-fontSize4-lineHeight);
+}
+
+/* ArticleSubtitle */
+.sitecore-article-subtitle {
+  color: var(--sdc-palette-text-secondary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize3-fontSize);
+  font-weight: var(--sdc-typography-fontSize3-fontWeight);
+  line-height: var(--sdc-typography-fontSize3-lineHeight);
+  margin: 0 0 var(--sdc-spacing-s);
+}
+
+/* ArticleImageWrapper */
+.sitecore-article-image-wrapper {
+  overflow: hidden;
+  flex: none;
+  width: 25%;
+}
+
+/* ArticleImage */
+.sitecore-article-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* ArticleContent */
+.sitecore-article-content {
+  padding-left: var(--sdc-spacing-m);
+  flex-direction: column;
+}
+
+/* ArticleSpan */
+.sitecore-article-span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* ArticleContentText */
+.sitecore-article-content-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: var(--sdc-typography-fontSize);
+  line-height: 1.25rem;
+}
+
+/* ArticleId */
+.sitecore-article-id {
+  font-family: var(--sdc-typography-fontFamilySystem);
+  color: var(--sdc-palette-primary-main);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+}
+
+/* ArticleLink */
+.sitecore-article-link {
+  text-decoration: none;
+  color: var(--sdc-palette-primary-main);
+  font-size: var(--sdc-typography-fontSize4-fontSize);
+ }
+  .sitecore-article-link:hover {
+    text-decoration: none;
+  }
+  .sitecore-article-link:focus {
+    text-decoration: none;
+  }

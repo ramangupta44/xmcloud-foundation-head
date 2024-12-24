@@ -1,4 +1,3 @@
-
 /* SearchGroupHeading */
 .sitecore-search-group-heading {
   box-sizing: border-box;
@@ -16,12 +15,11 @@
 .sitecore-suggestion-group-trigger {
   cursor: pointer;
   padding: var(--sdc-spacing-s) var(--sdc-spacing-s);
-
-  &[data-state='active'],
-  &:focus,
-  &:hover {
-    outline: none;
-    font-weight: bold;
-    background: #fff;
-  }
+}
+.sitecore-suggestion-group-trigger[data-state="active"],
+.sitecore-suggestion-group-trigger:focus,
+.sitecore-suggestion-group-trigger:hover {
+  outline: none;
+  font-weight: bold;
+  background: #fff;
 }
