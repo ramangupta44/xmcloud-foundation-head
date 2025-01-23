@@ -1,6 +1,6 @@
 /* PreviewSearchInput */
 .sitecore-preview-search-input {
-  width: 600px;
+  width: 100%;
   box-sizing: border-box;
 }
 .sitecore-preview-search-input:focus {
