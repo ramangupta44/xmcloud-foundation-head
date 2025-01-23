@@ -3,7 +3,7 @@
   color: var(--sdc-palette-text-primary);
   font-family: var(--sdc-typography-fontFamilySystem);
   display: flex;
-  margin-top: var(--sdc-spacing-m);
+  align-items: center;
 }
 
 /* PaginationPrevPage */
@@ -87,7 +87,9 @@
   cursor: pointer;
   color: var(--sdc-palette-text-primary);
   margin: 0 5px;
+  padding: 0 8px;
   text-decoration: none;
+  font-size: 16px;
 }
   .sitecore-pagination-page:hover {
     color: var(--sdc-palette-primary-main);
@@ -97,5 +99,6 @@
     color: var(--sdc-palette-primary-main);
     pointer-events: none;
     text-decoration-line: none;
+    border-bottom: 1px solid;
   }
 

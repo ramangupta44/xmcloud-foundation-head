@@ -18,7 +18,7 @@
   flex: none;
   width: 25%;
   margin-right: var(--sdc-spacing-l);
-  margin-top: var(--sdc-spacing-m);
+  margin-top: 28px;
 }
 
 /* RightArea */
@@ -32,8 +32,15 @@
 .sitecore-right-top-area {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;;
 }
-
+.sitecore-right-top-area button{
+  border: 1px solid;
+}
+.sitecore-right-top-area button > div{
+  margin-top: 48px;
+}
 /* Grid */
 .sitecore-grid {
   width: 100%;
@@ -45,8 +52,11 @@
   justify-content: space-between;
   font-family: var(--sdc-typography-fontFamilySystem);
   font-size: var(--sdc-typography-fontSize1-fontSize);
+  margin: 16px 0;
 }
-
+.sitecore-page-controls label{
+  font-size: 16px;
+}
 /* NoResults */
 .sitecore-no-results {
   display: flex;
