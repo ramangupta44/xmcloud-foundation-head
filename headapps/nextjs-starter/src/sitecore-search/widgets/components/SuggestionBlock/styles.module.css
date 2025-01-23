@@ -2,6 +2,9 @@
 .sitecore-search-group-heading {
   box-sizing: border-box;
   padding-left: var(--sdc-spacing-s);
+  font-size: 1.4em;
+  margin: 0;
+  border-bottom: 1px solid;
 }
 
 /* SuggestionGroupRoot */
@@ -22,4 +25,10 @@
   outline: none;
   font-weight: bold;
   background: #fff;
+}
+a.sitecore-suggestion-group-trigger{
+  font-size: 14px!important;
+}
+a.sitecore-suggestion-group-trigger:focus{
+  background-color: transparent;
 }

@@ -123,7 +123,6 @@ export const PreviewSearchListComponent = ({
                 <PreviewSearch.Items className={styles['sitecore-preview-search-items']}>
                   {articles.length > 0 && (
                     <>
-                      <hr />
                       <h2 className={styles['sitecore-search-group-heading']}>Articles</h2>
                     </>
                   )}
