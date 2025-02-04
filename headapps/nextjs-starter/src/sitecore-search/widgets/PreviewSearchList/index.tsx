@@ -11,7 +11,6 @@ import Spinner from '../components/Spinner/index';
 import SuggestionBlock from '../components/SuggestionBlock/index';
 import styles from './styles.module.css';
 
-const DEFAULT_IMG_URL = 'https://placehold.co/500x300?text=No%20Image';
 type ArticleModel = {
   id: string;
   author: string;
@@ -20,6 +19,7 @@ type ArticleModel = {
   image_url: string;
   url: string;
   source_id?: string;
+  description: string;
 };
 type InitialState = PreviewSearchInitialState<'itemsPerPage' | 'suggestionsList'>;
 interface PreviewSearchListProps {
@@ -48,13 +48,10 @@ interface PreviewSearchListProps {
   submitRedirectionHandler?: (query: string) => void;
 }
 
-export const PreviewSearchListComponent = ({
-  defaultItemsPerPage = 6,
-  itemRedirectionHandler,
-}: PreviewSearchListProps) => {
+export const PreviewSearchListComponent = ({ defaultItemsPerPage = 6 }: PreviewSearchListProps) => {
   const {
     widgetRef,
-    actions: { onItemClick, onKeyphraseChange },
+    actions: { onKeyphraseChange },
     queryResult,
     queryResult: {
       isFetching,
@@ -88,6 +85,7 @@ export const PreviewSearchListComponent = ({
     router.push(`/SearchList?q=${target.value}`);
     target.value = '';
   };
+
   return (
     <PreviewSearch.Root>
       <form onSubmit={handleSubmit} className={styles['sitecore-preview-search-form']}>
@@ -121,44 +119,27 @@ export const PreviewSearchListComponent = ({
             <PreviewSearch.Results defaultQueryResult={queryResult}>
               {({ data: { content: articles = [] } = {} }) => (
                 <PreviewSearch.Items className={styles['sitecore-preview-search-items']}>
-                  {articles.length > 0 && (
-                    <>
-                      <h2 className={styles['sitecore-search-group-heading']}>Articles</h2>
-                    </>
-                  )}
-                  {articles?.map((article: ArticleModel, index: number) => (
+                  {articles?.map((article: ArticleModel) => (
                     <PreviewSearch.Item
                       key={article.id}
                       asChild
                       className={styles['sitecore-preview-search-item']}
                     >
-                      <PreviewSearch.ItemLink
-                        href={article.url}
-                        onClick={() => {
-                          // onItemClick is for tracking purposes
-                          onItemClick({
-                            id: article.id,
-                            index,
-                            sourceId: article.source_id,
-                          });
-                          itemRedirectionHandler && itemRedirectionHandler(article);
-                        }}
+                      <a
+                        href={article.url && article.url !== '#' ? article.url : ''}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={styles['sitecore-preview-search-link']}
                       >
                         <ArticleCard.Root className={styles['sitecore-article-root']}>
-                          <div className={styles['sitecore-article-image-wrapper']}>
-                            <ArticleCard.Image
-                              src={article.image_url || DEFAULT_IMG_URL}
-                              className={styles['sitecore-article-image']}
-                            />
-                          </div>
-                          <section className={styles['sitecore-article-title-wrapper']}>
-                            <ArticleCard.Title className={styles['sitecore-article-title']}>
-                              {article.name || article.title}
-                            </ArticleCard.Title>
-                          </section>
+                          <ArticleCard.Title className={styles['sitecore-article-title']}>
+                            {article.name || article.title}
+                          </ArticleCard.Title>
+                          <ArticleCard.Subtitle className={styles['sitecore-article-subtitle']}>
+                            {article?.description}
+                          </ArticleCard.Subtitle>
                         </ArticleCard.Root>
-                      </PreviewSearch.ItemLink>
+                      </a>
                     </PreviewSearch.Item>
                   ))}
                 </PreviewSearch.Items>

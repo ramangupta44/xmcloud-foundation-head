@@ -30,7 +30,6 @@ const SuggestionBlock = ({
           filterAttribute={filterAttribute}
           className={styles['sitecore-suggestion-group-root']}
         >
-          <h2 className={styles['sitecore-search-group-heading']}>{title}</h2>
           {items.map(({ text }) => (
             <PreviewSearch.SuggestionTrigger
               id={text}

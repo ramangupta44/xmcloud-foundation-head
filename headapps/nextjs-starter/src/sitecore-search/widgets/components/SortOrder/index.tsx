@@ -9,6 +9,12 @@ type SortOrderProps = {
   selected: string;
 };
 
+const sortLabels: Record<string, string> = {
+  featured_asc: 'Alphabetical (A–Z)',
+  featured_desc: 'Alphabetical (Z-A)',
+  suggested: 'Relevance',
+};
+
 const SortOrder = ({ options, selected }: SortOrderProps) => {
   const selectedSortIndex = options.findIndex((s) => s.name === selected);
   const { onSortChange } = useSearchResultsActions();
@@ -17,7 +23,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
     <SortSelect.Root defaultValue={options[selectedSortIndex]?.name} onValueChange={onSortChange}>
       <SortSelect.Trigger className={styles['sitecore-sort-select-trigger']}>
         <SortSelect.SelectValue className={styles['sitecore-sort-select-value']}>
-          {selectedSortIndex > -1 ? options[selectedSortIndex].label : ''}
+          {selectedSortIndex > -1 ? sortLabels[options[selectedSortIndex].name.toLowerCase()] : ''}
         </SortSelect.SelectValue>
         <SortSelect.Icon className={styles['sitecore-sort-select-icon']} />
       </SortSelect.Trigger>
@@ -25,12 +31,12 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
         <SortSelect.Viewport className={styles['sitecore-sort-select-viewport']}>
           {options.map((option: SearchResponseSortChoice) => (
             <SortSelect.Option
-              value={option} // Assuming `value` expects `option.name` but i removed option.name
+              value={option}
               key={option.name}
               className={styles['sitecore-sort-select-option']}
             >
               <SortSelect.OptionText className={styles['sitecore-sort-select-option-text']}>
-                {option.label}
+                {sortLabels[option.name.toLowerCase()] || option.name}
               </SortSelect.OptionText>
             </SortSelect.Option>
           ))}
