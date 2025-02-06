@@ -3,7 +3,7 @@
   display: flex;
   box-sizing: border-box;
   position: relative;
-  padding: var(--sdc-spacing-m);
+  padding: 20px 0;
   margin-bottom: 0;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -62,7 +62,7 @@
 
 /* ArticleContent */
 .sitecore-article-content {
-  padding-left: var(--sdc-spacing-m);
+  padding-left: 0;
   flex-direction: column;
 }
 
@@ -110,3 +110,4 @@
     font-size: 24px;
     line-height: 1.5;
   }
+  

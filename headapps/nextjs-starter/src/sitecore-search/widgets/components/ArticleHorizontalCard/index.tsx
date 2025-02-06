@@ -1,8 +1,8 @@
 import type { ActionProp, ItemClickedAction } from '@sitecore-search/core';
 import { ArticleCard } from '@sitecore-search/ui';
-
+ 
 import styles from './styles.module.css';
-
+ 
 // Define the type for the article object
 type Article = {
   id: string;
@@ -14,13 +14,13 @@ type Article = {
   source_id?: string;
   url: string;
 };
-
+ 
 type ArticleCardItemCardProps = {
   article: Article; // Replace `any` with `Article` type
   onItemClick: ActionProp<ItemClickedAction>;
   index: number;
 };
-
+ 
 const ArticleHorizontalCard = ({ article }: ArticleCardItemCardProps) => {
   return (
     <ArticleCard.Root key={article.id} className={styles['sitecore-article-root']}>
@@ -48,5 +48,5 @@ const ArticleHorizontalCard = ({ article }: ArticleCardItemCardProps) => {
     </ArticleCard.Root>
   );
 };
-
+ 
 export default ArticleHorizontalCard;

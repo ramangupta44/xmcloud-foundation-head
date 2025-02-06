@@ -1,24 +1,24 @@
 import type { SearchResponseSortChoice } from '@sitecore-search/data';
 import { useSearchResultsActions } from '@sitecore-search/react';
 import { SortSelect } from '@sitecore-search/ui';
-
+ 
 import styles from './styles.module.css';
-
+ 
 type SortOrderProps = {
   options: Array<SearchResponseSortChoice>;
   selected: string;
 };
-
+ 
 const sortLabels: Record<string, string> = {
   featured_asc: 'Alphabetical (A–Z)',
   featured_desc: 'Alphabetical (Z-A)',
   suggested: 'Relevance',
 };
-
+ 
 const SortOrder = ({ options, selected }: SortOrderProps) => {
   const selectedSortIndex = options.findIndex((s) => s.name === selected);
   const { onSortChange } = useSearchResultsActions();
-
+ 
   return (
     <SortSelect.Root defaultValue={options[selectedSortIndex]?.name} onValueChange={onSortChange}>
       <SortSelect.Trigger className={styles['sitecore-sort-select-trigger']}>
@@ -45,5 +45,6 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
     </SortSelect.Root>
   );
 };
-
+ 
 export default SortOrder;
+ 
