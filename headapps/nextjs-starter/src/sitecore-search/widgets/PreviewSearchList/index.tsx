@@ -82,7 +82,7 @@ export const PreviewSearchListComponent = ({ defaultItemsPerPage = 6 }: PreviewS
   const handleSubmit = (e: SyntheticEvent): void => {
     e.preventDefault();
     const target = (e.target as HTMLFormElement).querySelector('input') as HTMLInputElement;
-    router.push(`/SearchList?q=${target.value}`);
+    router.push(`/searchlist?q=${target.value}`);
     target.value = '';
   };
 

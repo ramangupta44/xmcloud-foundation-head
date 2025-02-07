@@ -3,9 +3,9 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import PreviewSearchList from '../../../sitecore-search/widgets/PreviewSearchList';
 
-const SearchBox = () => {
+const SearchBox = (props: ComponentProps): JSX.Element => {
   return (
-    <div className="search-bar-default col-md-5">
+    <div className={`search-bar-default ${props.params.styles}`}>
       <PreviewSearchList rfkId="rfkid_6" defaultItemsPerPage={5} />
     </div>
   );
