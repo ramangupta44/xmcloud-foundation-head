@@ -5,7 +5,7 @@ import PreviewSearchList from '../../../sitecore-search/widgets/PreviewSearchLis
 
 const SearchBox = (props: ComponentProps): JSX.Element => {
   return (
-    <div className={`search-bar-default col-md-5 ${props.params.styles}`}>
+    <div className={`search-bar-default ${props.params.styles}`}>
       <PreviewSearchList rfkId="rfkid_6" defaultItemsPerPage={5} />
     </div>
   );
