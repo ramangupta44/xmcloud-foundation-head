@@ -9,12 +9,6 @@ type SortOrderProps = {
   selected: string;
 };
 
-const sortLabels: Record<string, string> = {
-  featured_asc: 'Alphabetical (A–Z)',
-  featured_desc: 'Alphabetical (Z-A)',
-  suggested: 'Relevance',
-};
-
 const SortOrder = ({ options, selected }: SortOrderProps) => {
   const selectedSortIndex = options.findIndex((s) => s.name === selected);
   const { onSortChange } = useSearchResultsActions();
@@ -23,7 +17,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
     <SortSelect.Root defaultValue={options[selectedSortIndex]?.name} onValueChange={onSortChange}>
       <SortSelect.Trigger className={styles['sitecore-sort-select-trigger']}>
         <SortSelect.SelectValue className={styles['sitecore-sort-select-value']}>
-          {selectedSortIndex > -1 ? sortLabels[options[selectedSortIndex].name.toLowerCase()] : ''}
+          {selectedSortIndex > -1 ? options[selectedSortIndex].label : ''}
         </SortSelect.SelectValue>
         <SortSelect.Icon className={styles['sitecore-sort-select-icon']} />
       </SortSelect.Trigger>
@@ -36,7 +30,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
               className={styles['sitecore-sort-select-option']}
             >
               <SortSelect.OptionText className={styles['sitecore-sort-select-option-text']}>
-                {sortLabels[option.name.toLowerCase()] || option.name}
+                {option.label}
               </SortSelect.OptionText>
             </SortSelect.Option>
           ))}
