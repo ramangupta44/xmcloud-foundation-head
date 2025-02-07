@@ -25,7 +25,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
         <SortSelect.Viewport className={styles['sitecore-sort-select-viewport']}>
           {options.map((option: SearchResponseSortChoice) => (
             <SortSelect.Option
-              value={option} // Assuming `value` expects `option.name` but i removed option.name
+              value={option}
               key={option.name}
               className={styles['sitecore-sort-select-option']}
             >

@@ -1,4 +1,5 @@
 /* MainArea */
+
 .sitecore-main-area {
   color: var(--sdc-palette-text-primary);
   font-family: var(--sdc-typography-fontFamilySystem);
@@ -22,7 +23,7 @@
 }
 
 /* RightArea */
-.sitecore-right-area {
+.sitecore-right-area { 
   display: flex;
   flex-direction: column;
   flex: 4 1 0%;
@@ -34,6 +35,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
+  flex-wrap: wrap;
 }
 .sitecore-right-top-area button{
   border: 1px solid;
@@ -62,4 +64,26 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+.sitecore-no-results{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 20px;
+    background-color: aliceblue;
+}
+@media(max-width: 767px){
+  .sitecore-no-results h3 {
+    font-size: 24px;
+  }
+}
+@media(max-width: 1023px){
+  .sitecore-main-area{
+    display: block;
+  }
+  .sitecore-right-area,
+  .sitecore-left-area{
+    width: 100%
+  }
 }

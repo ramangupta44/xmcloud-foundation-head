@@ -3,8 +3,6 @@ import { ArticleCard } from '@sitecore-search/ui';
 
 import styles from './styles.module.css';
 
-const DEFAULT_IMG_URL = 'https://placehold.co/500x300?text=No%20Image'; // TODO: Update with corresponding fallback image
-
 // Define the type for the article object
 type Article = {
   id: string;
@@ -23,26 +21,14 @@ type ArticleCardItemCardProps = {
   index: number;
 };
 
-const ArticleHorizontalCard = ({ article, onItemClick, index }: ArticleCardItemCardProps) => {
+const ArticleHorizontalCard = ({ article }: ArticleCardItemCardProps) => {
   return (
     <ArticleCard.Root key={article.id} className={styles['sitecore-article-root']}>
-      <div className={styles['sitecore-article-image-wrapper']}>
-        <ArticleCard.Image
-          src={article.image_url || DEFAULT_IMG_URL}
-          className={styles['sitecore-article-image']}
-        />
-      </div>
       <ArticleCard.Content className={styles['sitecore-article-content']}>
         <a
-          href={article.url}
-          onClick={(e) => {
-            e.preventDefault();
-            onItemClick({
-              id: article.id,
-              index,
-              sourceId: article.source_id,
-            });
-          }}
+          href={article.url && article.url !== '#' ? article.url : ''}
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles['sitecore-article-link']}
         >
           <span aria-hidden="true" className={styles['sitecore-article-span']}></span>

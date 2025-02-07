@@ -70,7 +70,7 @@ export const SearchResultListComponent = ({
   }
 
   return (
-    <div ref={widgetRef} className={styles['sitecore-wrapper']}>
+    <div ref={widgetRef} className={styles['sitecore-no-result']}>
       <div className={styles['sitecore-main-area']}>
         {isFetching && <Spinner />}
         {totalItems > 0 && (
