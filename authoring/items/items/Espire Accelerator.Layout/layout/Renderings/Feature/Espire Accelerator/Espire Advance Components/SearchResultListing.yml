@@ -2,14 +2,14 @@
 ID: "6728cd6d-0227-49ea-8c78-1b94df0396d3"
 Parent: "e0644b0e-8e12-4997-8d99-339228429ddb"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Feature/Espire Accelerator/Espire Advance Components/SearchResult
+Path: /sitecore/layout/Renderings/Feature/Espire Accelerator/Espire Advance Components/SearchResultListing
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: SearchResult
+  Value: SearchResultListing
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Applications/32x32/view.png
+  Value: Applications/32x32/text_view.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: 
@@ -77,14 +77,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c2f22b6a-5949-4c4d-953f-3c1577b24000"
+      Value: "c1d9e5c9-d1ba-4e7a-8811-2e0c293f7116"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\manoj.chopkar@espire.com
+        sitecore\atul.gusain@espire.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20241223T170915Z
+      Value: 20250213T062741Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

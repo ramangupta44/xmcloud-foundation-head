@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import SearchResults from '../../../sitecore-search/widgets/SearchResultList';
 
-const SearchResult = (): JSX.Element => {
+const SearchResultListing = (): JSX.Element => {
   const router = useRouter();
   const [keyword, setKeyword] = useState('');
 
@@ -19,4 +19,4 @@ const SearchResult = (): JSX.Element => {
   );
 };
 
-export default SearchResult;
+export default SearchResultListing;
