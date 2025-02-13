@@ -55,6 +55,8 @@
   list-style: none;
   padding: 0;
   margin-top: 16px;
+  background-color: #f2f2f2;
+  padding: 8px;
 }
   .sitecore-accordion-value-list .li {
     padding: var(--sdc-spacing-xs) 0;
@@ -85,15 +87,21 @@
 .sitecore-accordion-header {
   display: flex;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
+  position: relative;
 }
-
+.sitecore-accordion-header::after{
+  content: url('../../../../assets/images/down-arrow.svg');
+  position: absolute;
+  top: -20px;
+    right: 0;
+}
 /* AccordionTrigger */
 .sitecore-accordion-trigger {
   align-items: center;
   display: flex;
   color: var(--sdc-palette-text-primary);
-  font-size: var(--sdc-typography-fontSize3-fontSize);
+  font-size: var(--sdc-typography-fontSize4-fontSize);
   font-family: var(--sdc-typography-fontFamilySystem);
   font-weight: 600;
   padding: 0;
