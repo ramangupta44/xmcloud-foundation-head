@@ -27,7 +27,17 @@
   box-shadow: 2px 2px 4px #cfcfcf;
   z-index: 100;
 }
-
+.sitecore-select-content {
+  margin-top: 35px;
+  margin-left: -5px;
+  width: 55px; 
+} 
+.sitecore-select-content div div:hover{
+  background: transparent!important;
+  border: none!important;
+  outline: none!important;
+  color: #333;
+}
 /* SelectItem */
 .sitecore-select-item {
   display: flex;
@@ -43,6 +53,8 @@
   .sitecore-select-item:hover {
     background-color: #6366f1;
     color: white;
+    border: none;
+    outline: none;
   }
 
   .sitecore-select-item[data-state='checked'] {

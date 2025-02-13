@@ -22,7 +22,7 @@
   overflow: hidden;
   box-shadow: 2px 2px 4px var(--sdc-palette-grey-400);
   position: absolute;
-  top: 30px;
+  top: 40px;
   z-index: 100;
 }
   .sitecore-sort-select-content:focus-within {
