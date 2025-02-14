@@ -49,10 +49,10 @@
     color: #6366f1;
     background-color: white;
   }
-
-  .sitecore-select-item:focus {
-    outline: 2px solid #6366f1;
-    outline-offset: 2px;
-  }
+  .sitecore-select-content {
+    margin-top: 35px;
+    margin-left: -5px;
+    width: 55px; 
+  } 
 
   

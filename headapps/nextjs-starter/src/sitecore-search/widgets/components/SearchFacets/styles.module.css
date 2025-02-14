@@ -53,7 +53,8 @@
 /* AccordionValueList */
 .sitecore-accordion-value-list {
   list-style: none;
-  padding: 0;
+  background-color: #f2f2f2;
+  padding: 8px;
   margin-top: 16px;
 }
   .sitecore-accordion-value-list .li {
@@ -85,15 +86,24 @@
 .sitecore-accordion-header {
   display: flex;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
+.sitecore-accordion-header button.sitecore-accordion-trigger::after{
+  content: url('../../../../assets/images/right-arrow.svg');
+  position: absolute; 
+  right: -10px;
+}
+.sitecore-accordion-header button.sitecore-accordion-trigger[data-state="open"]::after{
+  content: url('../../../../assets/images/down-arrow.svg');
+  right: 0;
+}
 /* AccordionTrigger */
 .sitecore-accordion-trigger {
   align-items: center;
   display: flex;
   color: var(--sdc-palette-text-primary);
-  font-size: var(--sdc-typography-fontSize3-fontSize);
+  font-size: var(--sdc-typography-fontSize4-fontSize);
   font-family: var(--sdc-typography-fontFamilySystem);
   font-weight: 600;
   padding: 0;
@@ -102,6 +112,7 @@
   flex: 1 1 0;
   background: none;
   border: none;
+  position: relative;
 }
 
 /* AccordionFacetsFacet */
@@ -109,9 +120,7 @@
   border-bottom: solid 1px var(--sdc-palette-grey-800);
   margin-bottom: var(--sdc-spacing-m);
   padding-bottom: var(--sdc-spacing-m);
-}
-
-
+} 
 
 /* RangeFacetRoot */
 .sitecore-range-facet-root {
